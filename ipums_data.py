@@ -6,7 +6,8 @@ import pandas as pd
 
 from ipumspy import IpumsApiClient, UsaExtract, CpsExtract, IpumsiExtract
 
-IPUMS_API_KEY = "59cba10d8a5da536fc06b59dbd7181d551084657b83506bdc3028b35"
+IPUMS_API_KEY = os.environ["IPUMS_API_KEY"]
+
 DOWNLOAD_DIR = Path("data")
 
 ipums = IpumsApiClient(IPUMS_API_KEY)
@@ -14,7 +15,7 @@ ipums = IpumsApiClient(IPUMS_API_KEY)
 # TODO: webscrape comprehensive list of USA variables, not just those available in 2021
 usa_2021_variables = pd.read_csv("ipums_metadata/usa_variables_2021.csv")
 
-# This is a complete list of all variables available for ipumsi data
+# This is a complete list of all variables available for ipumsi (international) data
 ipumsi_variables = pd.read_csv("ipums_metadata/ipumsi_vars.csv")
 
 # define your extract
