@@ -1,20 +1,18 @@
 ## IPUMS Data Scraper
-Run 
-```python ipums_data.py```
-to download all IPUMSI International datasets to the data/ directory within the file. 
-
 ### Example Usage
 Download all sample_id datasets within the specified collection. 
 The collection_name should be one of: usa, cps, ipumsi
+
 ```python download_ipums_data.py <collection_name> ```
 
 Download the datasets corresponding to a subset of sample_ids.
+
 ```python download_ipums_data.py <collection_name> sample_id1, sample_id2, sample_id3,...```
 
 ### Output structure
-All data is downloaded into the `data/` folder of the IPUMS repository. For each dataset,
-a folder <sample_id> is created. Within data/<sample_id>/, the download_ipums_data.py
-script generates a .dat.gz file containing the actual data, and generates a "<sample_id>_description.json" json file
+All data is downloaded into the `data/` folder of the IPUMS_Data_Scraper repository. For each dataset,
+a folder `<sample_id>/` is created. Within `data/<sample_id>/`, the `download_ipums_data.py`
+script generates a .dat.gz file containing the actual data, and generates a `<sample_id>_description.json` json file
 containing metadata for the dataset. 
 
 A dataset's json file contains a key-value feature_name: {"samples_description": ..., "variables":{"description":...,"label":...,"numpy_type":...,"codes":...}} mapping. 
