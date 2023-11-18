@@ -8,7 +8,7 @@ import os
 from ipumspy import IpumsApiClient, UsaExtract, CpsExtract, IpumsiExtract, readers
 
 IPUMS_API_KEY = os.environ["IPUMS_API_KEY"]
-DOWNLOAD_DIR = Path("data")
+DOWNLOAD_DIR = "data"
 
 ipums = IpumsApiClient(IPUMS_API_KEY)
 
@@ -22,8 +22,8 @@ ipumsi_variables = pd.read_csv("ipums_metadata/ipumsi_vars.csv")
 
 # define your extract
 def get_extract(name):
-    if os.path.isfile(f"data/{name}/present_variables.csv"):
-        df=pd.read_csv(f"data/{name}/present_variables.csv")
+    if os.path.isfile(f"{DOWNLOAD_DIR}/{name}/present_variables.csv"):
+        df=pd.read_csv(f"{DOWNLOAD_DIR}/{name}/present_variables.csv")
         variables=df["variables"].tolist()
     else:
         # Use default 2021 variables
@@ -46,10 +46,10 @@ def get_extract(name):
     return extract
 
 def try_save_extract(extract,name):
-    dir=f"data/{name}"
+    dir=f"{DOWNLOAD_DIR}/{name}"
     data_csv = f"{dir}/{name}.csv"
-    if not os.path.isdir("data/"):
-        os.mkdir("data/")
+    if not os.path.isdir(DOWNLOAD_DIR):
+        os.mkdir(DOWNLOAD_DIR)
     if not os.path.isdir(dir):
         os.mkdir(dir)
     if os.path.isfile(data_csv):
@@ -60,7 +60,7 @@ def try_save_extract(extract,name):
     else:
         present_vars = usa_2021_variables["variables"].tolist() if "us"==name[:2] else (cps_variables["variables"].tolist() if "cps"==name[:3] else ipumsi_variables["variables"].tolist())
         
-    DOWNLOAD_DIR = Path(dir)
+    DOWNLOAD_DIR_PATH = Path(dir)
     
     # submit your extract
     try:
@@ -79,15 +79,15 @@ def try_save_extract(extract,name):
     ipums.wait_for_extract(extract)
 
     # Download the extract
-    ipums.download_extract(extract, download_dir=DOWNLOAD_DIR)
+    ipums.download_extract(extract, download_dir=DOWNLOAD_DIR_PATH)
 
     # Get the DDI
-    ddi_file = list(DOWNLOAD_DIR.glob("*.xml"))[0]
+    ddi_file = list(DOWNLOAD_DIR_PATH.glob("*.xml"))[0]
     ddi = readers.read_ipums_ddi(ddi_file)
 
     # Get the data
     try:
-        ipums_df = readers.read_microdata(ddi, DOWNLOAD_DIR / ddi.file_description.filename)
+        ipums_df = readers.read_microdata(ddi, DOWNLOAD_DIR_PATH / ddi.file_description.filename)
         ipums_df.to_csv(data_csv)
         print(name,ipums_df.shape)
     except Exception as e:
@@ -117,8 +117,8 @@ def save_collection_extracts(collection="usa"):
 # data type, and mappings from codings to true values (for categorical variables). Save to json file.
 def save_ddi_json(name):
     # read ddi and data
-    ddi_path = [file for file in os.listdir(f"data/{name}") if file.endswith('.xml')][0]
-    ddi_codebook = readers.read_ipums_ddi(f"data/{name}/{ddi_path}")
+    ddi_path = [file for file in os.listdir(f"{DOWNLOAD_DIR}/{name}") if file.endswith('.xml')][0]
+    ddi_codebook = readers.read_ipums_ddi(f"{DOWNLOAD_DIR}/{name}/{ddi_path}")
     variable_dict = {"samples_description":ddi_codebook.samples_description[0],"variables":{}}
     for variable_info in ddi_codebook.data_description:
         # get VariableDescription for each variable
@@ -128,5 +128,5 @@ def save_ddi_json(name):
             "numpy_type": str(variable_info.python_type),
             "codes": variable_info.codes,
         }
-    with open(f"data/{name}/{name}_description.json", 'w') as json_file:
+    with open(f"{DOWNLOAD_DIR}/{name}/{name}_description.json", 'w') as json_file:
         json.dump(variable_dict, json_file)
