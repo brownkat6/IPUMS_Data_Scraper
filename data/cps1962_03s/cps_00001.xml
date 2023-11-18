@@ -1,0 +1,5152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ipums-ddi-xslt.xsl"?>
+<codeBook ID="ddi2-821120b0-5cef-013c-327c-0242ac1c0004-cps_00001.dat-cps.ipums.org" version="2.5" xmlns="ddi:codebook:2_5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd">
+  <docDscr>
+    <citation>
+      <titlStmt>
+        <titl>Codebook for an IPUMS CPS Data Extract</titl>
+        <subTitl>DDI 2.5 metadata describing the extract file  'cps_00001.dat'</subTitl>
+        <IDNo>ddi2-821120b0-5cef-013c-327c-0242ac1c0004-cps_00001.dat-cps.ipums.org</IDNo>
+      </titlStmt>
+      <rspStmt>
+        <AuthEnty affiliation="University of Minnesota">IPUMS</AuthEnty>
+      </rspStmt>
+      <prodStmt>
+        <producer abbr="IPUMS" affiliation="University of Minnesota" role="Documentation">IPUMS</producer>
+        <prodDate date="2023-11-18">November 18, 2023</prodDate>
+        <prodPlac>IPUMS, 50 Willey Hall, 225 - 19th Avenue South, Minneapolis, MN 55455</prodPlac>
+      </prodStmt>
+      <distStmt>
+        <contact URI="https://ipums.org" affiliation="University of Minnesota">IPUMS</contact>
+      </distStmt>
+    </citation>
+  </docDscr>
+  <stdyDscr>
+    <citation>
+      <titlStmt>
+        <titl>User Extract cps_00001.dat</titl>
+      </titlStmt>
+      <rspStmt>
+        <AuthEnty affiliation="University of Minnesota">IPUMS</AuthEnty>
+      </rspStmt>
+      <prodStmt>
+        <producer abbr="IPUMS" affiliation="University of Minnesota" role="Documentation">IPUMS</producer>
+        <prodDate date="2023-11-18">November 18, 2023</prodDate>
+        <prodPlac>IPUMS, 50 Willey Hall, 225 - 19th Avenue South, Minneapolis, MN 55455</prodPlac>
+      </prodStmt>
+      <distStmt>
+        <contact URI="https://ipums.org" affiliation="University of Minnesota">IPUMS</contact>
+      </distStmt>
+      <serStmt>
+        <serName abbr="cps">IPUMS CPS</serName>
+        <serInfo>DOI:10.18128/D030.V11.0</serInfo>
+      </serStmt>
+      <verStmt>
+        <version date="2023-11-18"/>
+      </verStmt>
+    </citation>
+    <stdyInfo>
+      <subject>
+        <topcClas vocab="IPUMS">Technical Variables -- HOUSEHOLD</topcClas>
+        <topcClas vocab="IPUMS">Geographic Variables -- HOUSEHOLD</topcClas>
+        <topcClas vocab="IPUMS">Economic Characteristics Variables -- HOUSEHOLD</topcClas>
+        <topcClas vocab="IPUMS">Linking Variables -- HOUSEHOLD</topcClas>
+        <topcClas vocab="IPUMS">Technical Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Demographics Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Family Interrelationships Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Work Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Education Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Work Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Income Variables -- PERSON</topcClas>
+      </subject>
+      <sumDscr ID="sdatref-2320">
+        <timePrd date="1962-03" event="single">1962-03</timePrd>
+        <nation abbr="us">United States</nation>
+      </sumDscr>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  IPUMS-CPS, ASEC 1962
+            Note: persons under age 14 not included in sample
+]]></notes>
+    </stdyInfo>
+    <dataAccs>
+      <useStmt>
+        <confDec required="no"><![CDATA[None]]></confDec>
+        <contact URI="http://cps.ipums.org/" affiliation="IPUMS">IPUMS CPS</contact>
+        <citReq><![CDATA[Publications and research reports based on the IPUMS CPS database must cite it appropriately. The citation should include the following:
+
+Sarah Flood, Miriam King, Renae Rodgers, Steven Ruggles, J. Robert Warren, Daniel Backman, Annie Chen, Grace Cooper, Stephanie Richards, Megan Schouweiler and Michael Westberry. IPUMS CPS: Version 11.0 [dataset]. Minneapolis, MN: IPUMS, 2023. https://doi.org/10.18128/D030.V11.0
+
+The licensing agreement for use of IPUMS CPS data requires that users supply us with the title and full citation for any publications, research reports, or educational materials making use of the data or documentation. Please add your citation to the IPUMS bibliography: http://bibliography.ipums.org/]]></citReq>
+        <conditions><![CDATA[Users of IPUMS CPS data must agree to abide by the conditions of use. A user's license is valid for one year and may be renewed.  Users must agree to the following conditions:
+
+(1) No fees may be charged for use or distribution of the data.  All persons are granted a limited license to use these data, but you may not charge a fee for the data if you distribute it to others.
+
+(2) Cite IPUMS appropriately.  For information on proper citation,  refer to the citation requirement section of this DDI document.
+
+(3) Tell us about any work you do using the IPUMS.  Publications, research  reports, or presentations making use of IPUMS CPS should be added to our  Bibliography. Continued funding for the IPUMS depends on our ability to  show our sponsor agencies that researchers are using the data for productive  purposes.
+
+(4) Use it for GOOD -- never for EVIL.]]></conditions>
+        <disclaimer>The user of the data acknowledges that the original collector of the data, the authorized distributor of the data, and the relevant funding agency bear no responsibility for use of the data or for interpretations or inferences based upon such uses.</disclaimer>
+      </useStmt>
+    </dataAccs>
+    <notes><![CDATA[User-provided description:  My IPUMS CPS extract]]></notes>
+  </stdyDscr>
+  <fileDscr ID="ExtractData">
+    <fileTxt>
+      <fileName>cps_00001.dat</fileName>
+      <fileCont>Microdata records</fileCont>
+      <fileStrc type="rectangular"/>
+      <fileType charset="ISO-8859-1">ISO-8859-1 data file</fileType>
+      <format>fixed length fields</format>
+      <filePlac>IPUMS, 50 Willey Hall, 225 - 19th Avenue South, Minneapolis, MN 55455</filePlac>
+    </fileTxt>
+  </fileDscr>
+  <dataDscr><var ID="YEAR" dcml="0" files="ExtractData" intrvl="contin" name="YEAR">
+  <location EndPos="4" StartPos="1" width="4"/>
+  <labl>Survey year</labl>
+  <txt><![CDATA[YEAR reports the year in which the survey was conducted.  YEARP is repeated on person records.]]></txt>
+  <codInstr><![CDATA[CodesYEAR is a 4-digit numeric value.]]></codInstr>
+  <concept vocab="IPUMS">Technical Variables -- HOUSEHOLD</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="SERIAL" dcml="0" files="ExtractData" intrvl="contin" name="SERIAL">
+  <location EndPos="9" StartPos="5" width="5"/>
+  <labl>Household serial number</labl>
+  <txt><![CDATA[SERIAL is an identifying number unique to each household in a given survey month and year.  All person records are assigned the same serial number as the household record they follow.  A combination of YEAR, MONTH, and SERIAL provides a within-sample unique identifier for every household in IPUMS-CPS; YEAR, MONTH, SERIAL, and PERNUM uniquely identify every person within a single sample.
+
+SERIAL is a new value generated for IPUMS-CPS and should not be confused with the household serial number created by the Census Bureau and included in the original CPS data.]]></txt>
+  <codInstr><![CDATA[CodesSERIAL is a 5-digit numeric variable.]]></codInstr>
+  <concept vocab="IPUMS">Technical Variables -- HOUSEHOLD</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="MONTH" dcml="0" files="ExtractData" intrvl="discrete" name="MONTH">
+  <location EndPos="11" StartPos="10" width="2"/>
+  <labl>Month</labl>
+  <txt><![CDATA[MONTH indicates the calendar month of the CPS interview.]]></txt>
+  <catgry>
+    <catValu>01</catValu>
+    <labl>January</labl>
+  </catgry>
+  <catgry>
+    <catValu>02</catValu>
+    <labl>February</labl>
+  </catgry>
+  <catgry>
+    <catValu>03</catValu>
+    <labl>March</labl>
+  </catgry>
+  <catgry>
+    <catValu>04</catValu>
+    <labl>April</labl>
+  </catgry>
+  <catgry>
+    <catValu>05</catValu>
+    <labl>May</labl>
+  </catgry>
+  <catgry>
+    <catValu>06</catValu>
+    <labl>June</labl>
+  </catgry>
+  <catgry>
+    <catValu>07</catValu>
+    <labl>July</labl>
+  </catgry>
+  <catgry>
+    <catValu>08</catValu>
+    <labl>August</labl>
+  </catgry>
+  <catgry>
+    <catValu>09</catValu>
+    <labl>September</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>October</labl>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>November</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>December</labl>
+  </catgry>
+  <concept vocab="IPUMS">Technical Variables -- HOUSEHOLD</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="ASECWTH" dcml="4" files="ExtractData" intrvl="contin" name="ASECWTH">
+  <location EndPos="22" StartPos="12" width="11"/>
+  <labl>Annual Social and Economic Supplement Household weight</labl>
+  <txt><![CDATA[ASECWTH is a household-level weight that should be used to generate statistics about households in March Annual Social and Economic (ASEC) Supplement data. The CPS uses a complex stratified sampling scheme, and ASECWTH must be used to produce unbiased household-level statistics from the IPUMS-CPS ASEC data. For analyses of non-ASEC data, researchers should use HWTFINL. For individual-level analyses, researchers should use WTFINL, ASECWT, or EARNWT. 
+
+ASECWTH generally has the same value as WTSUPP for the household head or reference person. Vacant housing units and households that could not be interviewed due to residents' absence or refusal to participate have a value of zero in HWTSUPP; such sampled units were included in the public use CPS data beginning in 1988. 
+
+Estimates on the entire population are prepared by projecting forward the resident population from the last available census. These projections are derived by updating the demographic census data from a number of other data sources that account for death, births and net migration. About 3 years after every census (i.e. 2003 for the 2000 Census and 2013 for the 2010 Census), the Census Bureau updates its independent population control and provides a new weight for the relevant years.
+
+Two important points should be noted here. First, the lag between when the Census is conducted and when the CPS weights are updated is about 3 years. While the Census data are being processed, the CPS files are made available using the weighting scheme from the US Census prior to the latest Census. Second, once the files are updated, the old weights become obsolete and are replaced in the IPUMS data extract system. Published estimates from the lag years that use the old weights are not always updated. For example, 2010 poverty estimates were released in ASEC using the 2000 population controls. Once the 2010 population controls were made available, IPUMS-CPS replaced the ASEC 2010, 2011, and 2012 weights that are based on the 2000 population control with weights that are based on the 2010 population controls.
+
+IPUMS-CPS makes available only the most up-to-date weights. The old values are available here: Old SPM and Weights Values.]]></txt>
+  <codInstr><![CDATA[CodesASECWTH is a 10-digit numeric variable with four implied decimals.  That is, 1234567890 should be interpreted as 123456.7890.  The IPUMS command files automatically divide ASECWTH by 10,000, so no further adjustment is needed.]]></codInstr>
+  <concept vocab="IPUMS">Technical Variables -- HOUSEHOLD</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="NUMPREC" dcml="0" files="ExtractData" intrvl="contin" name="NUMPREC">
+  <location EndPos="24" StartPos="23" width="2"/>
+  <labl>Number of person records following</labl>
+  <txt><![CDATA[NUMPREC reports the number of person records following the household record.  These person records all have the same serial number (SERIAL) as the household record.]]></txt>
+  <codInstr><![CDATA[CodesNUMPREC is a 2-digit numeric variable.]]></codInstr>
+  <concept vocab="IPUMS">Technical Variables -- HOUSEHOLD</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="FRAGMNT" dcml="0" files="ExtractData" intrvl="discrete" name="FRAGMNT">
+  <location EndPos="25" StartPos="25" width="1"/>
+  <labl>Household fragment</labl>
+  <txt><![CDATA[FRAGMNT identifies households that do not contain household heads.  These are all one-person households where the individual was assigned a relationship code other than "Head."  We assume that these individuals either live in group quarters or belong with a household elsewhere in the dataset.  The original CPS documentation does not offer any advice about how to treat these households. Users should anaylze them with caution.]]></txt>
+  <catgry>
+    <catValu>0</catValu>
+    <labl>Not a household fragment</labl>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Household fragment</labl>
+  </catgry>
+  <concept vocab="IPUMS">Technical Variables -- HOUSEHOLD</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="CPI99" dcml="3" files="ExtractData" intrvl="contin" name="CPI99">
+  <location EndPos="29" StartPos="26" width="4"/>
+  <labl>CPI-U adjustment factor to 1999 dollars</labl>
+  <txt><![CDATA[CPI99 provides the CPI-U multiplier (available from the Bureau of Labor Statistics) to convert dollar figures to constant 1999 dollars. (This corresponds to the dollar amounts in the 2000 CPS, which inquired about income in 1999.) Multiplying dollar amounts by this variable (which is constant within years) will render them comparable across time and thus suitable for multivariate analysis. 
+For more information on how to use CPI99, please see the IPUMS inflation adjustment page.
+See also the Monetary Adjustment Feature.]]></txt>
+  <codInstr><![CDATA[CodesCPI99 is a 4-digit variable with three implied decimal places.]]></codInstr>
+  <concept vocab="IPUMS">Technical Variables -- HOUSEHOLD</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="REGION" dcml="0" files="ExtractData" intrvl="discrete" name="REGION">
+  <location EndPos="31" StartPos="30" width="2"/>
+  <labl>Region and division</labl>
+  <txt><![CDATA[REGION identifies the region and division where the housing unit was located. Unless otherwise noted in the comparability discussion, states are recoded into the following 1990 regional and divisional classification system: 
+
+1. Northeast Region
+New England Division: Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island, Vermont
+
+Middle Atlantic Division: New Jersey, New York, Pennsylvania
+2. Midwest (formerly North Central) Region
+East North Central Division: Illinois, Indiana, Michigan, Ohio, Wisconsin
+
+West North Central Division: Iowa, Kansas, Minnesota, Missouri, Nebraska, North Dakota, South Dakota
+3. South Region
+South Atlantic Division: Delaware, District of Columbia, Florida, Georgia, Maryland, North Carolina, South Carolina, Virginia, West Virginia
+
+East South Central Division: Alabama, Kentucky, Mississippi, Tennessee
+
+West South Central Division: Arkansas, Louisiana , Oklahoma, Texas
+4. West Region
+Mountain Division: Arizona, Colorado, Idaho, Montana, Nevada, New Mexico, Utah, Wyoming
+
+Pacific Division: Alaska, California, Hawaii, Oregon, Washington
+]]></txt>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>New England Division</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>Middle Atlantic Division</labl>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+    <labl>East North Central Division</labl>
+  </catgry>
+  <catgry>
+    <catValu>22</catValu>
+    <labl>West North Central Division</labl>
+  </catgry>
+  <catgry>
+    <catValu>31</catValu>
+    <labl>South Atlantic Division</labl>
+  </catgry>
+  <catgry>
+    <catValu>32</catValu>
+    <labl>East South Central Division</labl>
+  </catgry>
+  <catgry>
+    <catValu>33</catValu>
+    <labl>West South Central Division</labl>
+  </catgry>
+  <catgry>
+    <catValu>41</catValu>
+    <labl>Mountain Division</labl>
+  </catgry>
+  <catgry>
+    <catValu>42</catValu>
+    <labl>Pacific Division</labl>
+  </catgry>
+  <catgry>
+    <catValu>97</catValu>
+    <labl>State not identified</labl>
+  </catgry>
+  <concept vocab="IPUMS">Geographic Variables -- HOUSEHOLD</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="STATEFIP" dcml="0" files="ExtractData" intrvl="discrete" name="STATEFIP">
+  <location EndPos="33" StartPos="32" width="2"/>
+  <labl>State (FIPS code)</labl>
+  <txt><![CDATA[STATEFIP identifies the household's state of residence, using the Federal Information Processing Standards (FIPS) coding scheme, which orders the states alphabetically.
+
+In 1973-1975 ASEC samples, all households in the Anaheim-Santa Ana-Garden Grove, CA METAREA are coded as Michigan-Wisconsin for STATEFIP in the original data. As there is insufficient geographic information in the public use data to determine which variable is in error, this mistake has been left un-recoded.]]></txt>
+  <catgry>
+    <catValu>01</catValu>
+    <labl>Alabama</labl>
+  </catgry>
+  <catgry>
+    <catValu>02</catValu>
+    <labl>Alaska</labl>
+  </catgry>
+  <catgry>
+    <catValu>04</catValu>
+    <labl>Arizona</labl>
+  </catgry>
+  <catgry>
+    <catValu>05</catValu>
+    <labl>Arkansas</labl>
+  </catgry>
+  <catgry>
+    <catValu>06</catValu>
+    <labl>California</labl>
+  </catgry>
+  <catgry>
+    <catValu>08</catValu>
+    <labl>Colorado</labl>
+  </catgry>
+  <catgry>
+    <catValu>09</catValu>
+    <labl>Connecticut</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>Delaware</labl>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>District of Columbia</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>Florida</labl>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+    <labl>Georgia</labl>
+  </catgry>
+  <catgry>
+    <catValu>15</catValu>
+    <labl>Hawaii</labl>
+  </catgry>
+  <catgry>
+    <catValu>16</catValu>
+    <labl>Idaho</labl>
+  </catgry>
+  <catgry>
+    <catValu>17</catValu>
+    <labl>Illinois</labl>
+  </catgry>
+  <catgry>
+    <catValu>18</catValu>
+    <labl>Indiana</labl>
+  </catgry>
+  <catgry>
+    <catValu>19</catValu>
+    <labl>Iowa</labl>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+    <labl>Kansas</labl>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+    <labl>Kentucky</labl>
+  </catgry>
+  <catgry>
+    <catValu>22</catValu>
+    <labl>Louisiana</labl>
+  </catgry>
+  <catgry>
+    <catValu>23</catValu>
+    <labl>Maine</labl>
+  </catgry>
+  <catgry>
+    <catValu>24</catValu>
+    <labl>Maryland</labl>
+  </catgry>
+  <catgry>
+    <catValu>25</catValu>
+    <labl>Massachusetts</labl>
+  </catgry>
+  <catgry>
+    <catValu>26</catValu>
+    <labl>Michigan</labl>
+  </catgry>
+  <catgry>
+    <catValu>27</catValu>
+    <labl>Minnesota</labl>
+  </catgry>
+  <catgry>
+    <catValu>28</catValu>
+    <labl>Mississippi</labl>
+  </catgry>
+  <catgry>
+    <catValu>29</catValu>
+    <labl>Missouri</labl>
+  </catgry>
+  <catgry>
+    <catValu>30</catValu>
+    <labl>Montana</labl>
+  </catgry>
+  <catgry>
+    <catValu>31</catValu>
+    <labl>Nebraska</labl>
+  </catgry>
+  <catgry>
+    <catValu>32</catValu>
+    <labl>Nevada</labl>
+  </catgry>
+  <catgry>
+    <catValu>33</catValu>
+    <labl>New Hampshire</labl>
+  </catgry>
+  <catgry>
+    <catValu>34</catValu>
+    <labl>New Jersey</labl>
+  </catgry>
+  <catgry>
+    <catValu>35</catValu>
+    <labl>New Mexico</labl>
+  </catgry>
+  <catgry>
+    <catValu>36</catValu>
+    <labl>New York</labl>
+  </catgry>
+  <catgry>
+    <catValu>37</catValu>
+    <labl>North Carolina</labl>
+  </catgry>
+  <catgry>
+    <catValu>38</catValu>
+    <labl>North Dakota</labl>
+  </catgry>
+  <catgry>
+    <catValu>39</catValu>
+    <labl>Ohio</labl>
+  </catgry>
+  <catgry>
+    <catValu>40</catValu>
+    <labl>Oklahoma</labl>
+  </catgry>
+  <catgry>
+    <catValu>41</catValu>
+    <labl>Oregon</labl>
+  </catgry>
+  <catgry>
+    <catValu>42</catValu>
+    <labl>Pennsylvania</labl>
+  </catgry>
+  <catgry>
+    <catValu>44</catValu>
+    <labl>Rhode Island</labl>
+  </catgry>
+  <catgry>
+    <catValu>45</catValu>
+    <labl>South Carolina</labl>
+  </catgry>
+  <catgry>
+    <catValu>46</catValu>
+    <labl>South Dakota</labl>
+  </catgry>
+  <catgry>
+    <catValu>47</catValu>
+    <labl>Tennessee</labl>
+  </catgry>
+  <catgry>
+    <catValu>48</catValu>
+    <labl>Texas</labl>
+  </catgry>
+  <catgry>
+    <catValu>49</catValu>
+    <labl>Utah</labl>
+  </catgry>
+  <catgry>
+    <catValu>50</catValu>
+    <labl>Vermont</labl>
+  </catgry>
+  <catgry>
+    <catValu>51</catValu>
+    <labl>Virginia</labl>
+  </catgry>
+  <catgry>
+    <catValu>53</catValu>
+    <labl>Washington</labl>
+  </catgry>
+  <catgry>
+    <catValu>54</catValu>
+    <labl>West Virginia</labl>
+  </catgry>
+  <catgry>
+    <catValu>55</catValu>
+    <labl>Wisconsin</labl>
+  </catgry>
+  <catgry>
+    <catValu>56</catValu>
+    <labl>Wyoming</labl>
+  </catgry>
+  <catgry>
+    <catValu>61</catValu>
+    <labl>Maine-New Hampshire-Vermont</labl>
+  </catgry>
+  <catgry>
+    <catValu>65</catValu>
+    <labl>Montana-Idaho-Wyoming</labl>
+  </catgry>
+  <catgry>
+    <catValu>68</catValu>
+    <labl>Alaska-Hawaii</labl>
+  </catgry>
+  <catgry>
+    <catValu>69</catValu>
+    <labl>Nebraska-North Dakota-South Dakota</labl>
+  </catgry>
+  <catgry>
+    <catValu>70</catValu>
+    <labl>Maine-Massachusetts-New Hampshire-Rhode Island-Vermont</labl>
+  </catgry>
+  <catgry>
+    <catValu>71</catValu>
+    <labl>Michigan-Wisconsin</labl>
+  </catgry>
+  <catgry>
+    <catValu>72</catValu>
+    <labl>Minnesota-Iowa</labl>
+  </catgry>
+  <catgry>
+    <catValu>73</catValu>
+    <labl>Nebraska-North Dakota-South Dakota-Kansas</labl>
+  </catgry>
+  <catgry>
+    <catValu>74</catValu>
+    <labl>Delaware-Virginia</labl>
+  </catgry>
+  <catgry>
+    <catValu>75</catValu>
+    <labl>North Carolina-South Carolina</labl>
+  </catgry>
+  <catgry>
+    <catValu>76</catValu>
+    <labl>Alabama-Mississippi</labl>
+  </catgry>
+  <catgry>
+    <catValu>77</catValu>
+    <labl>Arkansas-Oklahoma</labl>
+  </catgry>
+  <catgry>
+    <catValu>78</catValu>
+    <labl>Arizona-New Mexico-Colorado</labl>
+  </catgry>
+  <catgry>
+    <catValu>79</catValu>
+    <labl>Idaho-Wyoming-Utah-Montana-Nevada</labl>
+  </catgry>
+  <catgry>
+    <catValu>80</catValu>
+    <labl>Alaska-Washington-Hawaii</labl>
+  </catgry>
+  <catgry>
+    <catValu>81</catValu>
+    <labl>New Hampshire-Maine-Vermont-Rhode Island</labl>
+  </catgry>
+  <catgry>
+    <catValu>83</catValu>
+    <labl>South Carolina-Georgia</labl>
+  </catgry>
+  <catgry>
+    <catValu>84</catValu>
+    <labl>Kentucky-Tennessee</labl>
+  </catgry>
+  <catgry>
+    <catValu>85</catValu>
+    <labl>Arkansas-Louisiana-Oklahoma</labl>
+  </catgry>
+  <catgry>
+    <catValu>87</catValu>
+    <labl>Iowa-N Dakota-S Dakota-Nebraska-Kansas-Minnesota-Missouri</labl>
+  </catgry>
+  <catgry>
+    <catValu>88</catValu>
+    <labl>Washington-Oregon-Alaska-Hawaii</labl>
+  </catgry>
+  <catgry>
+    <catValu>89</catValu>
+    <labl>Montana-Wyoming-Colorado-New Mexico-Utah-Nevada-Arizona</labl>
+  </catgry>
+  <catgry>
+    <catValu>90</catValu>
+    <labl>Delaware-Maryland-Virginia-West Virginia</labl>
+  </catgry>
+  <catgry>
+    <catValu>99</catValu>
+    <labl>State not identified</labl>
+  </catgry>
+  <concept vocab="IPUMS">Geographic Variables -- HOUSEHOLD</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="METRO" dcml="0" files="ExtractData" intrvl="discrete" name="METRO">
+  <location EndPos="34" StartPos="34" width="1"/>
+  <labl>Metropolitan central city status</labl>
+  <txt><![CDATA[METRO indicates whether a household was located in a metropolitan area.  For households within metropolitan areas, METRO specifies whether the housing unit was inside or outside the central city of the metropolitan area.  Information on metropolitan status was added by the Census Bureau, rather than being directly collected from respondents.]]></txt>
+  <catgry>
+    <catValu>0</catValu>
+    <labl>Not identifiable</labl>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Not in metro area</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Central city</labl>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Outside central city</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Central city status unknown</labl>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+    <labl>Missing/Unknown</labl>
+  </catgry>
+  <concept vocab="IPUMS">Geographic Variables -- HOUSEHOLD</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="METAREA" dcml="0" files="ExtractData" intrvl="discrete" name="METAREA">
+  <location EndPos="38" StartPos="35" width="4"/>
+  <labl>Metropolitan area</labl>
+  <txt><![CDATA[METAREA identifies the metropolitan area in which a household was located.  Metropolitan areas are counties or groups of counties centering on a substantial urban area. While the Census Bureau's terminology for metropolitan areas and the classification of specific areas changes over time, the general concept is consistent: a metropolitan area consists of a large population center and adjacent communities that have a high degree of economic and social interaction.  Metropolitan areas often cross state lines.  See also (METRO), which specifies whether a housing unit was inside or outside the central city of a metropolitan area.  
+
+METAREA information was added to the ASEC CPS data by the Census Bureau, not collected from respondents.  For 1962-1976, the Census Bureau coded the METAREA data using simple numbering (e.g., from 1 to 15) in the original ASEC CPS public use files.  Beginning with the 1977 survey, the Census Bureau adopted standard FIPS codes for metropolitan areas.  To maximize consistency between IPUMS-CPS and IPUMS-USA, IPUMS-CPS adopts the four-digit codes used in the 1990 census for METAREA.  Along with the codes identifying specific cities, two general codes are used: 9998 (N/A, for households not in metropolitan areas), and 9997 (other metropolitan areas, not identified).  The 9997 code applies to much of the metropolitan area population for years prior to the mid-1980s, when very few metropolitan areas were identified in the CPS data.  For later years, the "not identified" code was used when geographic identification would have violated confidentiality requirements.  
+
+The Census Bureau warns that, "One set of estimates that can be produced from CPS microdata files should be treated with caution.  These are estimates for individual metropolitan areas.  Although estimates for the larger areas such as New York, Los Angeles, and so forth, should be fairly accurate and valid for a multitude of uses, estimates for the smaller metropolitan areas (those with populations under 500,000) should be used with caution because of the relatively large sampling variability associated with these estimates." 
+IPUMS CPS discontinued updates to METAREA after December 2022; however, it will continue to be available for 1962-2022 samples. The un-recoded variable METFIPS, which provides the original codes for the respondent’s metropolitan area of residence, will continue to be updated going forward.]]></txt>
+  <catgry>
+    <catValu>0060</catValu>
+    <labl>Abilene, TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>0080</catValu>
+    <labl>Akron, OH</labl>
+  </catgry>
+  <catgry>
+    <catValu>0120</catValu>
+    <labl>Albany, GA</labl>
+  </catgry>
+  <catgry>
+    <catValu>0160</catValu>
+    <labl>Albany-Schenectady-Troy, NY</labl>
+  </catgry>
+  <catgry>
+    <catValu>0200</catValu>
+    <labl>Albuquerque, NM</labl>
+  </catgry>
+  <catgry>
+    <catValu>0240</catValu>
+    <labl>Allentown-Bethlehem-Easton, PA/NJ</labl>
+  </catgry>
+  <catgry>
+    <catValu>0280</catValu>
+    <labl>Altoona, PA MSA</labl>
+  </catgry>
+  <catgry>
+    <catValu>0320</catValu>
+    <labl>Amarillo, TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>0380</catValu>
+    <labl>Anchorage, AK</labl>
+  </catgry>
+  <catgry>
+    <catValu>0400</catValu>
+    <labl>Anderson, IN</labl>
+  </catgry>
+  <catgry>
+    <catValu>0440</catValu>
+    <labl>Ann Arbor, MI</labl>
+  </catgry>
+  <catgry>
+    <catValu>0450</catValu>
+    <labl>Anniston, AL</labl>
+  </catgry>
+  <catgry>
+    <catValu>0451</catValu>
+    <labl>Anniston-Oxford, AL</labl>
+  </catgry>
+  <catgry>
+    <catValu>0460</catValu>
+    <labl>Appleton,Oshkosh-Neenah, WI</labl>
+  </catgry>
+  <catgry>
+    <catValu>0461</catValu>
+    <labl>Appleton, WI</labl>
+  </catgry>
+  <catgry>
+    <catValu>0462</catValu>
+    <labl>Oshkosh-Neenah, WI</labl>
+  </catgry>
+  <catgry>
+    <catValu>0480</catValu>
+    <labl>Asheville, NC</labl>
+  </catgry>
+  <catgry>
+    <catValu>0500</catValu>
+    <labl>Athens, GA</labl>
+  </catgry>
+  <catgry>
+    <catValu>0501</catValu>
+    <labl>Athens-Clark County, GA</labl>
+  </catgry>
+  <catgry>
+    <catValu>0520</catValu>
+    <labl>Atlanta, GA</labl>
+  </catgry>
+  <catgry>
+    <catValu>0521</catValu>
+    <labl>Atlanta-Sandy Springs-Marietta, GA</labl>
+  </catgry>
+  <catgry>
+    <catValu>0560</catValu>
+    <labl>Atlantic City, NJ</labl>
+  </catgry>
+  <catgry>
+    <catValu>0580</catValu>
+    <labl>Auburn-Opelika, AL</labl>
+  </catgry>
+  <catgry>
+    <catValu>0600</catValu>
+    <labl>Augusta-Aiken, GA-SC</labl>
+  </catgry>
+  <catgry>
+    <catValu>0601</catValu>
+    <labl>Augusta-Richmond County, GA-SC</labl>
+  </catgry>
+  <catgry>
+    <catValu>0640</catValu>
+    <labl>Austin, TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>0641</catValu>
+    <labl>Austin-Round Rock, TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>0680</catValu>
+    <labl>Bakersfield, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>0720</catValu>
+    <labl>Baltimore, MD</labl>
+  </catgry>
+  <catgry>
+    <catValu>0721</catValu>
+    <labl>Baltimore-Towson, MD</labl>
+  </catgry>
+  <catgry>
+    <catValu>0722</catValu>
+    <labl>Baltimore-Towson-Columbia, MD</labl>
+  </catgry>
+  <catgry>
+    <catValu>0730</catValu>
+    <labl>Bangor, ME</labl>
+  </catgry>
+  <catgry>
+    <catValu>0740</catValu>
+    <labl>Barnstable-Yarmouth, MA</labl>
+  </catgry>
+  <catgry>
+    <catValu>0741</catValu>
+    <labl>Barnstable Town, MA</labl>
+  </catgry>
+  <catgry>
+    <catValu>0760</catValu>
+    <labl>Baton Rouge, LA</labl>
+  </catgry>
+  <catgry>
+    <catValu>0780</catValu>
+    <labl>Battle Creek, MI</labl>
+  </catgry>
+  <catgry>
+    <catValu>0840</catValu>
+    <labl>Beaumont-Port Arthur-Orange, TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>0841</catValu>
+    <labl>Beaumont-Port Arthur, TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>0860</catValu>
+    <labl>Bellingham, WA</labl>
+  </catgry>
+  <catgry>
+    <catValu>0870</catValu>
+    <labl>Benton Harbor, MI</labl>
+  </catgry>
+  <catgry>
+    <catValu>0871</catValu>
+    <labl>Niles-Benton Harbor, MI</labl>
+  </catgry>
+  <catgry>
+    <catValu>0880</catValu>
+    <labl>Billings, MT</labl>
+  </catgry>
+  <catgry>
+    <catValu>0900</catValu>
+    <labl>Bend, OR</labl>
+  </catgry>
+  <catgry>
+    <catValu>0920</catValu>
+    <labl>Biloxi-Gulfport, MS</labl>
+  </catgry>
+  <catgry>
+    <catValu>0960</catValu>
+    <labl>Binghamton, NY</labl>
+  </catgry>
+  <catgry>
+    <catValu>1000</catValu>
+    <labl>Birmingham, AL</labl>
+  </catgry>
+  <catgry>
+    <catValu>1001</catValu>
+    <labl>Birmingham-Hoover, AL</labl>
+  </catgry>
+  <catgry>
+    <catValu>1010</catValu>
+    <labl>Blacksburg-Christiansburg-Radford, VA</labl>
+  </catgry>
+  <catgry>
+    <catValu>1020</catValu>
+    <labl>Bloomington, IN</labl>
+  </catgry>
+  <catgry>
+    <catValu>1040</catValu>
+    <labl>Bloomington-Normal, IL</labl>
+  </catgry>
+  <catgry>
+    <catValu>1041</catValu>
+    <labl>Bloomington, IL</labl>
+  </catgry>
+  <catgry>
+    <catValu>1080</catValu>
+    <labl>Boise City, ID</labl>
+  </catgry>
+  <catgry>
+    <catValu>1081</catValu>
+    <labl>Boise City-Nampa, ID</labl>
+  </catgry>
+  <catgry>
+    <catValu>1120</catValu>
+    <labl>Boston, MA</labl>
+  </catgry>
+  <catgry>
+    <catValu>1121</catValu>
+    <labl>Lawrence-Haverhill. MA/NH</labl>
+  </catgry>
+  <catgry>
+    <catValu>1122</catValu>
+    <labl>Lowell, MA/NH</labl>
+  </catgry>
+  <catgry>
+    <catValu>1123</catValu>
+    <labl>Salem-Gloucester, MA</labl>
+  </catgry>
+  <catgry>
+    <catValu>1124</catValu>
+    <labl>Boston-Cambridge-Quincy, MA-NH</labl>
+  </catgry>
+  <catgry>
+    <catValu>1125</catValu>
+    <labl>Boston-Cambridge-Newton, MA-NH</labl>
+  </catgry>
+  <catgry>
+    <catValu>1130</catValu>
+    <labl>Bowling Green, KY</labl>
+  </catgry>
+  <catgry>
+    <catValu>1140</catValu>
+    <labl>Bradenton, FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>1150</catValu>
+    <labl>Bremerton-Silverdale, WA</labl>
+  </catgry>
+  <catgry>
+    <catValu>1160</catValu>
+    <labl>Bridgeport, CT</labl>
+  </catgry>
+  <catgry>
+    <catValu>1161</catValu>
+    <labl>Bridgeport-Stamford-Norwalk, CT</labl>
+  </catgry>
+  <catgry>
+    <catValu>1200</catValu>
+    <labl>Brockton, MA</labl>
+  </catgry>
+  <catgry>
+    <catValu>1240</catValu>
+    <labl>Brownsville-Harlingen-San Benito,TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>1241</catValu>
+    <labl>Brownsville-Harlingen, TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>1280</catValu>
+    <labl>Buffalo-Niagara Falls, NY</labl>
+  </catgry>
+  <catgry>
+    <catValu>1281</catValu>
+    <labl>Niagara Falls, NY</labl>
+  </catgry>
+  <catgry>
+    <catValu>1300</catValu>
+    <labl>Burlington, NC</labl>
+  </catgry>
+  <catgry>
+    <catValu>1310</catValu>
+    <labl>Burlington, VT</labl>
+  </catgry>
+  <catgry>
+    <catValu>1311</catValu>
+    <labl>Burlington-South Burlington, VT</labl>
+  </catgry>
+  <catgry>
+    <catValu>1305</catValu>
+    <labl>California-Lexington Park, MD</labl>
+  </catgry>
+  <catgry>
+    <catValu>1320</catValu>
+    <labl>Canton, OH</labl>
+  </catgry>
+  <catgry>
+    <catValu>1321</catValu>
+    <labl>Canton-Massillon, OH</labl>
+  </catgry>
+  <catgry>
+    <catValu>1340</catValu>
+    <labl>Carbondale-Marion, IL</labl>
+  </catgry>
+  <catgry>
+    <catValu>1360</catValu>
+    <labl>Cedar Rapids, IA</labl>
+  </catgry>
+  <catgry>
+    <catValu>1390</catValu>
+    <labl>Chambersburg-Waynesboro, PA</labl>
+  </catgry>
+  <catgry>
+    <catValu>1400</catValu>
+    <labl>Champaign-Urbana-Rantoul, IL</labl>
+  </catgry>
+  <catgry>
+    <catValu>1401</catValu>
+    <labl>Champaign-Urbana, IL</labl>
+  </catgry>
+  <catgry>
+    <catValu>1440</catValu>
+    <labl>Charleston-North Charleston, SC</labl>
+  </catgry>
+  <catgry>
+    <catValu>1480</catValu>
+    <labl>Charleston, WV</labl>
+  </catgry>
+  <catgry>
+    <catValu>1520</catValu>
+    <labl>Charlotte-Gastonia-Rock Hill, NC/SC</labl>
+  </catgry>
+  <catgry>
+    <catValu>1521</catValu>
+    <labl>Charlotte-Gastonia-Concord, NC/SC</labl>
+  </catgry>
+  <catgry>
+    <catValu>1530</catValu>
+    <labl>Charlottesville, VA</labl>
+  </catgry>
+  <catgry>
+    <catValu>1560</catValu>
+    <labl>Chattanooga, TN/GA</labl>
+  </catgry>
+  <catgry>
+    <catValu>1600</catValu>
+    <labl>Chicago-Gary-Lake IL</labl>
+  </catgry>
+  <catgry>
+    <catValu>1601</catValu>
+    <labl>Aurora-Elgin, IL</labl>
+  </catgry>
+  <catgry>
+    <catValu>1602</catValu>
+    <labl>Gary-Hamond-East Chicago, IN</labl>
+  </catgry>
+  <catgry>
+    <catValu>1603</catValu>
+    <labl>Joliet, IL</labl>
+  </catgry>
+  <catgry>
+    <catValu>1604</catValu>
+    <labl>Lake County, IL</labl>
+  </catgry>
+  <catgry>
+    <catValu>1605</catValu>
+    <labl>Chicago-Naperville-Joliet, IL-IN-WI</labl>
+  </catgry>
+  <catgry>
+    <catValu>1620</catValu>
+    <labl>Chico,CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>1640</catValu>
+    <labl>Cincinnati-Hamilton,OH/KY/IN</labl>
+  </catgry>
+  <catgry>
+    <catValu>1641</catValu>
+    <labl>Cincinnati-Middleton, OH/KY/IN</labl>
+  </catgry>
+  <catgry>
+    <catValu>1660</catValu>
+    <labl>Clarksville-Hopkinsville,TN/KY</labl>
+  </catgry>
+  <catgry>
+    <catValu>1661</catValu>
+    <labl>Clarksville, TN/KY, TN/KY</labl>
+  </catgry>
+  <catgry>
+    <catValu>1680</catValu>
+    <labl>Cleveland, OH</labl>
+  </catgry>
+  <catgry>
+    <catValu>1681</catValu>
+    <labl>Cleveland-Lorain-Mentor, OH</labl>
+  </catgry>
+  <catgry>
+    <catValu>1685</catValu>
+    <labl>Cleveland, TN</labl>
+  </catgry>
+  <catgry>
+    <catValu>1700</catValu>
+    <labl>Coeur d'Alene, ID</labl>
+  </catgry>
+  <catgry>
+    <catValu>1710</catValu>
+    <labl>College Station-Bryan, TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>1720</catValu>
+    <labl>Colorado Springs, CO</labl>
+  </catgry>
+  <catgry>
+    <catValu>1740</catValu>
+    <labl>Columbia, MO</labl>
+  </catgry>
+  <catgry>
+    <catValu>1760</catValu>
+    <labl>Columbia, SC</labl>
+  </catgry>
+  <catgry>
+    <catValu>1800</catValu>
+    <labl>Columbus, GA/AL</labl>
+  </catgry>
+  <catgry>
+    <catValu>1840</catValu>
+    <labl>Columbus, OH</labl>
+  </catgry>
+  <catgry>
+    <catValu>1880</catValu>
+    <labl>Corpus Christi, TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>1920</catValu>
+    <labl>Dallas-Fort Worth, TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>1921</catValu>
+    <labl>Fort Worth-Arlington, TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>1922</catValu>
+    <labl>Dallas-Fort Worth-Arlington, TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>1930</catValu>
+    <labl>Danbury, CT</labl>
+  </catgry>
+  <catgry>
+    <catValu>1940</catValu>
+    <labl>Daphne-Fairhope-Foley, AL</labl>
+  </catgry>
+  <catgry>
+    <catValu>1960</catValu>
+    <labl>Davenport-Rock Island-Moline, IA/IL</labl>
+  </catgry>
+  <catgry>
+    <catValu>2000</catValu>
+    <labl>Dayton-Springfield, OH</labl>
+  </catgry>
+  <catgry>
+    <catValu>2001</catValu>
+    <labl>Springfield, OH</labl>
+  </catgry>
+  <catgry>
+    <catValu>2002</catValu>
+    <labl>Dayton, OH</labl>
+  </catgry>
+  <catgry>
+    <catValu>2020</catValu>
+    <labl>Daytona Beach, FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>2021</catValu>
+    <labl>Deltona-Daytona Beach-Ormond Beach, FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>2030</catValu>
+    <labl>Decatur, AL</labl>
+  </catgry>
+  <catgry>
+    <catValu>2040</catValu>
+    <labl>Decatur, IL</labl>
+  </catgry>
+  <catgry>
+    <catValu>2080</catValu>
+    <labl>Denver-Boulder-Longmont, CO</labl>
+  </catgry>
+  <catgry>
+    <catValu>2081</catValu>
+    <labl>Boulder-Longmont, CO</labl>
+  </catgry>
+  <catgry>
+    <catValu>2082</catValu>
+    <labl>Boulder, CO</labl>
+  </catgry>
+  <catgry>
+    <catValu>2083</catValu>
+    <labl>Denver-Aurora, CO</labl>
+  </catgry>
+  <catgry>
+    <catValu>2120</catValu>
+    <labl>Des Moines, IA</labl>
+  </catgry>
+  <catgry>
+    <catValu>2160</catValu>
+    <labl>Detroit, MI</labl>
+  </catgry>
+  <catgry>
+    <catValu>2161</catValu>
+    <labl>Detroit-Warren-Livonia, MI</labl>
+  </catgry>
+  <catgry>
+    <catValu>2190</catValu>
+    <labl>Dover, DE</labl>
+  </catgry>
+  <catgry>
+    <catValu>2240</catValu>
+    <labl>Duluth-Superior, MN/WI</labl>
+  </catgry>
+  <catgry>
+    <catValu>2241</catValu>
+    <labl>Duluth, MN/WI</labl>
+  </catgry>
+  <catgry>
+    <catValu>2281</catValu>
+    <labl>Dutchess County, NY</labl>
+  </catgry>
+  <catgry>
+    <catValu>2285</catValu>
+    <labl>East Stroudsburg, PA</labl>
+  </catgry>
+  <catgry>
+    <catValu>2290</catValu>
+    <labl>Eau Claire, WI</labl>
+  </catgry>
+  <catgry>
+    <catValu>2300</catValu>
+    <labl>El Centro, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>2310</catValu>
+    <labl>El Paso, TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>2330</catValu>
+    <labl>Elkhart-Goshen, IN</labl>
+  </catgry>
+  <catgry>
+    <catValu>2360</catValu>
+    <labl>Erie, PA</labl>
+  </catgry>
+  <catgry>
+    <catValu>2400</catValu>
+    <labl>Eugene-Springfield, OR</labl>
+  </catgry>
+  <catgry>
+    <catValu>2440</catValu>
+    <labl>Evansville, IN/KY</labl>
+  </catgry>
+  <catgry>
+    <catValu>2520</catValu>
+    <labl>Fargo-Moorhead, ND/MN</labl>
+  </catgry>
+  <catgry>
+    <catValu>2521</catValu>
+    <labl>Fargo, ND/MN</labl>
+  </catgry>
+  <catgry>
+    <catValu>2540</catValu>
+    <labl>Farmington, NM</labl>
+  </catgry>
+  <catgry>
+    <catValu>2560</catValu>
+    <labl>Fayetteville, NC</labl>
+  </catgry>
+  <catgry>
+    <catValu>2580</catValu>
+    <labl>Fayetteville-Springdale, AR</labl>
+  </catgry>
+  <catgry>
+    <catValu>2581</catValu>
+    <labl>Fayetteville-Springdale-Rogers, AR-MO</labl>
+  </catgry>
+  <catgry>
+    <catValu>2600</catValu>
+    <labl>Fitchburg-Leominster, MA</labl>
+  </catgry>
+  <catgry>
+    <catValu>2601</catValu>
+    <labl>Leominster-Fitchburg-Gardner, MA</labl>
+  </catgry>
+  <catgry>
+    <catValu>2640</catValu>
+    <labl>Flint, MI</labl>
+  </catgry>
+  <catgry>
+    <catValu>2650</catValu>
+    <labl>Florence, AL</labl>
+  </catgry>
+  <catgry>
+    <catValu>2651</catValu>
+    <labl>Florence-Muscle Shoals, AL</labl>
+  </catgry>
+  <catgry>
+    <catValu>2660</catValu>
+    <labl>Florence, SC</labl>
+  </catgry>
+  <catgry>
+    <catValu>2670</catValu>
+    <labl>Fort Collins-Loveland, CO</labl>
+  </catgry>
+  <catgry>
+    <catValu>2680</catValu>
+    <labl>Fort Lauderdale-Hollywood-Pompano Beach, FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>2700</catValu>
+    <labl>Fort Myers-Cape Coral, FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>2710</catValu>
+    <labl>Fort Pierce, FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>2711</catValu>
+    <labl>Port St. Lucie-Fort Pierce, FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>2720</catValu>
+    <labl>Fort Smith, AR/OK</labl>
+  </catgry>
+  <catgry>
+    <catValu>2750</catValu>
+    <labl>Fort Walton Beach, FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>2751</catValu>
+    <labl>Fort Walton Beach-Crestview-Destin, FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>2760</catValu>
+    <labl>Fort Wayne, IN</labl>
+  </catgry>
+  <catgry>
+    <catValu>2840</catValu>
+    <labl>Fresno, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>2880</catValu>
+    <labl>Gadsden, AL</labl>
+  </catgry>
+  <catgry>
+    <catValu>2900</catValu>
+    <labl>Gainesville, FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>2905</catValu>
+    <labl>Gainesville, GA</labl>
+  </catgry>
+  <catgry>
+    <catValu>2920</catValu>
+    <labl>Galveston-Texas City, TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>2940</catValu>
+    <labl>Glens Falls, NY</labl>
+  </catgry>
+  <catgry>
+    <catValu>2980</catValu>
+    <labl>Goldsboro, NC</labl>
+  </catgry>
+  <catgry>
+    <catValu>3000</catValu>
+    <labl>Grand Rapids, MI</labl>
+  </catgry>
+  <catgry>
+    <catValu>3001</catValu>
+    <labl>Grand Rapids-Wyoming, MI</labl>
+  </catgry>
+  <catgry>
+    <catValu>3002</catValu>
+    <labl>Grand Rapids-Muskegon-Holland, MI MSA</labl>
+  </catgry>
+  <catgry>
+    <catValu>3003</catValu>
+    <labl>Holland-Grand Haven, MI</labl>
+  </catgry>
+  <catgry>
+    <catValu>3060</catValu>
+    <labl>Greeley, CO</labl>
+  </catgry>
+  <catgry>
+    <catValu>3080</catValu>
+    <labl>Green Bay, WI</labl>
+  </catgry>
+  <catgry>
+    <catValu>3120</catValu>
+    <labl>Greensboro-Winston Salem, NC</labl>
+  </catgry>
+  <catgry>
+    <catValu>3121</catValu>
+    <labl>Winston-Salem, NC</labl>
+  </catgry>
+  <catgry>
+    <catValu>3122</catValu>
+    <labl>Greensboro-High Point, NC</labl>
+  </catgry>
+  <catgry>
+    <catValu>3150</catValu>
+    <labl>Greenville, NC</labl>
+  </catgry>
+  <catgry>
+    <catValu>3160</catValu>
+    <labl>Greenville-Spartanburg-Anderson, SC</labl>
+  </catgry>
+  <catgry>
+    <catValu>3161</catValu>
+    <labl>Anderson, SC</labl>
+  </catgry>
+  <catgry>
+    <catValu>3162</catValu>
+    <labl>Greenville, SC</labl>
+  </catgry>
+  <catgry>
+    <catValu>3163</catValu>
+    <labl>Spartanburg, SC</labl>
+  </catgry>
+  <catgry>
+    <catValu>3180</catValu>
+    <labl>Hagerstown, MD</labl>
+  </catgry>
+  <catgry>
+    <catValu>3181</catValu>
+    <labl>Hagerstown-Martinsburg, MD-WV</labl>
+  </catgry>
+  <catgry>
+    <catValu>3200</catValu>
+    <labl>Hamilton-Middleton, OH</labl>
+  </catgry>
+  <catgry>
+    <catValu>3220</catValu>
+    <labl>Hanford-Corcoran, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>3240</catValu>
+    <labl>Harrisburg-Lebanon-Carlisle, PA</labl>
+  </catgry>
+  <catgry>
+    <catValu>3241</catValu>
+    <labl>Harrisburg-Carlisle, PA</labl>
+  </catgry>
+  <catgry>
+    <catValu>3260</catValu>
+    <labl>Harrisonburg, VA</labl>
+  </catgry>
+  <catgry>
+    <catValu>3280</catValu>
+    <labl>Hartford-Bristol-Middleton- New Britain, CT</labl>
+  </catgry>
+  <catgry>
+    <catValu>3283</catValu>
+    <labl>New Britain, CT</labl>
+  </catgry>
+  <catgry>
+    <catValu>3284</catValu>
+    <labl>Hartford-West Hartford-East Hartford, CT</labl>
+  </catgry>
+  <catgry>
+    <catValu>3285</catValu>
+    <labl>Hartford, CT</labl>
+  </catgry>
+  <catgry>
+    <catValu>3290</catValu>
+    <labl>Hickory-Morganton, NC</labl>
+  </catgry>
+  <catgry>
+    <catValu>3291</catValu>
+    <labl>Hickory-Morganton-Lenoir, NC</labl>
+  </catgry>
+  <catgry>
+    <catValu>3310</catValu>
+    <labl>Hilton Head Island-Bluffton-Beaufort, SC</labl>
+  </catgry>
+  <catgry>
+    <catValu>3320</catValu>
+    <labl>Honolulu, HI</labl>
+  </catgry>
+  <catgry>
+    <catValu>3350</catValu>
+    <labl>Houma-Thibodaux, LA</labl>
+  </catgry>
+  <catgry>
+    <catValu>3351</catValu>
+    <labl>Houma-Bayou Cane-Thibodaux, LA</labl>
+  </catgry>
+  <catgry>
+    <catValu>3360</catValu>
+    <labl>Houston-Brazoria,TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>3361</catValu>
+    <labl>Brazoria, TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>3362</catValu>
+    <labl>Houston-Baytown-Sugar Land, TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>3400</catValu>
+    <labl>Huntington-Ashland,WV/KY/OH</labl>
+  </catgry>
+  <catgry>
+    <catValu>3440</catValu>
+    <labl>Huntsville,AL</labl>
+  </catgry>
+  <catgry>
+    <catValu>3460</catValu>
+    <labl>Idaho Falls, ID</labl>
+  </catgry>
+  <catgry>
+    <catValu>3480</catValu>
+    <labl>Indianapolis, IN</labl>
+  </catgry>
+  <catgry>
+    <catValu>3500</catValu>
+    <labl>Iowa City, IA</labl>
+  </catgry>
+  <catgry>
+    <catValu>3520</catValu>
+    <labl>Jackson, MI</labl>
+  </catgry>
+  <catgry>
+    <catValu>3560</catValu>
+    <labl>Jackson, MS</labl>
+  </catgry>
+  <catgry>
+    <catValu>3590</catValu>
+    <labl>Jacksonville,FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>3600</catValu>
+    <labl>Jacksonville, NC</labl>
+  </catgry>
+  <catgry>
+    <catValu>3610</catValu>
+    <labl>Jamestown-Dunkirk, NY</labl>
+  </catgry>
+  <catgry>
+    <catValu>3611</catValu>
+    <labl>Jamestown, NY MSA</labl>
+  </catgry>
+  <catgry>
+    <catValu>3620</catValu>
+    <labl>Janesville-Beloit, WI</labl>
+  </catgry>
+  <catgry>
+    <catValu>3621</catValu>
+    <labl>Janvesville, WI</labl>
+  </catgry>
+  <catgry>
+    <catValu>3660</catValu>
+    <labl>Johnson City-Kingsport-Bristol, TN/VA</labl>
+  </catgry>
+  <catgry>
+    <catValu>3661</catValu>
+    <labl>Johnson City, TN</labl>
+  </catgry>
+  <catgry>
+    <catValu>3662</catValu>
+    <labl>Kingsport-Bristol, TN-VA</labl>
+  </catgry>
+  <catgry>
+    <catValu>3680</catValu>
+    <labl>Johnstown, PA</labl>
+  </catgry>
+  <catgry>
+    <catValu>3710</catValu>
+    <labl>Joplin, MO</labl>
+  </catgry>
+  <catgry>
+    <catValu>3715</catValu>
+    <labl>Kahului-Wailuku-Lahaina, HI</labl>
+  </catgry>
+  <catgry>
+    <catValu>3720</catValu>
+    <labl>Kalamazoo-Portage, MI</labl>
+  </catgry>
+  <catgry>
+    <catValu>3721</catValu>
+    <labl>Kalamazoo-Battle Creek, MI MSA</labl>
+  </catgry>
+  <catgry>
+    <catValu>3740</catValu>
+    <labl>Kankakee, IL</labl>
+  </catgry>
+  <catgry>
+    <catValu>3741</catValu>
+    <labl>Kankakee-Bradley, IL</labl>
+  </catgry>
+  <catgry>
+    <catValu>3760</catValu>
+    <labl>Kansas City, MO/KS</labl>
+  </catgry>
+  <catgry>
+    <catValu>3790</catValu>
+    <labl>Kennewick-Richland, WA</labl>
+  </catgry>
+  <catgry>
+    <catValu>3810</catValu>
+    <labl>Killeen-Temple,TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>3811</catValu>
+    <labl>Killeen-Temple-Fort Hood, TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>3830</catValu>
+    <labl>Kingston, NY</labl>
+  </catgry>
+  <catgry>
+    <catValu>3840</catValu>
+    <labl>Knoxville, TN</labl>
+  </catgry>
+  <catgry>
+    <catValu>3870</catValu>
+    <labl>LaCrosse, WI</labl>
+  </catgry>
+  <catgry>
+    <catValu>3880</catValu>
+    <labl>Lafayette, LA</labl>
+  </catgry>
+  <catgry>
+    <catValu>3890</catValu>
+    <labl>Lafayette-West Lafayette, IN</labl>
+  </catgry>
+  <catgry>
+    <catValu>3960</catValu>
+    <labl>Lake Charles, LA</labl>
+  </catgry>
+  <catgry>
+    <catValu>3980</catValu>
+    <labl>Lakeland-Winterhaven, FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>4000</catValu>
+    <labl>Lancaster, PA</labl>
+  </catgry>
+  <catgry>
+    <catValu>4040</catValu>
+    <labl>Lansing-East Lansing, MI</labl>
+  </catgry>
+  <catgry>
+    <catValu>4080</catValu>
+    <labl>Laredo, TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>4100</catValu>
+    <labl>Las Cruces, NM</labl>
+  </catgry>
+  <catgry>
+    <catValu>4120</catValu>
+    <labl>Las Vegas, NV</labl>
+  </catgry>
+  <catgry>
+    <catValu>4130</catValu>
+    <labl>Las Vegas-Paradise, NV</labl>
+  </catgry>
+  <catgry>
+    <catValu>4150</catValu>
+    <labl>Lawrence, KS</labl>
+  </catgry>
+  <catgry>
+    <catValu>4200</catValu>
+    <labl>Lawton, OK</labl>
+  </catgry>
+  <catgry>
+    <catValu>4290</catValu>
+    <labl>Lewiston-Auburn, ME</labl>
+  </catgry>
+  <catgry>
+    <catValu>4280</catValu>
+    <labl>Lexington-Fayette, KY</labl>
+  </catgry>
+  <catgry>
+    <catValu>4320</catValu>
+    <labl>Lima, OH</labl>
+  </catgry>
+  <catgry>
+    <catValu>4360</catValu>
+    <labl>Lincoln, NE</labl>
+  </catgry>
+  <catgry>
+    <catValu>4400</catValu>
+    <labl>Little Rock-North Little Rock, AR</labl>
+  </catgry>
+  <catgry>
+    <catValu>4420</catValu>
+    <labl>Longview-Marshall, TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>4421</catValu>
+    <labl>Longview, TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>4430</catValu>
+    <labl>Longview, WA</labl>
+  </catgry>
+  <catgry>
+    <catValu>4440</catValu>
+    <labl>Lorain-Elyria, OH</labl>
+  </catgry>
+  <catgry>
+    <catValu>4480</catValu>
+    <labl>Los Angeles-Long Beach, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>4481</catValu>
+    <labl>Anaheim-Santa Ana- Garden Grove, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>4482</catValu>
+    <labl>Orange County, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>4483</catValu>
+    <labl>Los Angeles-Long Beach-Santa Ana, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>4484</catValu>
+    <labl>Los Angeles-Long Beach-Anaheim, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>4520</catValu>
+    <labl>Louisville, KY/IN</labl>
+  </catgry>
+  <catgry>
+    <catValu>4600</catValu>
+    <labl>Lubbock, TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>4640</catValu>
+    <labl>Lynchburg, VA</labl>
+  </catgry>
+  <catgry>
+    <catValu>4680</catValu>
+    <labl>Macon-Warner Robins, GA</labl>
+  </catgry>
+  <catgry>
+    <catValu>4681</catValu>
+    <labl>Macon, GA</labl>
+  </catgry>
+  <catgry>
+    <catValu>4682</catValu>
+    <labl>Warner Robins, GA</labl>
+  </catgry>
+  <catgry>
+    <catValu>4700</catValu>
+    <labl>Madera, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>4720</catValu>
+    <labl>Madison, WI</labl>
+  </catgry>
+  <catgry>
+    <catValu>4760</catValu>
+    <labl>Manchester, NH</labl>
+  </catgry>
+  <catgry>
+    <catValu>4761</catValu>
+    <labl>Manchester-Nashua, NH</labl>
+  </catgry>
+  <catgry>
+    <catValu>4770</catValu>
+    <labl>Manhattan, KS</labl>
+  </catgry>
+  <catgry>
+    <catValu>4800</catValu>
+    <labl>Mansfield, OH</labl>
+  </catgry>
+  <catgry>
+    <catValu>4880</catValu>
+    <labl>McAllen-Edinburg-Pharr-Mission, TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>4881</catValu>
+    <labl>McAllen-Edinburg-Pharr, TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>4890</catValu>
+    <labl>Medford, OR</labl>
+  </catgry>
+  <catgry>
+    <catValu>4900</catValu>
+    <labl>Melbourne-Titusville-Cocoa-Palm Beach, FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>4901</catValu>
+    <labl>Palm Bay-Melbourne-Titusville, FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>4920</catValu>
+    <labl>Memphis, TN/AR/MS</labl>
+  </catgry>
+  <catgry>
+    <catValu>4940</catValu>
+    <labl>Merced, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>5000</catValu>
+    <labl>Miami-Hialeah, FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>5001</catValu>
+    <labl>Miami-Fort Lauderdale-Miami Beach, FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>5020</catValu>
+    <labl>Michigan City-La Porte, IN</labl>
+  </catgry>
+  <catgry>
+    <catValu>5080</catValu>
+    <labl>Milwaukee, WI</labl>
+  </catgry>
+  <catgry>
+    <catValu>5081</catValu>
+    <labl>Milwaukee-Waukesha-West Allis, WI</labl>
+  </catgry>
+  <catgry>
+    <catValu>5120</catValu>
+    <labl>Minneapolis-St. Paul, MN</labl>
+  </catgry>
+  <catgry>
+    <catValu>5121</catValu>
+    <labl>Minneapolis-St. Paul-Bloomington, MN/WI</labl>
+  </catgry>
+  <catgry>
+    <catValu>5160</catValu>
+    <labl>Mobile, AL</labl>
+  </catgry>
+  <catgry>
+    <catValu>5170</catValu>
+    <labl>Modesto, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>5190</catValu>
+    <labl>Monmouth-Ocean, NJ</labl>
+  </catgry>
+  <catgry>
+    <catValu>5200</catValu>
+    <labl>Monroe, LA</labl>
+  </catgry>
+  <catgry>
+    <catValu>5220</catValu>
+    <labl>Monroe, MI</labl>
+  </catgry>
+  <catgry>
+    <catValu>5240</catValu>
+    <labl>Montgomery, Al</labl>
+  </catgry>
+  <catgry>
+    <catValu>5260</catValu>
+    <labl>Morgantown, WV</labl>
+  </catgry>
+  <catgry>
+    <catValu>5270</catValu>
+    <labl>Mount Vernon-Anacortes, WA</labl>
+  </catgry>
+  <catgry>
+    <catValu>5320</catValu>
+    <labl>Muskegon-Norton Shores-Muskegon Heights, MI</labl>
+  </catgry>
+  <catgry>
+    <catValu>5321</catValu>
+    <labl>Muskegon-Norton Shores, MI</labl>
+  </catgry>
+  <catgry>
+    <catValu>5330</catValu>
+    <labl>Myrtle Beach, SC</labl>
+  </catgry>
+  <catgry>
+    <catValu>5331</catValu>
+    <labl>Myrtle Beach-Conway-North Myrtle Beach, SC</labl>
+  </catgry>
+  <catgry>
+    <catValu>5340</catValu>
+    <labl>Naples, FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>5341</catValu>
+    <labl>Naples-Marco Island, FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>5350</catValu>
+    <labl>Nashua, NH</labl>
+  </catgry>
+  <catgry>
+    <catValu>5360</catValu>
+    <labl>Nashville, TN</labl>
+  </catgry>
+  <catgry>
+    <catValu>5361</catValu>
+    <labl>Nashville-Davidson-Murfreesboro, TN</labl>
+  </catgry>
+  <catgry>
+    <catValu>5400</catValu>
+    <labl>New Bedford, MA</labl>
+  </catgry>
+  <catgry>
+    <catValu>5480</catValu>
+    <labl>New Haven-Meriden, CT</labl>
+  </catgry>
+  <catgry>
+    <catValu>5481</catValu>
+    <labl>New Haven, CT</labl>
+  </catgry>
+  <catgry>
+    <catValu>5482</catValu>
+    <labl>New Haven-Milford, CT</labl>
+  </catgry>
+  <catgry>
+    <catValu>5520</catValu>
+    <labl>New London-Norwich, CT/RI</labl>
+  </catgry>
+  <catgry>
+    <catValu>5560</catValu>
+    <labl>New Orleans, LA</labl>
+  </catgry>
+  <catgry>
+    <catValu>5561</catValu>
+    <labl>New Orleans-Metairie-Kenner, LA</labl>
+  </catgry>
+  <catgry>
+    <catValu>5600</catValu>
+    <labl>New York-Northeastern NJ</labl>
+  </catgry>
+  <catgry>
+    <catValu>5601</catValu>
+    <labl>Nassau-Suffolk, NY</labl>
+  </catgry>
+  <catgry>
+    <catValu>5602</catValu>
+    <labl>Bergen-Passaic, NJ</labl>
+  </catgry>
+  <catgry>
+    <catValu>5603</catValu>
+    <labl>Jersey City, NJ</labl>
+  </catgry>
+  <catgry>
+    <catValu>5604</catValu>
+    <labl>Middlesex-Somerset-Hunterdon, NJ</labl>
+  </catgry>
+  <catgry>
+    <catValu>5605</catValu>
+    <labl>Newark, NJ</labl>
+  </catgry>
+  <catgry>
+    <catValu>5606</catValu>
+    <labl>New York-Northern New Jersey-Long Island, NY-NJ-PA</labl>
+  </catgry>
+  <catgry>
+    <catValu>5607</catValu>
+    <labl>New York, NY</labl>
+  </catgry>
+  <catgry>
+    <catValu>5640</catValu>
+    <labl>Newark, OH</labl>
+  </catgry>
+  <catgry>
+    <catValu>5660</catValu>
+    <labl>Newburgh-Middletown, NY</labl>
+  </catgry>
+  <catgry>
+    <catValu>5720</catValu>
+    <labl>Norfolk-Virginia Beach-Newport News, VA</labl>
+  </catgry>
+  <catgry>
+    <catValu>5721</catValu>
+    <labl>Virginia Beach-Norfolk-Newport News, VA/NC</labl>
+  </catgry>
+  <catgry>
+    <catValu>5740</catValu>
+    <labl>North Port-Sarasota-Bradenton, FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>5760</catValu>
+    <labl>Norwalk, CT</labl>
+  </catgry>
+  <catgry>
+    <catValu>5770</catValu>
+    <labl>Norwich-New London, CT</labl>
+  </catgry>
+  <catgry>
+    <catValu>5790</catValu>
+    <labl>Ocala, FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>5800</catValu>
+    <labl>Odessa, TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>5801</catValu>
+    <labl>Midland, TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>5840</catValu>
+    <labl>Ocean City, NJ</labl>
+  </catgry>
+  <catgry>
+    <catValu>5880</catValu>
+    <labl>Oklahoma City, OK</labl>
+  </catgry>
+  <catgry>
+    <catValu>5910</catValu>
+    <labl>Olympia, WA</labl>
+  </catgry>
+  <catgry>
+    <catValu>5920</catValu>
+    <labl>Omaha, NE/IA</labl>
+  </catgry>
+  <catgry>
+    <catValu>5921</catValu>
+    <labl>Omaha-Council Bluffs, NE/IA</labl>
+  </catgry>
+  <catgry>
+    <catValu>5950</catValu>
+    <labl>Orange, NY</labl>
+  </catgry>
+  <catgry>
+    <catValu>5960</catValu>
+    <labl>Orlando, FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>6010</catValu>
+    <labl>Panama City, FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>6011</catValu>
+    <labl>Panama City-Lynn Haven, FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>6080</catValu>
+    <labl>Pensacola, FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>6081</catValu>
+    <labl>Pensacola-Ferry Pass-Brent, FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>6120</catValu>
+    <labl>Peoria, IL</labl>
+  </catgry>
+  <catgry>
+    <catValu>6160</catValu>
+    <labl>Philadelphia, PA/NJ</labl>
+  </catgry>
+  <catgry>
+    <catValu>6161</catValu>
+    <labl>Philadelphia-Camden-Wilmington, PA/NJ/DE</labl>
+  </catgry>
+  <catgry>
+    <catValu>6200</catValu>
+    <labl>Phoenix, AZ</labl>
+  </catgry>
+  <catgry>
+    <catValu>6201</catValu>
+    <labl>Phoenix-Mesa-Scottsdale, AZ</labl>
+  </catgry>
+  <catgry>
+    <catValu>6250</catValu>
+    <labl>Pine Bluff, AR</labl>
+  </catgry>
+  <catgry>
+    <catValu>6280</catValu>
+    <labl>Pittsburg, PA</labl>
+  </catgry>
+  <catgry>
+    <catValu>6281</catValu>
+    <labl>Beaver County</labl>
+  </catgry>
+  <catgry>
+    <catValu>6400</catValu>
+    <labl>Portland, ME</labl>
+  </catgry>
+  <catgry>
+    <catValu>6401</catValu>
+    <labl>Portland-South Portland, ME</labl>
+  </catgry>
+  <catgry>
+    <catValu>6440</catValu>
+    <labl>Portland-Vancouver, OR/WA</labl>
+  </catgry>
+  <catgry>
+    <catValu>6441</catValu>
+    <labl>Vancouver, WA</labl>
+  </catgry>
+  <catgry>
+    <catValu>6442</catValu>
+    <labl>Portland-Vancouver-Beaverton, OR/WA</labl>
+  </catgry>
+  <catgry>
+    <catValu>6450</catValu>
+    <labl>Portsmouth-Dover-Rochester, NH/ME</labl>
+  </catgry>
+  <catgry>
+    <catValu>6451</catValu>
+    <labl>Portsmouth-Rochester, NH/ME MSA</labl>
+  </catgry>
+  <catgry>
+    <catValu>6452</catValu>
+    <labl>Rochester-Dover, NH/ME</labl>
+  </catgry>
+  <catgry>
+    <catValu>6460</catValu>
+    <labl>Poughkeepsie, NY</labl>
+  </catgry>
+  <catgry>
+    <catValu>6461</catValu>
+    <labl>Poughkeepsie-Newburgh-Middletown, NY</labl>
+  </catgry>
+  <catgry>
+    <catValu>6470</catValu>
+    <labl>Prescott, AZ</labl>
+  </catgry>
+  <catgry>
+    <catValu>6480</catValu>
+    <labl>Providence-Fall River-Pawtucket, MA/RI</labl>
+  </catgry>
+  <catgry>
+    <catValu>6482</catValu>
+    <labl>Pawtuckett-Woonsocket-Attleboro, RI/MA</labl>
+  </catgry>
+  <catgry>
+    <catValu>6483</catValu>
+    <labl>Providence-Fall River-Warwick, MA-RI</labl>
+  </catgry>
+  <catgry>
+    <catValu>6484</catValu>
+    <labl>Providence-Warwick, RI-MA</labl>
+  </catgry>
+  <catgry>
+    <catValu>6520</catValu>
+    <labl>Provo-Orem, UT</labl>
+  </catgry>
+  <catgry>
+    <catValu>6560</catValu>
+    <labl>Pueblo, CO</labl>
+  </catgry>
+  <catgry>
+    <catValu>6580</catValu>
+    <labl>Punta Gorda, FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>6600</catValu>
+    <labl>Racine, WI</labl>
+  </catgry>
+  <catgry>
+    <catValu>6640</catValu>
+    <labl>Raleigh-Durham, NC</labl>
+  </catgry>
+  <catgry>
+    <catValu>6641</catValu>
+    <labl>Durham, NC</labl>
+  </catgry>
+  <catgry>
+    <catValu>6642</catValu>
+    <labl>Raleigh-Carey, NC</labl>
+  </catgry>
+  <catgry>
+    <catValu>6680</catValu>
+    <labl>Reading, PA</labl>
+  </catgry>
+  <catgry>
+    <catValu>6690</catValu>
+    <labl>Redding, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>6720</catValu>
+    <labl>Reno, NV</labl>
+  </catgry>
+  <catgry>
+    <catValu>6721</catValu>
+    <labl>Reno-Sparks, NV</labl>
+  </catgry>
+  <catgry>
+    <catValu>6760</catValu>
+    <labl>Richmond-Petersburg, VA</labl>
+  </catgry>
+  <catgry>
+    <catValu>6761</catValu>
+    <labl>Richmond, VA</labl>
+  </catgry>
+  <catgry>
+    <catValu>6780</catValu>
+    <labl>Riverside-San Bernadino, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>6800</catValu>
+    <labl>Roanoke, VA</labl>
+  </catgry>
+  <catgry>
+    <catValu>6840</catValu>
+    <labl>Rochester, NY</labl>
+  </catgry>
+  <catgry>
+    <catValu>6880</catValu>
+    <labl>Rockford, IL</labl>
+  </catgry>
+  <catgry>
+    <catValu>6920</catValu>
+    <labl>Sacramento, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>6921</catValu>
+    <labl>Sacramento-Arden Arcade-Roseville, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>6960</catValu>
+    <labl>Saginaw-Bay City-Midland, MI</labl>
+  </catgry>
+  <catgry>
+    <catValu>6961</catValu>
+    <labl>Saginaw-Saginaw Township North, MI</labl>
+  </catgry>
+  <catgry>
+    <catValu>6980</catValu>
+    <labl>St. Cloud, MN</labl>
+  </catgry>
+  <catgry>
+    <catValu>7000</catValu>
+    <labl>St. George, UT</labl>
+  </catgry>
+  <catgry>
+    <catValu>7040</catValu>
+    <labl>St. Louis, MO/IL</labl>
+  </catgry>
+  <catgry>
+    <catValu>7080</catValu>
+    <labl>Salem, OR</labl>
+  </catgry>
+  <catgry>
+    <catValu>7120</catValu>
+    <labl>Salinas-Sea Side-Monterey, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>7121</catValu>
+    <labl>Salinas, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>7130</catValu>
+    <labl>Salisbury, MD</labl>
+  </catgry>
+  <catgry>
+    <catValu>7160</catValu>
+    <labl>Salt Lake City-Ogden, UT</labl>
+  </catgry>
+  <catgry>
+    <catValu>7161</catValu>
+    <labl>Salt Lake City, UT</labl>
+  </catgry>
+  <catgry>
+    <catValu>7162</catValu>
+    <labl>Ogden-Clearfield, UT</labl>
+  </catgry>
+  <catgry>
+    <catValu>7240</catValu>
+    <labl>San Antonio, TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>7320</catValu>
+    <labl>San Diego, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>7321</catValu>
+    <labl>San Diego-Carlsbad-San Marcos, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>7360</catValu>
+    <labl>San Francisco-Oaklan-Vallejo, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>7361</catValu>
+    <labl>Oakland, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>7362</catValu>
+    <labl>Vallejo-Fairfield-Napa, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>7363</catValu>
+    <labl>Vallejo-Fairfield, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>7364</catValu>
+    <labl>Napa, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>7365</catValu>
+    <labl>San Francisco-Oakland-Fremont, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>7400</catValu>
+    <labl>San Jose, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>7401</catValu>
+    <labl>San Jose-Sunnyvale-Santa Clara, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>7460</catValu>
+    <labl>San Luis Obispo-Atascadero-Paso Robles, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>7461</catValu>
+    <labl>San Luis Obispo-Paso Robles, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>7470</catValu>
+    <labl>Santa Barbara-Santa Maria-Lompoc, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>7471</catValu>
+    <labl>Santa Barbara-Santa Maria-Goleta, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>7472</catValu>
+    <labl>Santa Barbara-Santa Maria, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>7480</catValu>
+    <labl>Santa Cruz, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>7481</catValu>
+    <labl>Santa Cruz-Watsonville, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>7490</catValu>
+    <labl>Santa Fe, NM</labl>
+  </catgry>
+  <catgry>
+    <catValu>7500</catValu>
+    <labl>Santa Rosa-Petaluma, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>7510</catValu>
+    <labl>Sarasota, FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>7511</catValu>
+    <labl>Sarasota-Bradenton-Venice, FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>7520</catValu>
+    <labl>Savannah, GA</labl>
+  </catgry>
+  <catgry>
+    <catValu>7560</catValu>
+    <labl>Scranton-Wilkes-Barre, PA</labl>
+  </catgry>
+  <catgry>
+    <catValu>7600</catValu>
+    <labl>Seattle-Everett, WA</labl>
+  </catgry>
+  <catgry>
+    <catValu>7601</catValu>
+    <labl>Seattle-Tacoma-Bellevue, WA</labl>
+  </catgry>
+  <catgry>
+    <catValu>7610</catValu>
+    <labl>Sharon, PA</labl>
+  </catgry>
+  <catgry>
+    <catValu>7640</catValu>
+    <labl>Sherman-Denison, TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>7680</catValu>
+    <labl>Shreveport, LA</labl>
+  </catgry>
+  <catgry>
+    <catValu>7681</catValu>
+    <labl>Shreveport-Bossier City, LA</labl>
+  </catgry>
+  <catgry>
+    <catValu>7720</catValu>
+    <labl>Sioux City, IA-NE</labl>
+  </catgry>
+  <catgry>
+    <catValu>7760</catValu>
+    <labl>Sioux Falls, SD</labl>
+  </catgry>
+  <catgry>
+    <catValu>7800</catValu>
+    <labl>South Bend-Mishawaka, IN</labl>
+  </catgry>
+  <catgry>
+    <catValu>7840</catValu>
+    <labl>Spokane, WA</labl>
+  </catgry>
+  <catgry>
+    <catValu>7880</catValu>
+    <labl>Springfield, IL</labl>
+  </catgry>
+  <catgry>
+    <catValu>7920</catValu>
+    <labl>Springfield, MO</labl>
+  </catgry>
+  <catgry>
+    <catValu>8000</catValu>
+    <labl>Springfield-Holyoke-Chicopee, MA</labl>
+  </catgry>
+  <catgry>
+    <catValu>8001</catValu>
+    <labl>Springfield, MA/CT</labl>
+  </catgry>
+  <catgry>
+    <catValu>8040</catValu>
+    <labl>Stamford, CT</labl>
+  </catgry>
+  <catgry>
+    <catValu>8120</catValu>
+    <labl>Stockton, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>8160</catValu>
+    <labl>Syracuse, NY</labl>
+  </catgry>
+  <catgry>
+    <catValu>8200</catValu>
+    <labl>Tacoma, WA</labl>
+  </catgry>
+  <catgry>
+    <catValu>8240</catValu>
+    <labl>Tallahassee, FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>8280</catValu>
+    <labl>Tampa-St. Petersburg-Clearwater, FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>8320</catValu>
+    <labl>Terre Haute, IN</labl>
+  </catgry>
+  <catgry>
+    <catValu>8400</catValu>
+    <labl>Toledo, OH/MI</labl>
+  </catgry>
+  <catgry>
+    <catValu>8440</catValu>
+    <labl>Topeka, KS</labl>
+  </catgry>
+  <catgry>
+    <catValu>8480</catValu>
+    <labl>Trenton, NJ</labl>
+  </catgry>
+  <catgry>
+    <catValu>8481</catValu>
+    <labl>Trenton-Ewing, NJ</labl>
+  </catgry>
+  <catgry>
+    <catValu>8520</catValu>
+    <labl>Tucson, AZ</labl>
+  </catgry>
+  <catgry>
+    <catValu>8560</catValu>
+    <labl>Tulsa, OK</labl>
+  </catgry>
+  <catgry>
+    <catValu>8600</catValu>
+    <labl>Tuscaloosa, AL</labl>
+  </catgry>
+  <catgry>
+    <catValu>8620</catValu>
+    <labl>Tyler, TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>8640</catValu>
+    <labl>Urban Honolulu, HI</labl>
+  </catgry>
+  <catgry>
+    <catValu>8680</catValu>
+    <labl>Utica-Rome, NY</labl>
+  </catgry>
+  <catgry>
+    <catValu>8700</catValu>
+    <labl>Valdosta, GA</labl>
+  </catgry>
+  <catgry>
+    <catValu>8730</catValu>
+    <labl>Ventura-Oxnard-Simi Valley, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>8731</catValu>
+    <labl>Oxnard-Thousand Oaks-Ventura, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>8740</catValu>
+    <labl>Vero Beach, FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>8750</catValu>
+    <labl>Victoria, TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>8760</catValu>
+    <labl>Vineland-Milville-Bridgetown, NJ</labl>
+  </catgry>
+  <catgry>
+    <catValu>8780</catValu>
+    <labl>Visalia-Tulare-Porterville, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>8781</catValu>
+    <labl>Visalia-Porterville, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>8800</catValu>
+    <labl>Waco, TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>8840</catValu>
+    <labl>Washington, DC/MD/VA</labl>
+  </catgry>
+  <catgry>
+    <catValu>8880</catValu>
+    <labl>Waterbury, CT</labl>
+  </catgry>
+  <catgry>
+    <catValu>8920</catValu>
+    <labl>Waterloo-Cedar Falls, IA</labl>
+  </catgry>
+  <catgry>
+    <catValu>8930</catValu>
+    <labl>Watertown-Fort Drum, NY</labl>
+  </catgry>
+  <catgry>
+    <catValu>8940</catValu>
+    <labl>Wausau, WI</labl>
+  </catgry>
+  <catgry>
+    <catValu>8960</catValu>
+    <labl>West Palm Beach-Boca Raton-Delray Beach, FL</labl>
+  </catgry>
+  <catgry>
+    <catValu>9000</catValu>
+    <labl>Wheeling, WV/OH</labl>
+  </catgry>
+  <catgry>
+    <catValu>9040</catValu>
+    <labl>Wichita, KS</labl>
+  </catgry>
+  <catgry>
+    <catValu>9050</catValu>
+    <labl>Wichita Falls, TX</labl>
+  </catgry>
+  <catgry>
+    <catValu>9140</catValu>
+    <labl>Williamsport, PA</labl>
+  </catgry>
+  <catgry>
+    <catValu>9160</catValu>
+    <labl>Wilmington, DE/NJ/MD</labl>
+  </catgry>
+  <catgry>
+    <catValu>9200</catValu>
+    <labl>Wilmington, NC</labl>
+  </catgry>
+  <catgry>
+    <catValu>9220</catValu>
+    <labl>Winchester, VA-WV</labl>
+  </catgry>
+  <catgry>
+    <catValu>9240</catValu>
+    <labl>Worcester, MA</labl>
+  </catgry>
+  <catgry>
+    <catValu>9260</catValu>
+    <labl>Yakima, WA</labl>
+  </catgry>
+  <catgry>
+    <catValu>9270</catValu>
+    <labl>Yolo, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>9280</catValu>
+    <labl>York, PA</labl>
+  </catgry>
+  <catgry>
+    <catValu>9281</catValu>
+    <labl>York-Hanover, PA</labl>
+  </catgry>
+  <catgry>
+    <catValu>9320</catValu>
+    <labl>Youngstown-Warren, OH/PA</labl>
+  </catgry>
+  <catgry>
+    <catValu>9321</catValu>
+    <labl>Youngstown-Warren-Boardman, OH</labl>
+  </catgry>
+  <catgry>
+    <catValu>9340</catValu>
+    <labl>Yuba City, CA</labl>
+  </catgry>
+  <catgry>
+    <catValu>9360</catValu>
+    <labl>Yuma, AZ</labl>
+  </catgry>
+  <catgry>
+    <catValu>9997</catValu>
+    <labl>Other metropolitan areas, unidentified</labl>
+  </catgry>
+  <catgry>
+    <catValu>9998</catValu>
+    <labl>NIU, household not in a metropolitan area</labl>
+  </catgry>
+  <catgry>
+    <catValu>9999</catValu>
+    <labl>Missing data</labl>
+  </catgry>
+  <concept vocab="IPUMS">Geographic Variables -- HOUSEHOLD</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="METFIPS" dcml="0" files="ExtractData" intrvl="contin" name="METFIPS">
+  <location EndPos="43" StartPos="39" width="5"/>
+  <labl>Metropolitan area FIPS code</labl>
+  <txt><![CDATA[METFIPS gives the original (unrecoded) codes for the respondent's metropolitan area of residence. For the same variable recoded to FIPS codes from the 1990 census, see (METAREA) (definitions of metropolitan areas can change over time, however). METFIPS information was added to the ASEC CPS data by the Census Bureau, not collected from respondents.
+
+Not all metropolitan areas are identified: see under "Codes" for more information. Note also that some component counties are not included in the CPS sample of households in certain metropolitan areas. See the "Specific Metropolitan Identifiers" Appendix of the appropriate month's technical documentation for more information on whether a specific metropolitan area sample has excluded components. For more information on the definitions and components of metropolitan areas over time, see the Census Bureau website; for the current metropolitan area definitions, see here.
+
+Note that the Census Bureau warns: "One set of estimates that can be produced from CPS microdata files should be treated with caution.  These are estimates for individual metropolitan areas.  Although estimates for the larger areas such as New York, Los Angeles, and so forth, should be fairly accurate and valid for a multitude of uses, estimates for the smaller metropolitan areas (those with populations under 500,000) should be used with caution because of the relatively large sampling variability associated with these estimates."]]></txt>
+  <codInstr><![CDATA[CodesFor a list of metropolitan areas identified and the corresponding codes, consult the links below for the appropriate time period. Note that some metropolitan areas are not available in all months of a time period.
+
+1962 (ASEC)
+1963-1967 (ASEC)
+1968-1972 (ASEC)
+1973-1975 (ASEC)
+1976 (ASEC)
+1977-1985 (ASEC)
+1986-1987 (ASEC)
+1988-March, 1995
+September, 1995-April, 2004
+May, 2004 -April, 2014
+May, 2014 onward
+
+99998 = Unidentified or nonmetropolitan
+99999 = Missing data]]></codInstr>
+  <concept vocab="IPUMS">Geographic Variables -- HOUSEHOLD</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="FARM" dcml="0" files="ExtractData" intrvl="discrete" name="FARM">
+  <location EndPos="44" StartPos="44" width="1"/>
+  <labl>Farm</labl>
+  <txt><![CDATA[FARM indicates whether the household was a farm household.]]></txt>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Non-farm</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Farm</labl>
+  </catgry>
+  <concept vocab="IPUMS">Economic Characteristics Variables -- HOUSEHOLD</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="HRHHID" dcml="0" files="ExtractData" intrvl="contin" name="HRHHID">
+  <location EndPos="59" StartPos="45" width="15"/>
+  <labl>Household ID, part 1</labl>
+  <txt><![CDATA[HRHHID is part 1 of the CPS household ID on the original files. When combined with HRHHID2, HRHHID can uniquely identify households within basic monthly samples.]]></txt>
+  <codInstr><![CDATA[CodesHRHHID is a 15-digit numeric variable.]]></codInstr>
+  <concept vocab="IPUMS">Linking Variables -- HOUSEHOLD</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="HUHHNUM" dcml="0" files="ExtractData" intrvl="discrete" name="HUHHNUM">
+  <location EndPos="61" StartPos="60" width="2"/>
+  <labl>Household number</labl>
+  <txt><![CDATA[HUHHNUM is one piece of unique identifying information that can be used to link households across CPS samples. It is on the original files for basic monthly samples prior to May 2004. IPUMS uses HUHHNUM, along with HRSAMPLE and HRSERSUF, to create HRHHID2 in samples prior to May 2004.]]></txt>
+  <catgry>
+    <catValu>00</catValu>
+    <labl/>
+  </catgry>
+  <catgry>
+    <catValu>01</catValu>
+    <labl/>
+  </catgry>
+  <catgry>
+    <catValu>02</catValu>
+    <labl/>
+  </catgry>
+  <catgry>
+    <catValu>03</catValu>
+    <labl/>
+  </catgry>
+  <catgry>
+    <catValu>04</catValu>
+    <labl/>
+  </catgry>
+  <catgry>
+    <catValu>05</catValu>
+    <labl/>
+  </catgry>
+  <catgry>
+    <catValu>06</catValu>
+    <labl/>
+  </catgry>
+  <catgry>
+    <catValu>07</catValu>
+    <labl/>
+  </catgry>
+  <catgry>
+    <catValu>08</catValu>
+    <labl/>
+  </catgry>
+  <concept vocab="IPUMS">Linking Variables -- HOUSEHOLD</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="PERNUM" dcml="0" files="ExtractData" intrvl="contin" name="PERNUM">
+  <location EndPos="63" StartPos="62" width="2"/>
+  <labl>Person number in sample unit</labl>
+  <txt><![CDATA[PERNUM numbers all persons within each household consecutively (starting with "1") in the order in which they are listed in the original CPS data.  When combined with YEAR , MONTH, and SERIAL, PERNUM uniquely identifies each person within IPUMS-CPS samples, though not across IPUMS-CPS samples.]]></txt>
+  <codInstr><![CDATA[CodesPERNUM is a 2-digit numeric variable.]]></codInstr>
+  <concept vocab="IPUMS">Technical Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="ASECWT" dcml="4" files="ExtractData" intrvl="contin" name="ASECWT">
+  <location EndPos="74" StartPos="64" width="11"/>
+  <labl>Annual Social and Economic Supplement Weight</labl>
+  <txt><![CDATA[ASECWT is a person-level weight that should be used in analyses of individual-level CPS supplement data. Since the CPS relies on a complex stratified sampling scheme, it is essential to use one of the provided weighting variables.
+
+Researchers should use WTFINL rather than ASECWT when they wish to conduct person-level analyses of non-ASEC data. EARNWT should be used for any analysis including a small number of person-level variables (EARNWEEK, HOURWAGE, PAIDHOUR, and UNION). Researchers should use ASECWTH for household-level analyses. ASECWTCVD is available for the 2020 ASEC to adjust for nonrandom nonresponse resulting from the COVID-19 pandemic.
+
+User Caution: For analyses that include the 2014 ASEC sample, please see the comparability tab.
+
+The ASEC CPS files include two groups of people who are not included in the production of published labor force statistics: (1) members of the armed services, and (2) members of the Hispanic oversample who were interviewed in months other than March. WTFINL and EARNWT assign these groups a value of 0. Both groups are assigned non-zero values in ASECWT.
+
+ASECWT is based on the inverse probability of selection into the sample and adjustments for the following factors: failure to obtain an interview; sampling within large sample units; the known distribution of the entire population according to age, sex, and race; over-sampling Hispanic persons; to give husbands and wives the same weight; and an additional step to provide consistency with labor force estimates from the basic survey. 
+
+Estimates on the entire population are prepared by projecting forward the resident population from the last available census. These projections are derived by updating the demographic census data from a number of other data sources that account for death, births and net migration. About 3 years after every census (i.e. 2003 for the 2000 Census and 2013 for the 2010 Census), the Census Bureau updates its independent population control and provides a new weight for the relevant years.
+
+Two important points should be noted here. First, the lag between when the Census is conducted and when the CPS weights are updated is about 3 years. While the Census data are being processed, the CPS files are made available using the weighting scheme from the US Census prior to the latest Census. Second, once the files are updated, the old weights become obsolete and are replaced in the IPUMS data extract system. Published estimates from the lag years that use the old weights are not always updated. For example, 2010 poverty estimates were released in ASEC using the 2000 population controls. Once the 2010 population controls were made available, IPUMS-CPS replaced the ASEC 2010, 2011, and 2012 weights that are based on the 2000 population control with weights that are based on the 2010 population controls. IPUMS-CPS makes available only the most up-to-date weights.]]></txt>
+  <codInstr><![CDATA[CodesASECWT is a 10-digit numeric variable with four implied decimal places. That is, values of 0012345600 should be interpreted as 1,234.56.  The IPUMS command files automatically divide ASECWT by 10,000, so no further adjustment is needed.]]></codInstr>
+  <concept vocab="IPUMS">Technical Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="RELATE" dcml="0" files="ExtractData" intrvl="discrete" name="RELATE">
+  <location EndPos="78" StartPos="75" width="4"/>
+  <labl>Relationship to household head</labl>
+  <txt><![CDATA[RELATE reports an individual's relationship to the head of household or householder.
+
+CPS interviewers collected detailed information about the precise relationships of all persons in the household in their initial listing of household members.  Unfortunately, they then simplified the detailed data (e.g., daughter-in-law, lodger's brother) by coding it into a few broad categories (e.g., "other relative of head," "nonrelative of head with own relatives in household") specified on the interview form.  Only the broad categories are preserved in the data.  The 4-digit codes for RELATE are consistent with the coding scheme used in IPUMS-USA census data.]]></txt>
+  <catgry>
+    <catValu>0101</catValu>
+    <labl>Head/householder</labl>
+  </catgry>
+  <catgry>
+    <catValu>0201</catValu>
+    <labl>Spouse</labl>
+  </catgry>
+  <catgry>
+    <catValu>0202</catValu>
+    <labl>Opposite sex spouse</labl>
+  </catgry>
+  <catgry>
+    <catValu>0203</catValu>
+    <labl>Same sex spouse</labl>
+  </catgry>
+  <catgry>
+    <catValu>0301</catValu>
+    <labl>Child</labl>
+  </catgry>
+  <catgry>
+    <catValu>0303</catValu>
+    <labl>Stepchild</labl>
+  </catgry>
+  <catgry>
+    <catValu>0501</catValu>
+    <labl>Parent</labl>
+  </catgry>
+  <catgry>
+    <catValu>0701</catValu>
+    <labl>Sibling</labl>
+  </catgry>
+  <catgry>
+    <catValu>0901</catValu>
+    <labl>Grandchild</labl>
+  </catgry>
+  <catgry>
+    <catValu>1001</catValu>
+    <labl>Other relatives, n.s.</labl>
+  </catgry>
+  <catgry>
+    <catValu>1113</catValu>
+    <labl>Partner/roommate</labl>
+  </catgry>
+  <catgry>
+    <catValu>1114</catValu>
+    <labl>Unmarried partner</labl>
+  </catgry>
+  <catgry>
+    <catValu>1116</catValu>
+    <labl>Opposite sex unmarried partner</labl>
+  </catgry>
+  <catgry>
+    <catValu>1117</catValu>
+    <labl>Same sex unmarried partner</labl>
+  </catgry>
+  <catgry>
+    <catValu>1115</catValu>
+    <labl>Housemate/roomate</labl>
+  </catgry>
+  <catgry>
+    <catValu>1241</catValu>
+    <labl>Roomer/boarder/lodger</labl>
+  </catgry>
+  <catgry>
+    <catValu>1242</catValu>
+    <labl>Foster children</labl>
+  </catgry>
+  <catgry>
+    <catValu>1260</catValu>
+    <labl>Other nonrelatives</labl>
+  </catgry>
+  <catgry>
+    <catValu>9900</catValu>
+    <labl>Relationship unknown</labl>
+  </catgry>
+  <catgry>
+    <catValu>9999</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <concept vocab="IPUMS">Demographics Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="AGE" dcml="0" files="ExtractData" intrvl="discrete" name="AGE">
+  <location EndPos="80" StartPos="79" width="2"/>
+  <labl>Age</labl>
+  <txt><![CDATA[Age gives each person's age at last birthday.]]></txt>
+  <catgry>
+    <catValu>00</catValu>
+    <labl>Under 1 year</labl>
+  </catgry>
+  <catgry>
+    <catValu>01</catValu>
+    <labl>1</labl>
+  </catgry>
+  <catgry>
+    <catValu>02</catValu>
+    <labl>2</labl>
+  </catgry>
+  <catgry>
+    <catValu>03</catValu>
+    <labl>3</labl>
+  </catgry>
+  <catgry>
+    <catValu>04</catValu>
+    <labl>4</labl>
+  </catgry>
+  <catgry>
+    <catValu>05</catValu>
+    <labl>5</labl>
+  </catgry>
+  <catgry>
+    <catValu>06</catValu>
+    <labl>6</labl>
+  </catgry>
+  <catgry>
+    <catValu>07</catValu>
+    <labl>7</labl>
+  </catgry>
+  <catgry>
+    <catValu>08</catValu>
+    <labl>8</labl>
+  </catgry>
+  <catgry>
+    <catValu>09</catValu>
+    <labl>9</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>10</labl>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>11</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>12</labl>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+    <labl>13</labl>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+    <labl>14</labl>
+  </catgry>
+  <catgry>
+    <catValu>15</catValu>
+    <labl>15</labl>
+  </catgry>
+  <catgry>
+    <catValu>16</catValu>
+    <labl>16</labl>
+  </catgry>
+  <catgry>
+    <catValu>17</catValu>
+    <labl>17</labl>
+  </catgry>
+  <catgry>
+    <catValu>18</catValu>
+    <labl>18</labl>
+  </catgry>
+  <catgry>
+    <catValu>19</catValu>
+    <labl>19</labl>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+    <labl>20</labl>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+    <labl>21</labl>
+  </catgry>
+  <catgry>
+    <catValu>22</catValu>
+    <labl>22</labl>
+  </catgry>
+  <catgry>
+    <catValu>23</catValu>
+    <labl>23</labl>
+  </catgry>
+  <catgry>
+    <catValu>24</catValu>
+    <labl>24</labl>
+  </catgry>
+  <catgry>
+    <catValu>25</catValu>
+    <labl>25</labl>
+  </catgry>
+  <catgry>
+    <catValu>26</catValu>
+    <labl>26</labl>
+  </catgry>
+  <catgry>
+    <catValu>27</catValu>
+    <labl>27</labl>
+  </catgry>
+  <catgry>
+    <catValu>28</catValu>
+    <labl>28</labl>
+  </catgry>
+  <catgry>
+    <catValu>29</catValu>
+    <labl>29</labl>
+  </catgry>
+  <catgry>
+    <catValu>30</catValu>
+    <labl>30</labl>
+  </catgry>
+  <catgry>
+    <catValu>31</catValu>
+    <labl>31</labl>
+  </catgry>
+  <catgry>
+    <catValu>32</catValu>
+    <labl>32</labl>
+  </catgry>
+  <catgry>
+    <catValu>33</catValu>
+    <labl>33</labl>
+  </catgry>
+  <catgry>
+    <catValu>34</catValu>
+    <labl>34</labl>
+  </catgry>
+  <catgry>
+    <catValu>35</catValu>
+    <labl>35</labl>
+  </catgry>
+  <catgry>
+    <catValu>36</catValu>
+    <labl>36</labl>
+  </catgry>
+  <catgry>
+    <catValu>37</catValu>
+    <labl>37</labl>
+  </catgry>
+  <catgry>
+    <catValu>38</catValu>
+    <labl>38</labl>
+  </catgry>
+  <catgry>
+    <catValu>39</catValu>
+    <labl>39</labl>
+  </catgry>
+  <catgry>
+    <catValu>40</catValu>
+    <labl>40</labl>
+  </catgry>
+  <catgry>
+    <catValu>41</catValu>
+    <labl>41</labl>
+  </catgry>
+  <catgry>
+    <catValu>42</catValu>
+    <labl>42</labl>
+  </catgry>
+  <catgry>
+    <catValu>43</catValu>
+    <labl>43</labl>
+  </catgry>
+  <catgry>
+    <catValu>44</catValu>
+    <labl>44</labl>
+  </catgry>
+  <catgry>
+    <catValu>45</catValu>
+    <labl>45</labl>
+  </catgry>
+  <catgry>
+    <catValu>46</catValu>
+    <labl>46</labl>
+  </catgry>
+  <catgry>
+    <catValu>47</catValu>
+    <labl>47</labl>
+  </catgry>
+  <catgry>
+    <catValu>48</catValu>
+    <labl>48</labl>
+  </catgry>
+  <catgry>
+    <catValu>49</catValu>
+    <labl>49</labl>
+  </catgry>
+  <catgry>
+    <catValu>50</catValu>
+    <labl>50</labl>
+  </catgry>
+  <catgry>
+    <catValu>51</catValu>
+    <labl>51</labl>
+  </catgry>
+  <catgry>
+    <catValu>52</catValu>
+    <labl>52</labl>
+  </catgry>
+  <catgry>
+    <catValu>53</catValu>
+    <labl>53</labl>
+  </catgry>
+  <catgry>
+    <catValu>54</catValu>
+    <labl>54</labl>
+  </catgry>
+  <catgry>
+    <catValu>55</catValu>
+    <labl>55</labl>
+  </catgry>
+  <catgry>
+    <catValu>56</catValu>
+    <labl>56</labl>
+  </catgry>
+  <catgry>
+    <catValu>57</catValu>
+    <labl>57</labl>
+  </catgry>
+  <catgry>
+    <catValu>58</catValu>
+    <labl>58</labl>
+  </catgry>
+  <catgry>
+    <catValu>59</catValu>
+    <labl>59</labl>
+  </catgry>
+  <catgry>
+    <catValu>60</catValu>
+    <labl>60</labl>
+  </catgry>
+  <catgry>
+    <catValu>61</catValu>
+    <labl>61</labl>
+  </catgry>
+  <catgry>
+    <catValu>62</catValu>
+    <labl>62</labl>
+  </catgry>
+  <catgry>
+    <catValu>63</catValu>
+    <labl>63</labl>
+  </catgry>
+  <catgry>
+    <catValu>64</catValu>
+    <labl>64</labl>
+  </catgry>
+  <catgry>
+    <catValu>65</catValu>
+    <labl>65</labl>
+  </catgry>
+  <catgry>
+    <catValu>66</catValu>
+    <labl>66</labl>
+  </catgry>
+  <catgry>
+    <catValu>67</catValu>
+    <labl>67</labl>
+  </catgry>
+  <catgry>
+    <catValu>68</catValu>
+    <labl>68</labl>
+  </catgry>
+  <catgry>
+    <catValu>69</catValu>
+    <labl>69</labl>
+  </catgry>
+  <catgry>
+    <catValu>70</catValu>
+    <labl>70</labl>
+  </catgry>
+  <catgry>
+    <catValu>71</catValu>
+    <labl>71</labl>
+  </catgry>
+  <catgry>
+    <catValu>72</catValu>
+    <labl>72</labl>
+  </catgry>
+  <catgry>
+    <catValu>73</catValu>
+    <labl>73</labl>
+  </catgry>
+  <catgry>
+    <catValu>74</catValu>
+    <labl>74</labl>
+  </catgry>
+  <catgry>
+    <catValu>75</catValu>
+    <labl>75</labl>
+  </catgry>
+  <catgry>
+    <catValu>76</catValu>
+    <labl>76</labl>
+  </catgry>
+  <catgry>
+    <catValu>77</catValu>
+    <labl>77</labl>
+  </catgry>
+  <catgry>
+    <catValu>78</catValu>
+    <labl>78</labl>
+  </catgry>
+  <catgry>
+    <catValu>79</catValu>
+    <labl>79</labl>
+  </catgry>
+  <catgry>
+    <catValu>80</catValu>
+    <labl>80</labl>
+  </catgry>
+  <catgry>
+    <catValu>81</catValu>
+    <labl>81</labl>
+  </catgry>
+  <catgry>
+    <catValu>82</catValu>
+    <labl>82</labl>
+  </catgry>
+  <catgry>
+    <catValu>83</catValu>
+    <labl>83</labl>
+  </catgry>
+  <catgry>
+    <catValu>84</catValu>
+    <labl>84</labl>
+  </catgry>
+  <catgry>
+    <catValu>85</catValu>
+    <labl>85</labl>
+  </catgry>
+  <catgry>
+    <catValu>86</catValu>
+    <labl>86</labl>
+  </catgry>
+  <catgry>
+    <catValu>87</catValu>
+    <labl>87</labl>
+  </catgry>
+  <catgry>
+    <catValu>88</catValu>
+    <labl>88</labl>
+  </catgry>
+  <catgry>
+    <catValu>89</catValu>
+    <labl>89</labl>
+  </catgry>
+  <catgry>
+    <catValu>90</catValu>
+    <labl>90 (90+, 1988-2002)</labl>
+  </catgry>
+  <catgry>
+    <catValu>91</catValu>
+    <labl>91</labl>
+  </catgry>
+  <catgry>
+    <catValu>92</catValu>
+    <labl>92</labl>
+  </catgry>
+  <catgry>
+    <catValu>93</catValu>
+    <labl>93</labl>
+  </catgry>
+  <catgry>
+    <catValu>94</catValu>
+    <labl>94</labl>
+  </catgry>
+  <catgry>
+    <catValu>95</catValu>
+    <labl>95</labl>
+  </catgry>
+  <catgry>
+    <catValu>96</catValu>
+    <labl>96</labl>
+  </catgry>
+  <catgry>
+    <catValu>97</catValu>
+    <labl>97</labl>
+  </catgry>
+  <catgry>
+    <catValu>98</catValu>
+    <labl>98</labl>
+  </catgry>
+  <catgry>
+    <catValu>99</catValu>
+    <labl>99+</labl>
+  </catgry>
+  <concept vocab="IPUMS">Demographics Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="SEX" dcml="0" files="ExtractData" intrvl="discrete" name="SEX">
+  <location EndPos="81" StartPos="81" width="1"/>
+  <labl>Sex</labl>
+  <txt><![CDATA[SEX gives each person's sex.]]></txt>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Male</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Female</labl>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <concept vocab="IPUMS">Demographics Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="RACE" dcml="0" files="ExtractData" intrvl="discrete" name="RACE">
+  <location EndPos="84" StartPos="82" width="3"/>
+  <labl>Race</labl>
+  <txt><![CDATA[Racial categories in the CPS have been more consistent than racial categories in the census.  Up through 2002, the number of race categories ranged from 3 (white, negro, and other) to 5 (white, black, American Indian/Eskimo/Aleut, Asian or Pacific Islander, and other).   Beginning in 2003, respondents could report more than one race, and the number of codes rose to 21, and then up to 26 codes in 2013.]]></txt>
+  <catgry>
+    <catValu>100</catValu>
+    <labl>White</labl>
+  </catgry>
+  <catgry>
+    <catValu>200</catValu>
+    <labl>Black</labl>
+  </catgry>
+  <catgry>
+    <catValu>300</catValu>
+    <labl>American Indian/Aleut/Eskimo</labl>
+  </catgry>
+  <catgry>
+    <catValu>650</catValu>
+    <labl>Asian or Pacific Islander</labl>
+  </catgry>
+  <catgry>
+    <catValu>651</catValu>
+    <labl>Asian only</labl>
+  </catgry>
+  <catgry>
+    <catValu>652</catValu>
+    <labl>Hawaiian/Pacific Islander only</labl>
+  </catgry>
+  <catgry>
+    <catValu>700</catValu>
+    <labl>Other (single) race, n.e.c.</labl>
+  </catgry>
+  <catgry>
+    <catValu>801</catValu>
+    <labl>White-Black</labl>
+  </catgry>
+  <catgry>
+    <catValu>802</catValu>
+    <labl>White-American Indian</labl>
+  </catgry>
+  <catgry>
+    <catValu>803</catValu>
+    <labl>White-Asian</labl>
+  </catgry>
+  <catgry>
+    <catValu>804</catValu>
+    <labl>White-Hawaiian/Pacific Islander</labl>
+  </catgry>
+  <catgry>
+    <catValu>805</catValu>
+    <labl>Black-American Indian</labl>
+  </catgry>
+  <catgry>
+    <catValu>806</catValu>
+    <labl>Black-Asian</labl>
+  </catgry>
+  <catgry>
+    <catValu>807</catValu>
+    <labl>Black-Hawaiian/Pacific Islander</labl>
+  </catgry>
+  <catgry>
+    <catValu>808</catValu>
+    <labl>American Indian-Asian</labl>
+  </catgry>
+  <catgry>
+    <catValu>809</catValu>
+    <labl>Asian-Hawaiian/Pacific Islander</labl>
+  </catgry>
+  <catgry>
+    <catValu>810</catValu>
+    <labl>White-Black-American Indian</labl>
+  </catgry>
+  <catgry>
+    <catValu>811</catValu>
+    <labl>White-Black-Asian</labl>
+  </catgry>
+  <catgry>
+    <catValu>812</catValu>
+    <labl>White-American Indian-Asian</labl>
+  </catgry>
+  <catgry>
+    <catValu>813</catValu>
+    <labl>White-Asian-Hawaiian/Pacific Islander</labl>
+  </catgry>
+  <catgry>
+    <catValu>814</catValu>
+    <labl>White-Black-American Indian-Asian</labl>
+  </catgry>
+  <catgry>
+    <catValu>815</catValu>
+    <labl>American Indian-Hawaiian/Pacific Islander</labl>
+  </catgry>
+  <catgry>
+    <catValu>816</catValu>
+    <labl>White-Black--Hawaiian/Pacific Islander</labl>
+  </catgry>
+  <catgry>
+    <catValu>817</catValu>
+    <labl>White-American Indian-Hawaiian/Pacific Islander</labl>
+  </catgry>
+  <catgry>
+    <catValu>818</catValu>
+    <labl>Black-American Indian-Asian</labl>
+  </catgry>
+  <catgry>
+    <catValu>819</catValu>
+    <labl>White-American Indian-Asian-Hawaiian/Pacific Islander</labl>
+  </catgry>
+  <catgry>
+    <catValu>820</catValu>
+    <labl>Two or three races, unspecified</labl>
+  </catgry>
+  <catgry>
+    <catValu>830</catValu>
+    <labl>Four or five races, unspecified</labl>
+  </catgry>
+  <catgry>
+    <catValu>999</catValu>
+    <labl>Blank</labl>
+  </catgry>
+  <concept vocab="IPUMS">Demographics Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="MARST" dcml="0" files="ExtractData" intrvl="discrete" name="MARST">
+  <location EndPos="85" StartPos="85" width="1"/>
+  <labl>Marital status</labl>
+  <txt><![CDATA[MARST gives each person's current marital status, including whether the spouse was currently living in the same household.]]></txt>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Married, spouse present</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Married, spouse absent</labl>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Separated</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Divorced</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>Widowed</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>Never married/single</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>Widowed or Divorced</labl>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <concept vocab="IPUMS">Demographics Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="POPSTAT" dcml="0" files="ExtractData" intrvl="discrete" name="POPSTAT">
+  <location EndPos="86" StartPos="86" width="1"/>
+  <labl>Adult civilian, armed forces, or child</labl>
+  <txt><![CDATA[POPSTAT reports the person's status in the population -- whether the person is an adult civilian, member of the U. S. armed forces, or a child.
+
+The CPS is, in large part, a labor market survey, and is used to measure unemployment among the civilian labor force.  (The U.S. unemployment rate reported by the Bureau of Labor Statistics excludes members of the armed forces.)   Children (for ASEC samples under age 14 through 1979 and under age 15 beginning in 1980; for non-ASEC samples under 14 through February, 1989 and under 15 beginning March 1989) were not asked questions pertaining to economic activity.  Members of the armed forces were asked only a small number of questions relating to demographic facts, migration, and income during the previous calendar year.  POPSTAT provides a useful "filter" variable for excluding persons who had no responses for many of the survey questions.  If children and/or members of the armed forces were excluded from the universe of a particular question, they appear only in the "not in universe" category of a variable.]]></txt>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Adult civilian</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Armed Forces</labl>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Child</labl>
+  </catgry>
+  <concept vocab="IPUMS">Demographics Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="AGEMARR" dcml="0" files="ExtractData" intrvl="contin" name="AGEMARR">
+  <location EndPos="88" StartPos="87" width="2"/>
+  <labl>Age at first marriage</labl>
+  <txt><![CDATA[AGEMARR reports each ever-married person's age at the time of first marriage.
+
+CPS interviewers collected information about the date of first marriage for ever-married persons and filled in the month, decade, and year on the interview form.  Using this information and information about the respondent's date of birth, age at marriage was calculated by the Census Bureau staff.]]></txt>
+  <codInstr><![CDATA[Codes00 = N.I.U. (Not in Universe)
+
+		
+Top codes:1962-1967: 45+
+1968: 44+]]></codInstr>
+  <concept vocab="IPUMS">Demographics Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="SPLOC" dcml="0" files="ExtractData" intrvl="contin" name="SPLOC">
+  <location EndPos="90" StartPos="89" width="2"/>
+  <labl>Person number of spouse (from programming)</labl>
+  <txt><![CDATA[SPLOC is a constructed variable that indicates whether the person's spouse lived in the same household and, if so, gives the person number (PERNUM) of the spouse. The method by which probable spouse-spouse links are identified is described in SPRULE.
+
+SPLOC makes it easy for researchers to link the characteristics of (probable) spouses. 
+
+In 2016, the family interrelationship variables for all samples were revised to increase comparability across IPUMS projects and include same-sex couples. Many researchers who are familiar with the previous version of family interrelationship variables will find it useful to read a brief overview of the key differences of the New IPUMS Family Interrelationship Variables. On this page you'll find information on how family interrelationship variables are constructed, common uses of these variables, and specific examples of how these variables can be used efficiently.
+
+The pre-2016 version of SPLOC and other IPUMS pointer variables are available here.]]></txt>
+  <codInstr><![CDATA[Codes00 = No spouse of this person present in household.]]></codInstr>
+  <concept vocab="IPUMS">Family Interrelationships Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="SPRULE" dcml="0" files="ExtractData" intrvl="discrete" name="SPRULE">
+  <location EndPos="92" StartPos="91" width="2"/>
+  <labl>Rule for linking spouse</labl>
+  <txt><![CDATA[SPRULE is a constructed variable that indicates the method by which the probable spouse/partner link shown in SPLOC was identified.  
+
+The IPUMS family interrelationship variables address two types of ambiguity when forming links. First, we prioritize links based on how clear the relationship is between the two people being linked. Second, we use a series of logical steps to select between multiple potential spouses. SPRULE is a two digit variables that show how these two types of ambiguity were addressed when forming a spousal link. The first digit indicates how direct the relationship is between the two people and the second digit indicates if the link was selected among multiple options and, if so, how it was selected.
+
+We first prioritize links within a household based how clear the relationship is between the two people being linked (using RELATE). The priority of the link is captured in the first digit of SPRULE. Except for links between a householder and an unmarried partner, a person must be "married, spouse present" according to MARST in order to have a non-zero value for SPLOC.
+
+Direct links: 
+Spouse rule value: 1- 
+
+Householder to Spouse
+
+Parent to Parent
+
+Housemate to Housemate
+
+Roomer to Roomer
+
+Non-relative to Non-relative
+2nd level links
+Spouse rule value: 2-]]></txt>
+  <catgry>
+    <catValu>00</catValu>
+    <labl>No spouse link</labl>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>Rule 11 is used to identify spouse/partner</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>Rule 12 is used to identify spouse/partner</labl>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+    <labl>Rule 13 is used to identify spouse/partner</labl>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+    <labl>Rule 14 is used to identify spouse/partner</labl>
+  </catgry>
+  <catgry>
+    <catValu>15</catValu>
+    <labl>Rule 15 is used to identify spouse/partner</labl>
+  </catgry>
+  <catgry>
+    <catValu>16</catValu>
+    <labl>Rule 16 is used to identify spouse/partner</labl>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+    <labl>Rule 21 is used to identify spouse/partner</labl>
+  </catgry>
+  <catgry>
+    <catValu>22</catValu>
+    <labl>Rule 22 is used to identify spouse/partner</labl>
+  </catgry>
+  <catgry>
+    <catValu>23</catValu>
+    <labl>Rule 23 is used to identify spouse/partner</labl>
+  </catgry>
+  <catgry>
+    <catValu>24</catValu>
+    <labl>Rule 24 is used to identify spouse/partner</labl>
+  </catgry>
+  <catgry>
+    <catValu>25</catValu>
+    <labl>Rule 25 is used to identify spouse/partner</labl>
+  </catgry>
+  <catgry>
+    <catValu>26</catValu>
+    <labl>Rule 26 is used to identify spouse/partner</labl>
+  </catgry>
+  <catgry>
+    <catValu>31</catValu>
+    <labl>Rule 31 is used to identify spouse/partner</labl>
+  </catgry>
+  <catgry>
+    <catValu>32</catValu>
+    <labl>Rule 32 is used to identify spouse/partner</labl>
+  </catgry>
+  <catgry>
+    <catValu>33</catValu>
+    <labl>Rule 33 is used to identify spouse/partner</labl>
+  </catgry>
+  <catgry>
+    <catValu>34</catValu>
+    <labl>Rule 34 is used to identify spouse/partner</labl>
+  </catgry>
+  <catgry>
+    <catValu>35</catValu>
+    <labl>Rule 35 is used to identify spouse/partner</labl>
+  </catgry>
+  <catgry>
+    <catValu>36</catValu>
+    <labl>Rule 36 is used to identify spouse/partner</labl>
+  </catgry>
+  <catgry>
+    <catValu>41</catValu>
+    <labl>Rule 41 is used to identify spouse/partner</labl>
+  </catgry>
+  <catgry>
+    <catValu>42</catValu>
+    <labl>Rule 42 is used to identify spouse/partner</labl>
+  </catgry>
+  <catgry>
+    <catValu>43</catValu>
+    <labl>Rule 43 is used to identify spouse/partner</labl>
+  </catgry>
+  <catgry>
+    <catValu>44</catValu>
+    <labl>Rule 44 is used to identify spouse/partner</labl>
+  </catgry>
+  <catgry>
+    <catValu>45</catValu>
+    <labl>Rule 45 is used to identify spouse/partner</labl>
+  </catgry>
+  <catgry>
+    <catValu>46</catValu>
+    <labl>Rule 46 is used to identify spouse/partner</labl>
+  </catgry>
+  <concept vocab="IPUMS">Family Interrelationships Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="FAMUNIT" dcml="0" files="ExtractData" intrvl="discrete" name="FAMUNIT">
+  <location EndPos="94" StartPos="93" width="2"/>
+  <labl>Family unit membership</labl>
+  <txt><![CDATA[FAMUNIT indicates to which family within the housing unit each person belongs. If there is only one group of related individuals, all members of the household will be coded 1; if there is a second, separate such group, all members of that family group will be coded 2, and so on. All persons with a RELATE code less than 1100 are included in FAMUNIT 1.  All persons with a RELATE code of at least 1100 receive a FAMUNIT code of 2 or greater unless they are linked via birth, marriage, or adoption to someone with a RELATE code of less than 1100.  This means that some households contain no persons with a FAMUNIT code of 1: for example, household fragments (identified via FRAGMNT) receive a FAMUNIT code of 2.
+
+The Census Bureau defines "primary families" as groups of persons related to the head of household, and "primary individuals" as household heads/householders residing without kin. In the IPUMS, primary families and primary individuals are identified in FAMUNIT with a code of 1; each secondary family or secondary individual receives a higher code. 
+
+Note that FAMUNIT is an IPUMS-derived variable using IPUMS-derived family interrelationships, and does not directly correspond to the Census Bureau's enumeration of families within households. See FTYPE, FAMKIND, and FAMREL for variables that correspond to Census family units. FAMUNIT is also not analogous to the Census Bureau's concept of "related subfamily." People in "related subfamilies" as defined by the Census Bureau are necessarily related to the householder, and they will be included in FAMUNIT 1. 
+
+An Introduction to the Family Interrelationship Variables can be found on IPUMS-USA. On this page you'll find information on how family interrelationship variables are constructed, common uses of these variables, and specific examples of how these variables can be used efficiently.]]></txt>
+  <catgry>
+    <catValu>01</catValu>
+    <labl>1st family in household or group quarters</labl>
+  </catgry>
+  <catgry>
+    <catValu>02</catValu>
+    <labl>2nd family in household or group quarters</labl>
+  </catgry>
+  <catgry>
+    <catValu>03</catValu>
+    <labl>3rd</labl>
+  </catgry>
+  <catgry>
+    <catValu>04</catValu>
+    <labl>4th</labl>
+  </catgry>
+  <catgry>
+    <catValu>05</catValu>
+    <labl>5th</labl>
+  </catgry>
+  <catgry>
+    <catValu>06</catValu>
+    <labl>6th</labl>
+  </catgry>
+  <catgry>
+    <catValu>07</catValu>
+    <labl>7th</labl>
+  </catgry>
+  <catgry>
+    <catValu>08</catValu>
+    <labl>8th</labl>
+  </catgry>
+  <catgry>
+    <catValu>09</catValu>
+    <labl>9th</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>10</labl>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>11</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>12</labl>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+    <labl>13</labl>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+    <labl>14</labl>
+  </catgry>
+  <catgry>
+    <catValu>15</catValu>
+    <labl>15</labl>
+  </catgry>
+  <catgry>
+    <catValu>16</catValu>
+    <labl>16</labl>
+  </catgry>
+  <catgry>
+    <catValu>17</catValu>
+    <labl>17</labl>
+  </catgry>
+  <catgry>
+    <catValu>18</catValu>
+    <labl>18</labl>
+  </catgry>
+  <catgry>
+    <catValu>19</catValu>
+    <labl>19</labl>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+    <labl>20</labl>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+    <labl>21</labl>
+  </catgry>
+  <catgry>
+    <catValu>22</catValu>
+    <labl>22</labl>
+  </catgry>
+  <catgry>
+    <catValu>23</catValu>
+    <labl>23</labl>
+  </catgry>
+  <catgry>
+    <catValu>24</catValu>
+    <labl>24</labl>
+  </catgry>
+  <catgry>
+    <catValu>25</catValu>
+    <labl>25</labl>
+  </catgry>
+  <catgry>
+    <catValu>26</catValu>
+    <labl>26</labl>
+  </catgry>
+  <catgry>
+    <catValu>27</catValu>
+    <labl>27</labl>
+  </catgry>
+  <catgry>
+    <catValu>28</catValu>
+    <labl>28</labl>
+  </catgry>
+  <catgry>
+    <catValu>29</catValu>
+    <labl>29</labl>
+  </catgry>
+  <concept vocab="IPUMS">Family Interrelationships Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="FTYPE" dcml="0" files="ExtractData" intrvl="discrete" name="FTYPE">
+  <location EndPos="95" StartPos="95" width="1"/>
+  <labl>Family Type</labl>
+  <txt><![CDATA[FTYPE reports the Census family type of each person in a household. Note that the Census family is not necessarily the same as the IPUMS-derived family as give in FAMUNIT. The Census family is a group of two people or more (one of whom is the householder) related by birth, marriage, or adoption and residing together; all such people (including related subfamily members) are considered as members of one family. Any family level variable depends directly on this variable in that all members of each CPS-identified family unit are assigned the same value for any given family level variable. The Census Bureau poverty statistics are developed with the family interrelationships defined by FTYPE. 
+
+Recall that a household includes the related family members and all the unrelated people, if any, such as lodgers, foster children, wards, or employees who share the housing unit. A person living alone in a housing unit, or a group of unrelated people sharing a housing unit such as partners or roomers, is also counted as a household. For more on the Census family definitions, see below as well as the description for FAMREL.
+
+A family household is a household maintained by a householder who is in a family (as defined above), and includes any unrelated people (unrelated subfamily members and/or secondary individuals) who may be residing there. The number of family households is equal to the number of families. The count of family household members differs from the count of family members, however, in that the family household members include all people living in the household, whereas family members include only the householder and his/her relatives.
+
+A primary family consists of a married couple with or without children, or one parent with one or more own never married children under 18 years old, who maintain the household.
+
+A nonfamily householder consists of a householder living alone (a one-person household) or where the householder shares the home exclusively with people to whom he/she is not related. 
+
+A subfamily is a married couple with or without children, or a single parent with one or more own never-married children under 18 years old. A subfamily does not maintain their own household, but lives in the home of someone else.
+
+A related subfamily is a married couple with or without children, or one parent with one or more own never married children under 18 years old, living in a household and related to, but not including, the person or couple who maintains the household. One example of a related subfamily is a young married couple sharing the home of the husbands or wife's parents. The number of related subfamilies is not included in the count of families.
+
+An unrelated subfamily (formerly called a secondary family) is a married couple with or without children, or a single parent with one or more own never-married children under 18 years old living in a household. Unrelated subfamily members are not related to the householder. An unrelated subfamily may include people such as guests, partners, roommates, or resident employees and their spouses and/or children. The number of unrelated subfamily members is included in the total number of household members, but is not included in the count of family members.
+
+Secondary individuals (formerly called unrelated individuals) are people of any age who reside in a household, but are not related to the householder (except unrelated subfamily members). People who reside in group quarters are also secondary individuals. Examples of a secondary individual include (1) a guest, partner, roommate, or resident employee; (2) a foster child; or (3) a person residing in a rooming house, a halfway house, staff quarters at a hospital, or other type of group quarters.
+
+For more information, see the Census Bureau's page on CPS definitions.]]></txt>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Primary family</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Nonfamily householder</labl>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Related subfamily</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Unrelated subfamily</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>Secondary individual</labl>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <concept vocab="IPUMS">Family Interrelationships Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="FAMREL" dcml="0" files="ExtractData" intrvl="discrete" name="FAMREL">
+  <location EndPos="96" StartPos="96" width="1"/>
+  <labl>Relationship to family</labl>
+  <txt><![CDATA[FAMREL states the person's relationship to their Census-defined subfamily unit. The Census subfamily type is identified in FTYPE. Values of Census family-level variables such as FTOTVAL are valid for the respective subfamily unit.
+
+Note that IPUMS and the Census Bureau define subfamilies differently. Subfamilies in IPUMS CPS can be identified using the variables MOMLOC, POPLOC and SPLOC. Any subfamilies identified using these variables are not necessarily the same as any Census subfamilies. The IPUMS-defined variable FAMUNIT identifies families according to IPUMS rules (not Census rules), but does not identify (related) subfamilies. FAMREL and FTYPE refer to Census-defined subfamilies. See here for a description of IPUMS subfamilies and their relation to Census subfamilies. IPUMS CPS does not currently offer IPUMS subfamily identifiers such as IPUMS USA's SUBFAM. Below is a brief description of the Census family/subfamily concept as it concerns FAMREL.
+
+Each CPS household has one person designated as the householder, who is the person in whose name the housing unit is rented or own. The CPS splits households into family, subfamily, and individual units. The primary family is the householder and everyone related to the householder. For the purposes of FAMREL and FTYPE, and following some CPS documentation, "primary family" will be used as shorthand for "primary family only", or the householder and his/her immediate family: that is, the primary family less any subfamily units. In addition to the primary family, a household can also contain subfamily units related to the primary family (related subfamily, or subfamily units that are extended family to the householder), as well as unrelated subfamily units, which are immediate family units with no relation to the householder. Additionally, the household can contain individuals who are not part of any family/subfamily unit, such as guests, boarders, or individual resident employees (i.e. those not living with the resident employee's family). Finally, the householder can also be someone without any relatives in the household, and so is not part of any family unit. More details on the family composition of households and the official CPS definitions can be found in the description for FTYPE. 
+
+For the purposes of FAMREL, each subfamily (including the "primary family only" subfamily) has a reference person. Thus the "reference person" for FAMREL can be in the primary family or any other subfamily unit. (Note that in some CPS documentation the term "reference person" refers to the householder only; FAMREL, which is based on the CPS variable PRFAMREL/A-FAMREL, uses the term slightly differently). 
+
+Note that since FAMREL gives the relationship to the subfamily unit, which may not be the entire household, the relationship given by FAMREL is not necessarily the same as the individual's relationship to the householder (RELATE). Thus, for example, a grandchild of the household head could be the reference person of a related subfamily. Additionally, since FAMUNIT is IPUMS-derived and also does not identify related subfamilies, the family identified by FAMUNIT will be different from the subfamily unit that FAMREL refers to. 
+
+Since FAMREL identifies the way in which the individual is related to the subfamily unit, for most years a child (FAMREL=3) can be of any age, and if under 18 can be or have been married. "Not a family member" refers to nonfamily householders or individuals unrelated to any subfamily units in the family (secondary individuals).]]></txt>
+  <catgry>
+    <catValu>0</catValu>
+    <labl>Not a family member</labl>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Reference person</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Spouse</labl>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Child</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Other relative (primary family only)</labl>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <concept vocab="IPUMS">Family Interrelationships Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="EMPSTAT" dcml="0" files="ExtractData" intrvl="discrete" name="EMPSTAT">
+  <location EndPos="98" StartPos="97" width="2"/>
+  <labl>Employment status</labl>
+  <txt><![CDATA[EMPSTAT indicates whether persons were part of the labor force--working or seeking work--and, if so, whether they were currently unemployed. The variable also provides information on the activity (e.g., doing housework, attending school,) or status (e.g., retired, unable to work) of persons not in the labor force, as well as limited additional information on those who are in the labor force (e.g. members of the Armed Forces, those with a job, but not at work last week). See LABFORCE for a dichotomous variable identifying whether a person participated in the labor force.
+
+In the CPS, individuals' employment status was determined on the basis of answers to a series of questions relating to their activities during the preceding week.  Those who reported doing any work at all for pay or profit, or working at least fifteen hours without pay in a family business or farm, were classified as "at work."  Those who did not work during the previous week but who acknowledged having a job or business from which they were temporarily absent (e.g., due to illness, vacation, bad weather, or labor dispute) were also classified as employed, under the heading "has job, not at work last week."
+
+Because the CPS is designed to measure unemployment in the civilian population, the original employment status variable in the survey classifies members of the armed forces as NIU (Not in universe).
+
+Unemployed persons make up the third element of the labor force.  Individuals were coded as unemployed if they did no work for pay or profit, did not have a job from which they were briefly absent, and either reported looking for work as their major activity during the previous week (for 1962 through 1993) or answered yes to a question about whether they had been looking for work in the past four weeks. People who were temporarily laid off from a job were also classified as unemployed. A separate CPS variable specifying whether an unemployed person had worked before or was looking for a first job was used to distinguish between "experienced" and "inexperienced" unemployed persons in IPUMS CPS.
+
+Persons who were neither employed nor unemployed fall into the residual category, "not in labor force."  Such individuals might be retired, disabled due to an illness lasting at least 6 months, occupied with other activities such as attending school or keeping house, or convinced that they are unlikely to find employment (discouraged workers).]]></txt>
+  <catgry>
+    <catValu>00</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <catgry>
+    <catValu>01</catValu>
+    <labl>Armed Forces</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>At work</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>Has job, not at work last week</labl>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+    <labl>Unemployed</labl>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+    <labl>Unemployed, experienced worker</labl>
+  </catgry>
+  <catgry>
+    <catValu>22</catValu>
+    <labl>Unemployed, new worker</labl>
+  </catgry>
+  <catgry>
+    <catValu>30</catValu>
+    <labl>Not in labor force</labl>
+  </catgry>
+  <catgry>
+    <catValu>31</catValu>
+    <labl>NILF, housework</labl>
+  </catgry>
+  <catgry>
+    <catValu>32</catValu>
+    <labl>NILF, unable to work</labl>
+  </catgry>
+  <catgry>
+    <catValu>33</catValu>
+    <labl>NILF, school</labl>
+  </catgry>
+  <catgry>
+    <catValu>34</catValu>
+    <labl>NILF, other</labl>
+  </catgry>
+  <catgry>
+    <catValu>35</catValu>
+    <labl>NILF, unpaid, lt 15 hours</labl>
+  </catgry>
+  <catgry>
+    <catValu>36</catValu>
+    <labl>NILF, retired</labl>
+  </catgry>
+  <concept vocab="IPUMS">Work Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="LABFORCE" dcml="0" files="ExtractData" intrvl="discrete" name="LABFORCE">
+  <location EndPos="99" StartPos="99" width="1"/>
+  <labl>Labor force status</labl>
+  <txt><![CDATA[LABFORCE is a dichotomous variable indicating whether the respondent participated in the labor force during the preceding week.  See EMPSTAT for a more detailed employment status variable.   Those coded as "yes" in LABFORCE were either: were at work; held a job but were temporarily absent from work due to factors like vacation or illness; were seeking work; or were temporarily laid off from a job during the reference period.  
+
+Because the CPS is designed to measure unemployment in the civilian population, the original dichotomous employment status variable in the survey classifies members of the armed forces as NIU (Not in universe).]]></txt>
+  <catgry>
+    <catValu>0</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>No, not in the labor force</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Yes, in the labor force</labl>
+  </catgry>
+  <concept vocab="IPUMS">Work Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="OCC" dcml="0" files="ExtractData" intrvl="contin" name="OCC">
+  <location EndPos="103" StartPos="100" width="4"/>
+  <labl>Occupation</labl>
+  <txt><![CDATA[OCC reports the person's primary occupation.  Respondents who held more than one job were to report the job at which they worked the largest number of hours.  For persons who were employed at the time of the survey, OCC relates to the job worked during the preceding week; unemployed persons and those not currently in the labor force were to give their most recent occupation.   The CPS interviewer collected information by asking what kind of work the person was doing, and Census Bureau staff coded the information into the contemporary CPS or census occupational classification.  Researchers who wish to work with a consistent occupational coding scheme for 1968 forward should use the OCC1950 variable.  For general discussion of employment concepts, including the definition of those not in the labor force, see the documentation on EMPSTAT.]]></txt>
+  <codInstr><![CDATA[CodesOCC is a 4-digit numeric variable.
+(Codes for 1962-1967 are 2 digits; each is preceded by two zeros).
+(Codes for 1968-2002 are 3 digits; each is preceded by a zero in the first position.)
+
+1962-1967  
+1968-1971
+1972-1982
+1983-1991
+1992-2002
+2003-2010
+2011-2019
+2020+]]></codInstr>
+  <concept vocab="IPUMS">Work Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="IND" dcml="0" files="ExtractData" intrvl="contin" name="IND">
+  <location EndPos="107" StartPos="104" width="4"/>
+  <labl>Industry</labl>
+  <txt><![CDATA[IND reports the type of industry in which the person performed his or her primary occupation, which is recorded in the variables OCC (Occupation) and, after 1968, OCC1950 (Occupation, 1950 basis).  "Industry" refers to the work setting and economic sector, while "occupation" relates to the worker's specific technical function.
+  
+For persons who were employed at the time of the survey, IND relates to the industrial sector in which the respondent worked during the preceding week.  For unemployed persons and those not currently in the labor force, IND characterizes the industrial sector of the respondent's most recent job.   The CPS interviewer collected information by asking what kind of work the person was doing, and Census Bureau staff coded the information into the CPS or census industrial classification.  Researchers who wish to work with a consistent industrial coding scheme for 1968 forward should use the IND1950 variable.  For general discussion of employment concepts, including the definition of those not in the labor force, see the documentation on EMPSTAT.]]></txt>
+  <codInstr><![CDATA[CodesIND is a 4-digit numeric variable.
+(Codes for 1962-1967 are 2 digits; each is preceded by two zeroes in the first positions.)
+(Codes for 1968-2002 are 3 digits; each is preceded by a zero in the first position.)
+
+1962
+1963-1967
+1968-1970
+1971-1982
+1983-1991
+1992-2002
+2003-2008
+2009-2013
+2014-2019
+2020+]]></codInstr>
+  <concept vocab="IPUMS">Work Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="CLASSWKR" dcml="0" files="ExtractData" intrvl="discrete" name="CLASSWKR">
+  <location EndPos="109" StartPos="108" width="2"/>
+  <labl>Class of worker </labl>
+  <txt><![CDATA[CLASSWKR indicates whether a respondent was self-employed, was an employee in private industry or the public sector, was in the armed forces, or worked without pay in a family business or farm.  Workers with multiple sources of employment were classified according to the job in which they worked the most hours.  For persons employed at the time of the survey, CLASSWKR relates to the respondent's job during the previous week.  Respondents who were not employed during the previous week reported the most recent job.  The CLASSWLY variable deals with the longest job held during the previous calendar year. 
+
+In the original CPS public use data, members of the armed forces are coded as N.I.U. (Not in Universe), because they are not part of the civilian labor force.]]></txt>
+  <catgry>
+    <catValu>00</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>Self-employed</labl>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+    <labl>Self-employed, not incorporated</labl>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+    <labl>Self-employed, incorporated</labl>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+    <labl>Works for wages or salary</labl>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+    <labl>Wage/salary, private</labl>
+  </catgry>
+  <catgry>
+    <catValu>22</catValu>
+    <labl>Private, for profit</labl>
+  </catgry>
+  <catgry>
+    <catValu>23</catValu>
+    <labl>Private, nonprofit</labl>
+  </catgry>
+  <catgry>
+    <catValu>24</catValu>
+    <labl>Wage/salary, government</labl>
+  </catgry>
+  <catgry>
+    <catValu>25</catValu>
+    <labl>Federal government employee</labl>
+  </catgry>
+  <catgry>
+    <catValu>26</catValu>
+    <labl>Armed forces</labl>
+  </catgry>
+  <catgry>
+    <catValu>27</catValu>
+    <labl>State government employee</labl>
+  </catgry>
+  <catgry>
+    <catValu>28</catValu>
+    <labl>Local government employee</labl>
+  </catgry>
+  <catgry>
+    <catValu>29</catValu>
+    <labl>Unpaid family worker</labl>
+  </catgry>
+  <catgry>
+    <catValu>99</catValu>
+    <labl>Missing/Unknown</labl>
+  </catgry>
+  <concept vocab="IPUMS">Work Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="AHRSWORKT" dcml="0" files="ExtractData" intrvl="contin" name="AHRSWORKT">
+  <location EndPos="112" StartPos="110" width="3"/>
+  <labl>Hours worked last week</labl>
+  <txt><![CDATA[AHRSWORKT reports the total number of hours the respondent was at work during the previous week.  For employers and the self-employed, this includes all hours spent attending to their operation(s) or enterprise(s).  For employees, it is the number of hours they spent at work.  For unpaid family workers, it is the number of hours spent doing work directly related to the family business or farm (not including housework).
+
+See the Hours Worked Variables Notes for an overview of the different actual and usual hours worked variables.]]></txt>
+  <codInstr><![CDATA[CodesAHRSWORKT is a 3-digit numeric variable.
+
+999 = NIU (Not in universe)]]></codInstr>
+  <concept vocab="IPUMS">Work Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="ABSENT" dcml="0" files="ExtractData" intrvl="discrete" name="ABSENT">
+  <location EndPos="113" StartPos="113" width="1"/>
+  <labl>Absent from work last week</labl>
+  <txt><![CDATA[ABSENT indicates whether persons who did not work during the previous week had a job or business from which they were temporarily absent and, if so, whether they were absent due to a layoff or for some other reason.]]></txt>
+  <catgry>
+    <catValu>0</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>No</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Yes, laid off</labl>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Yes, other reason (vacation, illness, labor dispute)</labl>
+  </catgry>
+  <concept vocab="IPUMS">Work Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="DURUNEM2" dcml="0" files="ExtractData" intrvl="discrete" name="DURUNEM2">
+  <location EndPos="115" StartPos="114" width="2"/>
+  <labl>Continuous weeks unemployed, intervalled</labl>
+  <txt><![CDATA[DURUNEM2 indicates, in intervalled form, how many consecutive weeks each currently unemployed respondent had been without a job and looking for work.  Beginning in 1988, this variable also indicates the number of continuous weeks of layoff for workers who expected to be recalled to their jobs.  For more detailed discussion, see DURUNEMP, which presents the same information in nonintervalled form.  DURUNEM2 has the advantage of providing data for 1963-1967, and the disadvantage of giving information in intervals that are quite broad (e.g., "35-42 weeks," "over 52 weeks") for respondents with lengthy periods of unemployment.]]></txt>
+  <catgry>
+    <catValu>00</catValu>
+    <labl>0</labl>
+  </catgry>
+  <catgry>
+    <catValu>01</catValu>
+    <labl>1</labl>
+  </catgry>
+  <catgry>
+    <catValu>02</catValu>
+    <labl>2</labl>
+  </catgry>
+  <catgry>
+    <catValu>03</catValu>
+    <labl>3</labl>
+  </catgry>
+  <catgry>
+    <catValu>04</catValu>
+    <labl>4</labl>
+  </catgry>
+  <catgry>
+    <catValu>05</catValu>
+    <labl>5</labl>
+  </catgry>
+  <catgry>
+    <catValu>06</catValu>
+    <labl>6</labl>
+  </catgry>
+  <catgry>
+    <catValu>07</catValu>
+    <labl>7-10</labl>
+  </catgry>
+  <catgry>
+    <catValu>08</catValu>
+    <labl>11-14</labl>
+  </catgry>
+  <catgry>
+    <catValu>09</catValu>
+    <labl>15-18</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>19-22</labl>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>23-26</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>27-34</labl>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+    <labl>35-42</labl>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+    <labl>43-50</labl>
+  </catgry>
+  <catgry>
+    <catValu>15</catValu>
+    <labl>51-52</labl>
+  </catgry>
+  <catgry>
+    <catValu>16</catValu>
+    <labl>Over 52 weeks</labl>
+  </catgry>
+  <catgry>
+    <catValu>99</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <concept vocab="IPUMS">Work Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="DURUNEMP" dcml="0" files="ExtractData" intrvl="contin" name="DURUNEMP">
+  <location EndPos="118" StartPos="116" width="3"/>
+  <labl>Continuous weeks unemployed</labl>
+  <txt><![CDATA[DURUNEMP indicates for how many consecutive weeks each currently unemployed respondent had been without a job and looking for work.  If a respondent had not done any work for pay or profit during the preceding week, did not have a job from which he or she was temporarily absent, and had been actively looking for work in the past four weeks, the interviewer asked, "How many weeks have you been looking for work?" and "How many weeks ago did you start looking?" 
+  
+Beginning in 1988, DURUNEMP also indicates the number of continuous weeks of layoff for workers who were laid off from a job (due, for example, to slow business conditions) but expected to return to the same job.  If a respondent reported being absent from a job during the preceding week due to temporary (under 30 days) or indefinite (30 days or more) layoff, the interviewer asked, "How many weeks ago were you laid off?"  
+
+DURUNEM2 provides the same information as DURUNEMP in intervalled form for the entire data series.]]></txt>
+  <codInstr><![CDATA[Codes999 = NIU (Not in Universe) or Missing.]]></codInstr>
+  <concept vocab="IPUMS">Work Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="WHYABSNT" dcml="0" files="ExtractData" intrvl="discrete" name="WHYABSNT">
+  <location EndPos="120" StartPos="119" width="2"/>
+  <labl>Reason for absence from work</labl>
+  <txt><![CDATA[WHYABSNT reports the reason for the absence of jobholders who were not working during the preceding week.]]></txt>
+  <catgry>
+    <catValu>00</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <catgry>
+    <catValu>01</catValu>
+    <labl>On temporary layoff (under 30 days)</labl>
+  </catgry>
+  <catgry>
+    <catValu>02</catValu>
+    <labl>On indefinite layoff (30+ days)</labl>
+  </catgry>
+  <catgry>
+    <catValu>03</catValu>
+    <labl>Slack work/business conditions</labl>
+  </catgry>
+  <catgry>
+    <catValu>04</catValu>
+    <labl>Waiting for a new job to begin</labl>
+  </catgry>
+  <catgry>
+    <catValu>05</catValu>
+    <labl>Vacation/personal days</labl>
+  </catgry>
+  <catgry>
+    <catValu>06</catValu>
+    <labl>Own illness/injury/medical problems</labl>
+  </catgry>
+  <catgry>
+    <catValu>07</catValu>
+    <labl>Child care problems</labl>
+  </catgry>
+  <catgry>
+    <catValu>08</catValu>
+    <labl>Other family/personal obligation</labl>
+  </catgry>
+  <catgry>
+    <catValu>09</catValu>
+    <labl>Maternity/paternity leave</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>Labor dispute</labl>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>Weather affected job</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>School/training</labl>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+    <labl>Civic/military duty</labl>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+    <labl>Does not work in the business</labl>
+  </catgry>
+  <catgry>
+    <catValu>15</catValu>
+    <labl>Other</labl>
+  </catgry>
+  <concept vocab="IPUMS">Work Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="WHYPTLWK" dcml="0" files="ExtractData" intrvl="discrete" name="WHYPTLWK">
+  <location EndPos="123" StartPos="121" width="3"/>
+  <labl>Reason for working part time last week</labl>
+  <txt><![CDATA[WHYPTLWK reports the reason why respondents worked part-time (a total of less than 35 hours combined for all jobs) during the previous week.   Some of these individuals normally worked a part-time job; others usually worked full-time but worked less than 35 hours during the week in question. These two groups can be identified using USFTPTLW, which reports whether persons who worked part-time (less than 35 hours) during the preceding week usually worked full-time (35 hours or more).     
+
+The total number of hours the respondent worked during the previous week is reported in AHRSWORKT.  WHYPTLYreports the reason why respondents worked part-time (less than 35 hours) for at least one week during the previous calendar year.]]></txt>
+  <catgry>
+    <catValu>000</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <catgry>
+    <catValu>001</catValu>
+    <labl>No response</labl>
+  </catgry>
+  <catgry>
+    <catValu>010</catValu>
+    <labl>Slack work, business conditions</labl>
+  </catgry>
+  <catgry>
+    <catValu>011</catValu>
+    <labl>Material shortage</labl>
+  </catgry>
+  <catgry>
+    <catValu>012</catValu>
+    <labl>Plant or machine repairs</labl>
+  </catgry>
+  <catgry>
+    <catValu>020</catValu>
+    <labl>Seasonal work</labl>
+  </catgry>
+  <catgry>
+    <catValu>030</catValu>
+    <labl>Weather affected job</labl>
+  </catgry>
+  <catgry>
+    <catValu>040</catValu>
+    <labl>Labor dispute</labl>
+  </catgry>
+  <catgry>
+    <catValu>050</catValu>
+    <labl>job started/ended during week</labl>
+  </catgry>
+  <catgry>
+    <catValu>051</catValu>
+    <labl>New job started</labl>
+  </catgry>
+  <catgry>
+    <catValu>052</catValu>
+    <labl>Job terminated</labl>
+  </catgry>
+  <catgry>
+    <catValu>060</catValu>
+    <labl>Could only find part-time</labl>
+  </catgry>
+  <catgry>
+    <catValu>070</catValu>
+    <labl>Not want full time work</labl>
+  </catgry>
+  <catgry>
+    <catValu>071</catValu>
+    <labl>Retired/SS limit on earnings</labl>
+  </catgry>
+  <catgry>
+    <catValu>080</catValu>
+    <labl>Full time work week under 35 hours</labl>
+  </catgry>
+  <catgry>
+    <catValu>081</catValu>
+    <labl>Full time peak season only</labl>
+  </catgry>
+  <catgry>
+    <catValu>090</catValu>
+    <labl>Holiday</labl>
+  </catgry>
+  <catgry>
+    <catValu>100</catValu>
+    <labl>Own illness</labl>
+  </catgry>
+  <catgry>
+    <catValu>101</catValu>
+    <labl>Health/medical limitation</labl>
+  </catgry>
+  <catgry>
+    <catValu>110</catValu>
+    <labl>On vacation</labl>
+  </catgry>
+  <catgry>
+    <catValu>111</catValu>
+    <labl>Vacation/personal day</labl>
+  </catgry>
+  <catgry>
+    <catValu>120</catValu>
+    <labl>Too busy with house, school, etc</labl>
+  </catgry>
+  <catgry>
+    <catValu>121</catValu>
+    <labl>Child care problems</labl>
+  </catgry>
+  <catgry>
+    <catValu>122</catValu>
+    <labl>Other family/personal obligations</labl>
+  </catgry>
+  <catgry>
+    <catValu>123</catValu>
+    <labl>School/training</labl>
+  </catgry>
+  <catgry>
+    <catValu>124</catValu>
+    <labl>Civic/military duty</labl>
+  </catgry>
+  <catgry>
+    <catValu>130</catValu>
+    <labl>Other</labl>
+  </catgry>
+  <concept vocab="IPUMS">Work Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="EDUC" dcml="0" files="ExtractData" intrvl="discrete" name="EDUC">
+  <location EndPos="126" StartPos="124" width="3"/>
+  <labl>Educational attainment recode</labl>
+  <txt><![CDATA[EDUC indicates respondents' educational attainment, as measured by the highest year of school or degree completed. Note that completion differs from the highest year of school attendance; for example, respondents who attended 10th grade but did not finish were classified in EDUC as having completed 9th grade. 
+
+EDUC is a combination of two other variables, HIGRADE and EDUC99, which measure educational attainment in different ways.  HIGRADE is available for years prior to 1992 and gives the respondent's highest grade of school or year of college completed.  EDUC99 is available beginning in 1992 and classifies high school graduates according to their highest degree or diploma attained.  
+
+General and detailed codes are not yet available for IPUMS-CPS, but one can construct the general version of EDUC by reading only the first two columns of EDUC.]]></txt>
+  <catgry>
+    <catValu>000</catValu>
+    <labl>NIU or no schooling</labl>
+  </catgry>
+  <catgry>
+    <catValu>001</catValu>
+    <labl>NIU or blank</labl>
+  </catgry>
+  <catgry>
+    <catValu>002</catValu>
+    <labl>None or preschool</labl>
+  </catgry>
+  <catgry>
+    <catValu>010</catValu>
+    <labl>Grades 1, 2, 3, or 4</labl>
+  </catgry>
+  <catgry>
+    <catValu>011</catValu>
+    <labl>Grade 1</labl>
+  </catgry>
+  <catgry>
+    <catValu>012</catValu>
+    <labl>Grade 2</labl>
+  </catgry>
+  <catgry>
+    <catValu>013</catValu>
+    <labl>Grade 3</labl>
+  </catgry>
+  <catgry>
+    <catValu>014</catValu>
+    <labl>Grade 4</labl>
+  </catgry>
+  <catgry>
+    <catValu>020</catValu>
+    <labl>Grades 5 or 6</labl>
+  </catgry>
+  <catgry>
+    <catValu>021</catValu>
+    <labl>Grade 5</labl>
+  </catgry>
+  <catgry>
+    <catValu>022</catValu>
+    <labl>Grade 6</labl>
+  </catgry>
+  <catgry>
+    <catValu>030</catValu>
+    <labl>Grades 7 or 8</labl>
+  </catgry>
+  <catgry>
+    <catValu>031</catValu>
+    <labl>Grade 7</labl>
+  </catgry>
+  <catgry>
+    <catValu>032</catValu>
+    <labl>Grade 8</labl>
+  </catgry>
+  <catgry>
+    <catValu>040</catValu>
+    <labl>Grade 9</labl>
+  </catgry>
+  <catgry>
+    <catValu>050</catValu>
+    <labl>Grade 10</labl>
+  </catgry>
+  <catgry>
+    <catValu>060</catValu>
+    <labl>Grade 11</labl>
+  </catgry>
+  <catgry>
+    <catValu>070</catValu>
+    <labl>Grade 12</labl>
+  </catgry>
+  <catgry>
+    <catValu>071</catValu>
+    <labl>12th grade, no diploma</labl>
+  </catgry>
+  <catgry>
+    <catValu>072</catValu>
+    <labl>12th grade, diploma unclear</labl>
+  </catgry>
+  <catgry>
+    <catValu>073</catValu>
+    <labl>High school diploma or equivalent</labl>
+  </catgry>
+  <catgry>
+    <catValu>080</catValu>
+    <labl>1 year of college</labl>
+  </catgry>
+  <catgry>
+    <catValu>081</catValu>
+    <labl>Some college but no degree</labl>
+  </catgry>
+  <catgry>
+    <catValu>090</catValu>
+    <labl>2 years of college</labl>
+  </catgry>
+  <catgry>
+    <catValu>091</catValu>
+    <labl>Associate's degree, occupational/vocational program</labl>
+  </catgry>
+  <catgry>
+    <catValu>092</catValu>
+    <labl>Associate's degree, academic program</labl>
+  </catgry>
+  <catgry>
+    <catValu>100</catValu>
+    <labl>3 years of college</labl>
+  </catgry>
+  <catgry>
+    <catValu>110</catValu>
+    <labl>4 years of college</labl>
+  </catgry>
+  <catgry>
+    <catValu>111</catValu>
+    <labl>Bachelor's degree</labl>
+  </catgry>
+  <catgry>
+    <catValu>120</catValu>
+    <labl>5+ years of college</labl>
+  </catgry>
+  <catgry>
+    <catValu>121</catValu>
+    <labl>5 years of college</labl>
+  </catgry>
+  <catgry>
+    <catValu>122</catValu>
+    <labl>6+ years of college</labl>
+  </catgry>
+  <catgry>
+    <catValu>123</catValu>
+    <labl>Master's degree</labl>
+  </catgry>
+  <catgry>
+    <catValu>124</catValu>
+    <labl>Professional school degree</labl>
+  </catgry>
+  <catgry>
+    <catValu>125</catValu>
+    <labl>Doctorate degree</labl>
+  </catgry>
+  <catgry>
+    <catValu>999</catValu>
+    <labl>Missing/Unknown</labl>
+  </catgry>
+  <concept vocab="IPUMS">Education Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="HIGRADE" dcml="0" files="ExtractData" intrvl="discrete" name="HIGRADE">
+  <location EndPos="129" StartPos="127" width="3"/>
+  <labl>Highest grade of school </labl>
+  <txt><![CDATA[HIGRADE reports the highest grade of school completed by the respondent.  
+
+Respondents were asked the highest grade of school they attended and whether they completed that grade.  Those who attended kindergarten only were treated as having no schooling.   
+
+For years after 1991, information about educational attainment is available in the EDUC99 variable.  Users who wish to study educational attainment for the entire span of CPS data should use the EDUC variable.]]></txt>
+  <catgry>
+    <catValu>000</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <catgry>
+    <catValu>010</catValu>
+    <labl>None</labl>
+  </catgry>
+  <catgry>
+    <catValu>031</catValu>
+    <labl>Did not finish 1st grade</labl>
+  </catgry>
+  <catgry>
+    <catValu>040</catValu>
+    <labl>1st grade</labl>
+  </catgry>
+  <catgry>
+    <catValu>041</catValu>
+    <labl>Did not finish 2nd grade</labl>
+  </catgry>
+  <catgry>
+    <catValu>050</catValu>
+    <labl>2nd grade</labl>
+  </catgry>
+  <catgry>
+    <catValu>051</catValu>
+    <labl>Did not finish 3rd grade</labl>
+  </catgry>
+  <catgry>
+    <catValu>060</catValu>
+    <labl>3rd grade</labl>
+  </catgry>
+  <catgry>
+    <catValu>061</catValu>
+    <labl>Did not finish 4th grade</labl>
+  </catgry>
+  <catgry>
+    <catValu>070</catValu>
+    <labl>4th grade</labl>
+  </catgry>
+  <catgry>
+    <catValu>071</catValu>
+    <labl>Did not finish 5th grade</labl>
+  </catgry>
+  <catgry>
+    <catValu>080</catValu>
+    <labl>5th grade</labl>
+  </catgry>
+  <catgry>
+    <catValu>081</catValu>
+    <labl>Did not finish 6th grade</labl>
+  </catgry>
+  <catgry>
+    <catValu>090</catValu>
+    <labl>6th grade</labl>
+  </catgry>
+  <catgry>
+    <catValu>091</catValu>
+    <labl>Did not finish 7th grade</labl>
+  </catgry>
+  <catgry>
+    <catValu>100</catValu>
+    <labl>7th grade</labl>
+  </catgry>
+  <catgry>
+    <catValu>101</catValu>
+    <labl>Did not finish 8th grade</labl>
+  </catgry>
+  <catgry>
+    <catValu>110</catValu>
+    <labl>8th grade</labl>
+  </catgry>
+  <catgry>
+    <catValu>111</catValu>
+    <labl>Did not finish 9th grade</labl>
+  </catgry>
+  <catgry>
+    <catValu>120</catValu>
+    <labl>9th grade</labl>
+  </catgry>
+  <catgry>
+    <catValu>121</catValu>
+    <labl>Did not finish 10th grade</labl>
+  </catgry>
+  <catgry>
+    <catValu>130</catValu>
+    <labl>10th grade</labl>
+  </catgry>
+  <catgry>
+    <catValu>131</catValu>
+    <labl>Did not finish 11th grade</labl>
+  </catgry>
+  <catgry>
+    <catValu>140</catValu>
+    <labl>11th grade</labl>
+  </catgry>
+  <catgry>
+    <catValu>141</catValu>
+    <labl>Did not finish 12th grade</labl>
+  </catgry>
+  <catgry>
+    <catValu>150</catValu>
+    <labl>12th grade</labl>
+  </catgry>
+  <catgry>
+    <catValu>151</catValu>
+    <labl>Did not finish 1st year college</labl>
+  </catgry>
+  <catgry>
+    <catValu>160</catValu>
+    <labl>1st year college</labl>
+  </catgry>
+  <catgry>
+    <catValu>161</catValu>
+    <labl>Did not finish 2nd year</labl>
+  </catgry>
+  <catgry>
+    <catValu>170</catValu>
+    <labl>2nd year college</labl>
+  </catgry>
+  <catgry>
+    <catValu>171</catValu>
+    <labl>Did not finish 3rd year</labl>
+  </catgry>
+  <catgry>
+    <catValu>180</catValu>
+    <labl>3rd year college</labl>
+  </catgry>
+  <catgry>
+    <catValu>181</catValu>
+    <labl>Did not finish 4th year</labl>
+  </catgry>
+  <catgry>
+    <catValu>190</catValu>
+    <labl>4th year college</labl>
+  </catgry>
+  <catgry>
+    <catValu>191</catValu>
+    <labl>Did not finish 5th year</labl>
+  </catgry>
+  <catgry>
+    <catValu>200</catValu>
+    <labl>5th year college</labl>
+  </catgry>
+  <catgry>
+    <catValu>201</catValu>
+    <labl>Did not finish 6th year</labl>
+  </catgry>
+  <catgry>
+    <catValu>210</catValu>
+    <labl>6th year college</labl>
+  </catgry>
+  <catgry>
+    <catValu>999</catValu>
+    <labl>Missing/Unknown</labl>
+  </catgry>
+  <concept vocab="IPUMS">Education Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="ROTATE" dcml="0" files="ExtractData" intrvl="discrete" name="ROTATE">
+  <location EndPos="130" StartPos="130" width="1"/>
+  <labl>Rotation group, person level</labl>
+  <txt><![CDATA[ROTATE identifies the "rotation group" or survey subsample (from 1 to 8) for a household included in the ASEC CPS. In the CPS sampling scheme, each month a new rotation group (i.e., a new group of households from sampled addresses) is added for its first month of interviewing, and the rotation group that was interviewed for the eighth time in the preceding month is permanently dropped from the sample.  Households in each rotation group are interviewed for four consecutive months, left out of the sample for the next eight months, and then interviewed for four more consecutive months.  A household has a value of 1 for ROTATE during the first month it was interviewed, a value of 5 when persons at that address are interviewed again after an eight-month hiatus, and a value of 8 for the final interview month.
+
+This 4-8-4 rotation pattern produces a 75 percent overlap in the households included in the survey month-to-month and a 50 percent overlap year-to-year.  Knowing the rotation group of a particular household can help researchers follow some individuals in the survey over time, but, because it is limited to the ASEC survey only, IPUMS-CPS is not currently designed for such longitudinal research.]]></txt>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>One</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Two</labl>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Three</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Four</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>Five</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>Six</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>Seven</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>Eight</labl>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+    <labl>Missing data</labl>
+  </catgry>
+  <concept vocab="IPUMS">Technical Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="FEBMAR" dcml="0" files="ExtractData" intrvl="discrete" name="FEBMAR">
+  <location EndPos="131" StartPos="131" width="1"/>
+  <labl>February-March match</labl>
+  <txt><![CDATA[FEBMAR's variable label, "February-March match," suggests that this variable refers to whether individuals in the ASEC CPS sample were also included in the February CPS sample of the same year, but this is only conjecture.  FEBMAR is included in the earliest ASEC CPS samples archived prior to the first official release of a public use CPS data file by the Census Bureau, and the variable might have been constructed by researchers at the University of Wisconsin.  Reasons for "non-match," according to the value labels, include being in the armed forces, missing data, and "not in income sample," and these reasons appear to vary across years.  The IPUMS-CPS staff welcomes any information from users on the interpretation and use of this variable.  
+
+FEBMAR is included in IPUMS-CPS because the variable, whatever its substantive meaning, serves as a filter in defining the universes for several variables in the IPUMS-CPS data for 1962-1967.]]></txt>
+  <catgry>
+    <catValu>0</catValu>
+    <labl>Missing data</labl>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Match</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No Match</labl>
+  </catgry>
+  <concept vocab="IPUMS">Technical Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="LINENO" dcml="0" files="ExtractData" intrvl="contin" name="LINENO">
+  <location EndPos="133" StartPos="132" width="2"/>
+  <labl>Line number on original form</labl>
+  <txt><![CDATA[LINENO indicates the numbered line on which the CPS interviewer recorded a household member's name, on a form called the "control card," when the interviewer drew up the roster of all household members.  Normally the head of the household was listed on the first line, followed by the spouse, their children, members of subfamilies (in the same order), and unrelated persons.  
+
+LINENO is useful for researchers analyzing the following variables related to health insurance: PRIVWHO1, PRIVWHO2, GRPWHO1, and GRPWHO2.  PRIVWHO1 and PRIVWHO2 indicate the line numbers of the first and second members of the household who were the policyholders for privately-purchased (i.e., not employment-based) insurance covering the respondent during the previous calendar year. GRPWHO1 and GRPWHO2 indicate the line numbers of the first and second members of the household who were the policyholders for employment-based insurance covering the respondent during the previous calendar year.]]></txt>
+  <codInstr><![CDATA[CodesLINENO is a 2-digit numeric value.]]></codInstr>
+  <concept vocab="IPUMS">Technical Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="CLASSWLY" dcml="0" files="ExtractData" intrvl="discrete" name="CLASSWLY">
+  <location EndPos="135" StartPos="134" width="2"/>
+  <labl>Class of worker last year</labl>
+  <txt><![CDATA[CLASSWLY specifies whether a person who worked during the previous calendar year was self-employed, an employee in private industry or the public sector, in the armed forces, or worked without pay in a family business or farm.  Respondents were classified by the job that they held for the longest time during the previous year.  More specific information about an individual's job during this period is given in OCCLY, OCC50LY, INDLY, and IND50LY.  
+
+CLASSWKR relates to the respondent's job during the previous week, rather than the previous year.  CLASSWKR also reports the most recent job for respondents who were not employed in the week prior to the survey.]]></txt>
+  <catgry>
+    <catValu>00</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>Self-employed</labl>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+    <labl>Self-employed, not incorporated</labl>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+    <labl>Self-employed, incorporated</labl>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+    <labl>Works for wages or salary</labl>
+  </catgry>
+  <catgry>
+    <catValu>22</catValu>
+    <labl>Wage/salary, private</labl>
+  </catgry>
+  <catgry>
+    <catValu>24</catValu>
+    <labl>Wage/salary, government</labl>
+  </catgry>
+  <catgry>
+    <catValu>25</catValu>
+    <labl>Federal government employee</labl>
+  </catgry>
+  <catgry>
+    <catValu>27</catValu>
+    <labl>State government employee</labl>
+  </catgry>
+  <catgry>
+    <catValu>28</catValu>
+    <labl>Local government employee</labl>
+  </catgry>
+  <catgry>
+    <catValu>29</catValu>
+    <labl>Unpaid family worker</labl>
+  </catgry>
+  <catgry>
+    <catValu>99</catValu>
+    <labl>Missing/Unknown</labl>
+  </catgry>
+  <concept vocab="IPUMS">Work Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="WKSWORK2" dcml="0" files="ExtractData" intrvl="discrete" name="WKSWORK2">
+  <location EndPos="136" StartPos="136" width="1"/>
+  <labl>Weeks worked last year, intervalled</labl>
+  <txt><![CDATA[WKSWORK2, like WKSWORK1, reports the number of weeks that the respondent worked for profit, pay, or as an unpaid family worker during the preceding calendar year.  It differs from WKSWORK1 in that responses are given in intervals: 1-13 weeks; 14-26 weeks; 27-39 weeks; 40-47 weeks; 48-49 weeks; and 50-52 weeks.  Respondents were prompted to include weeks in which they worked for even a few hours and to include paid vacation and sick leave as work.]]></txt>
+  <catgry>
+    <catValu>0</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>1-13 weeks</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>14-26 weeks</labl>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>27-39 weeks</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>40-47 weeks</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>48-49 weeks</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>50-52 weeks</labl>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+    <labl>Missing data</labl>
+  </catgry>
+  <concept vocab="IPUMS">Work Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="WKSUNEM2" dcml="0" files="ExtractData" intrvl="discrete" name="WKSUNEM2">
+  <location EndPos="137" StartPos="137" width="1"/>
+  <labl>Weeks unemployed last year, intervalled</labl>
+  <txt><![CDATA[WKSUNEM2 gives the number of weeks, in intervals, during which the respondent looked for during the preceding calendar year. In years after 1976, those on layoff are also included in this variable.  Information on weeks of unemployment during the preceding year is available in single weeks, beginning in 1976, in the variable WKSUNEM1.]]></txt>
+  <catgry>
+    <catValu>0</catValu>
+    <labl>None</labl>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>1-4 weeks</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>5-10 weeks</labl>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>11-14 weeks</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>15-26 weeks</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>27-39 weeks</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>40+ weeks</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>Over 26 weeks (1962-1967)</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>Missing/Unknown</labl>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <concept vocab="IPUMS">Work Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="LOOKING" dcml="0" files="ExtractData" intrvl="discrete" name="LOOKING">
+  <location EndPos="138" StartPos="138" width="1"/>
+  <labl>Looking for work</labl>
+  <txt><![CDATA[LOOKING indicates whether persons who did not work during the previous week had actively sought a job within the past four weeks.]]></txt>
+  <catgry>
+    <catValu>0</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>No</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Yes</labl>
+  </catgry>
+  <concept vocab="IPUMS">Work Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="FULLPART" dcml="0" files="ExtractData" intrvl="discrete" name="FULLPART">
+  <location EndPos="139" StartPos="139" width="1"/>
+  <labl>Worked full or part time last year</labl>
+  <txt><![CDATA[FULLPART indicates whether respondents who were employed during the previous calendar year worked full-time or part-time.  Full-time work is defined as thirty-five hours a week or more.   Beginning in 1976, more detailed information on hours worked during the previous year is available in UHRSWORKLY.]]></txt>
+  <catgry>
+    <catValu>0</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Full-time</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Part-time</labl>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+    <labl>Unknown</labl>
+  </catgry>
+  <concept vocab="IPUMS">Work Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="MAJORACT" dcml="0" files="ExtractData" intrvl="discrete" name="MAJORACT">
+  <location EndPos="140" StartPos="140" width="1"/>
+  <labl>Major activity preceding week</labl>
+  <txt><![CDATA[MAJORACT reports the responses to an "ice-breaker" question at the start of the interview: "What was [this person] doing most of last week?"  Seven specific responses--working, with a job but not at work, looking for work, keeping house, going to school, unable to work, or other--appeared on the form up through 1975.  Beginning in 1976, the form included one more response--retired. 
+
+CPS interviewers were told to frame the question about major activity according to the age and sex of the respondent.  For example, if the person in question was a woman, the query was to be followed by the words, "Keeping house or something else?"  If the person in question was a man, the query was to be followed by the words, "Working or something else?"  If the person in question was over 14 or over 15 but still quite young, the query was to be followed by the words, "Going to school or something else?"   Respondents' answers to the question about their major activity last week determined some of the skip patterns for further questions; for example, those who reported being unable to work were not asked whether they had done any work for pay in the preceding week.  With the redesign of the survey in 1994, the question about major activity was dropped, because the Bureau of Labor Statistics concluded that this question discouraged reporting of part-time work, especially by women.     
+
+Responses in MAJORACT may differ from how respondents were classified in EMPSTAT, employment status last week.  For example, a person who worked for pay for just one hour during the preceding week would be classified as "working" in EMPSTAT but would probably report their major activity as something else.]]></txt>
+  <catgry>
+    <catValu>0</catValu>
+    <labl>NIU, Children or armed forces</labl>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Working</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>With a job but not at work</labl>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Looking for work</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Keeping house</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>At school</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>Unable to work</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>Retired</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>Other</labl>
+  </catgry>
+  <concept vocab="IPUMS">Work Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="USFTPTLW" dcml="0" files="ExtractData" intrvl="discrete" name="USFTPTLW">
+  <location EndPos="141" StartPos="141" width="1"/>
+  <labl>Usually work full time (part time last week)</labl>
+  <txt><![CDATA[USFTPTLW reports whether persons who worked part-time (less than 35 hours) during the preceding week usually worked full-time (35 hours or more).]]></txt>
+  <catgry>
+    <catValu>0</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>No</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Yes</labl>
+  </catgry>
+  <concept vocab="IPUMS">Work Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="LKWKFTPT" dcml="0" files="ExtractData" intrvl="discrete" name="LKWKFTPT">
+  <location EndPos="142" StartPos="142" width="1"/>
+  <labl>Looking for full or part-time job</labl>
+  <txt><![CDATA[LKWKFTPT is a dichotomous variable that reports whether persons who were unemployed (either actively looking for work or on layoff from a job) wanted either full-time (coded "1") or part-time (coded "2") work.  The U.S. Bureau of Labor Statistics normally counts working 35 hours or more per week as full-time work, and working less than 35 hours per week as part-time work.  For LKWKFTPT, interviewers simply asked, "Has [this person] been looking for full-time or part-time work?" This was asked without defining the terms of full-time or part-time work according to the Bureau of Labor Statistics definition.]]></txt>
+  <catgry>
+    <catValu>0</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Full time</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Part time</labl>
+  </catgry>
+  <concept vocab="IPUMS">Work Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="PAYIFABS" dcml="0" files="ExtractData" intrvl="discrete" name="PAYIFABS">
+  <location EndPos="143" StartPos="143" width="1"/>
+  <labl>Paid if absent from work last week</labl>
+  <txt><![CDATA[PAYIFABS reports whether respondents received wages or salary for the time that they were absent from work during the preceding week.]]></txt>
+  <catgry>
+    <catValu>0</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Not Paid</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Paid</labl>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Self-employed</labl>
+  </catgry>
+  <concept vocab="IPUMS">Work Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="STRECHLK" dcml="0" files="ExtractData" intrvl="discrete" name="STRECHLK">
+  <location EndPos="144" StartPos="144" width="1"/>
+  <labl>Stretches of looking for work last year</labl>
+  <txt><![CDATA[STRCHLK reports whether the weeks that part-year workers spent looking for work or on layoff during the previous calendar year were "all in one stretch" or "in more than one stretch" (for 1962-1967) or occurred in one stretch, two stretches, or three or more stretches (for 1968 onward).]]></txt>
+  <catgry>
+    <catValu>0</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>1 stretch</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>More than 1 stretch</labl>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>2 stretches</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>3+ stretches</labl>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+    <labl>Not specified</labl>
+  </catgry>
+  <concept vocab="IPUMS">Work Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="ACTNLFLY" dcml="0" files="ExtractData" intrvl="discrete" name="ACTNLFLY">
+  <location EndPos="146" StartPos="145" width="2"/>
+  <labl>Activity when not in labor force last year (part-year workers)</labl>
+  <txt><![CDATA[For the period prior to 1976, ACTNLFLY reports respondents' main activity when they were not working during the previous calendar year.  For 1976 on, ACTNLFLY reports respondents' main activity when they were not in the labor force (neither working nor looking for work nor on layoff from a job) during the previous calendar year.  Only persons who were working part of the year (from 1-49 weeks) were asked this question about what they were doing during most of the remaining weeks.]]></txt>
+  <catgry>
+    <catValu>00</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>Ill or disabled</labl>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+    <labl>Taking care of home/family</labl>
+  </catgry>
+  <catgry>
+    <catValu>30</catValu>
+    <labl>Going to school</labl>
+  </catgry>
+  <catgry>
+    <catValu>40</catValu>
+    <labl>Retired</labl>
+  </catgry>
+  <catgry>
+    <catValu>50</catValu>
+    <labl>Other</labl>
+  </catgry>
+  <catgry>
+    <catValu>51</catValu>
+    <labl>Looking for work</labl>
+  </catgry>
+  <catgry>
+    <catValu>52</catValu>
+    <labl>No work available</labl>
+  </catgry>
+  <catgry>
+    <catValu>53</catValu>
+    <labl>Doing unpaid work</labl>
+  </catgry>
+  <catgry>
+    <catValu>54</catValu>
+    <labl>In Armed Forces</labl>
+  </catgry>
+  <concept vocab="IPUMS">Work Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="NWLOOKWK2" dcml="0" files="ExtractData" intrvl="discrete" name="NWLOOKWK2">
+  <location EndPos="148" StartPos="147" width="2"/>
+  <labl>Weeks looked for work last year, intervalled</labl>
+  <txt><![CDATA[NWLOOK2 reports the number of weeks, in intervals, that the respondent spent looking for work in the previous year. Information on weeks spent looking for work during the preceding year is available in single weeks, beginning in 1976, in the variable NWLOOKWK.]]></txt>
+  <catgry>
+    <catValu>00</catValu>
+    <labl>None (not looking for work)</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>1 to 4 weeks looking</labl>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+    <labl>5 to 14 weeks looking</labl>
+  </catgry>
+  <catgry>
+    <catValu>30</catValu>
+    <labl>15 to 26 weeks looking</labl>
+  </catgry>
+  <catgry>
+    <catValu>40</catValu>
+    <labl>27 to 39 weeks looking</labl>
+  </catgry>
+  <catgry>
+    <catValu>41</catValu>
+    <labl>Over 26 weeks (1962-1967)</labl>
+  </catgry>
+  <catgry>
+    <catValu>50</catValu>
+    <labl>40 or more weeks looking</labl>
+  </catgry>
+  <catgry>
+    <catValu>99</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <concept vocab="IPUMS">Work Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="INCTOT" dcml="0" files="ExtractData" intrvl="contin" name="INCTOT">
+  <location EndPos="157" StartPos="149" width="9"/>
+  <labl>Total personal income</labl>
+  <txt><![CDATA[INCTOT indicates each respondent's total pre-tax personal income or losses from all sources for the previous calendar year.  Amounts are expressed as they were reported to the interviewer; users must adjust for inflation using Consumer Price Index adjustment factors.]]></txt>
+  <codInstr><![CDATA[Codes999999999 = N.I.U.
+999999998 = Missing. (1962-1964 only)
+Values can be negative.
+
+The Census Bureau applies different disclosure avoidance measures across time for individuals with high income in this variable. Detailed explanations of these methods, topcodes, and replacement value and swap value thresholds are available here.]]></codInstr>
+  <concept vocab="IPUMS">Income Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="INCWAGE" dcml="0" files="ExtractData" intrvl="contin" name="INCWAGE">
+  <location EndPos="165" StartPos="158" width="8"/>
+  <labl>Wage and salary income</labl>
+  <txt><![CDATA[INCWAGE indicates each respondent's total pre-tax wage and salary income--that is, money received as an employee--for the previous calendar year.  Amounts are expressed as they were reported to the interviewer; users must adjust for inflation using Consumer Price Index adjustment factors. 
+
+For ASEC samples 1988-onward, INCWAGE is derived from a Census recode variable.  The topcoded components of INCWAGE are OINCWAGE and INCLONGJ.  OINCWAGE  is always a component of INCWAGE.  When SRCEARN indicates that INCLONGJ is earned from wage and salary, INCLONGJ is an additional component of INCWAGE.]]></txt>
+  <codInstr><![CDATA[Codes99999999 = N.I.U. (Not in Universe)
+99999998 = Missing (1962-1966 only)
+
+The Census Bureau applies different disclosure avoidance measures across time for individuals with high income in this variable. Detailed explanations of these methods, topcodes, and replacement value and swap value thresholds are available here.]]></codInstr>
+  <concept vocab="IPUMS">Income Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="INCBUS" dcml="0" files="ExtractData" intrvl="contin" name="INCBUS">
+  <location EndPos="173" StartPos="166" width="8"/>
+  <labl>Non-farm business income</labl>
+  <txt><![CDATA[INCBUS indicates each respondent's net pre-income-tax non-farm business and/or professional practice income for the previous calendar year.  INCBUS is reported for self-employed persons; employees' earnings are given in INCWAGE.   
+
+Amounts are expressed as they were reported to the interviewer; users must adjust for inflation using Consumer Price Index adjustment factors. 
+
+For ASEC samples 1988-onward, INCBUS is derived from a Census recode variable.  The topcoded components of INCBUS are OINCBUS and INCLONGJ.  OINCBUS  is always a component of INCBUS.  When SRCEARN indicates that INCLONGJ is earned from self-employment, INCLONGJ is an additional component of INCBUS.]]></txt>
+  <codInstr><![CDATA[Codes99999999 = N.I.U. (Not in Universe).
+99999998 = Missing. (1962-1964 only)
+Values can be negative.
+
+The Census Bureau applies different disclosure avoidance measures across time for individuals with high income in this variable. Detailed explanations of these methods, topcodes, and replacement value and swap value thresholds are available here.]]></codInstr>
+  <concept vocab="IPUMS">Income Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="INCFARM" dcml="0" files="ExtractData" intrvl="contin" name="INCFARM">
+  <location EndPos="181" StartPos="174" width="8"/>
+  <labl>Farm income</labl>
+  <txt><![CDATA[INCFARM indicates each respondent's net pre-income-tax earnings as a tenant farmer, sharecropper, or operator of his or her own farm during the previous calendar year.  INCFARM collects income information for self-employed persons who had their own farms.  Income earned as an employee on a farm is contained in the variable INCWAGE.  
+
+Amounts are expressed as they were reported to the interviewer; users must adjust for inflation using Consumer Price Index adjustment factors. 
+
+For ASEC samples 1988-onward, INCFARM is derived from a Census recode variable.  The topcoded components of INCFARM are OINCFARM and INCLONGJ.  OINCFARM  is always a component of INCFARM.  When SRCEARN indicates that INCLONGJ is earned from farm self-employment, INCLONGJ is an additional component of INCFARM.]]></txt>
+  <codInstr><![CDATA[Codes99999999 = N.I.U. (Not in Universe)
+99999998 = Missing (1962-1964 only)
+Values can be negative.
+
+The Census Bureau applies different disclosure avoidance measures across time for individuals with high income in this variable. Detailed explanations of these methods, topcodes, and replacement value and swap value thresholds are available here.]]></codInstr>
+  <concept vocab="IPUMS">Income Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="INCUNERN" dcml="0" files="ExtractData" intrvl="contin" name="INCUNERN">
+  <location EndPos="186" StartPos="182" width="5"/>
+  <labl>Income from Source other than earnings</labl>
+  <txt><![CDATA[INCUNERN indicates each respondent's income from sources other than wages and salary (INCWAGE) and self-employment in a business (INCBUS) or farm (INCFARM).    
+
+Amounts are expressed as they were reported to the interviewer; users must adjust for inflation using Consumer Price Index adjustment factors.]]></txt>
+  <codInstr><![CDATA[Codes99999 = N.I.U. (Not in Universe).
+99998 = Missing.
+
+See User Note for an explanation of these codes.]]></codInstr>
+  <concept vocab="IPUMS">Income Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+</dataDscr>
+</codeBook>
