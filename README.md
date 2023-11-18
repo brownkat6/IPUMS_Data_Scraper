@@ -47,5 +47,7 @@ Example of one entry with the json descriptor file "ar1970a_description.json":
     ,...}}
 ```
 
+You can also see the full downloaded data and json file for sample_id `cps1962_03s`, which is included in this repository for reference. 
+
 ### Dependencies
 Dependencies are light for this project, but are included in `requirements.txt`.
