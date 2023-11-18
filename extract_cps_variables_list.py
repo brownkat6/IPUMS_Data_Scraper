@@ -3,6 +3,7 @@ import string
 from bs4 import BeautifulSoup
 import pandas as pd
 
+# Generate a list of all variables available for the CPS data collection, stored in ipums_metadata/cps_vars.csv
 base_url = "https://cps.ipums.org/cps-action/variables/alphabetical?id={}&page={}"
 filename = "ipums_metadata/cps_variables.html"
 
