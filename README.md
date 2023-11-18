@@ -17,6 +17,8 @@ To download the datasets corresponding to a subset of sample_ids:
 
 ```python download_ipums_data.py <collection_name> sample_id1 sample_id2 sample_id3...```
 
+To see what sample_ids are available for a given data collection, refer to `ipums_metadata/usa_variables_2021.csv`, `ipums_metadata/cps_vars.csv`, `ipums_metadata/ipumsi_vars.csv`
+
 ### Output structure
 All data is downloaded into the `data/` folder of the IPUMS_Data_Scraper repository. For each dataset,
 a folder `<sample_id>/` is created. Within `data/<sample_id>/`, we generate a `.dat.gz` file containing the actual data, and generate a `<sample_id>_description.json` json file
