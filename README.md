@@ -15,12 +15,11 @@ To download all sample_id datasets within the specified collection:
 
 To download the datasets corresponding to a subset of sample_ids:
 
-```python download_ipums_data.py <collection_name> sample_id1, sample_id2, sample_id3,...```
+```python download_ipums_data.py <collection_name> sample_id1 sample_id2 sample_id3...```
 
 ### Output structure
 All data is downloaded into the `data/` folder of the IPUMS_Data_Scraper repository. For each dataset,
-a folder `<sample_id>/` is created. Within `data/<sample_id>/`, the `download_ipums_data.py`
-script generates a `.dat.gz` file containing the actual data, and generates a `<sample_id>_description.json` json file
+a folder `<sample_id>/` is created. Within `data/<sample_id>/`, we generate a `.dat.gz` file containing the actual data, and generate a `<sample_id>_description.json` json file
 containing metadata for the dataset. 
 
 A dataset's json file contains information about the name of the dataset, and information about each feature present. 
@@ -37,7 +36,6 @@ The per-variable metadata is as follows:
 Example of one entry with the json descriptor file "ar1970a_description.json":
 ```
 {"samples_description: "Armenia 2001",
-
  "variables":{
     "COUNTRY": {"description": "COUNTRY gives the country from which the sample was drawn.  The codes assigned to each country are those used by the UN Statistics Division and the ISO (International Organization for Standardization).", 
     "label": "Country", 
