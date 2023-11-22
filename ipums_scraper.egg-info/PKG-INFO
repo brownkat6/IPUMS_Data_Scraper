@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ipums-scraper
+Version: 0.1.0
+Summary: A package for downloading IPUMS data
+Home-page: https://github.com/katrbrow/IPUMS_Data_Scraper
+Author: Katrina Brown
+Author-email: katrinabrown@college.harvard.edu
+License: BSD 2-clause
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+
+UNKNOWN
+

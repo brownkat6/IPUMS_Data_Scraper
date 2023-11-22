@@ -1,0 +1,12 @@
+setup.py
+ipums_scraper/download_ipums_data.py
+ipums_scraper/extract_cps_variables_from_html.py
+ipums_scraper/extract_ipumsi_variables_from_html.py
+ipums_scraper/extract_usa_variables_from_html.py
+ipums_scraper/ipums_data.py
+ipums_scraper/utils.py
+ipums_scraper.egg-info/PKG-INFO
+ipums_scraper.egg-info/SOURCES.txt
+ipums_scraper.egg-info/dependency_links.txt
+ipums_scraper.egg-info/requires.txt
+ipums_scraper.egg-info/top_level.txt
