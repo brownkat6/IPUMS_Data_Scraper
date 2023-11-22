@@ -1,2 +1,3 @@
-data/
+ipums_scraper/data/
+ipums_scraper/__pycache__/
 __pycache__/
