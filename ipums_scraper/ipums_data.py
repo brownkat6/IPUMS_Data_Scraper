@@ -51,7 +51,7 @@ def try_save_extract(extract,name,download_dir):
         os.mkdir(dir)
     if os.path.isfile(data_csv):
         print(f"found {data_csv}")
-        return
+        return (1,"")
     if os.path.isfile(f"{dir}/present_variables.csv"):
         present_vars=pd.read_csv(f"{dir}/present_variables.csv")["variables"].tolist()
     else:

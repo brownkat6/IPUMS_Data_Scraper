@@ -18,11 +18,14 @@ if __name__ == "__main__":
     for collection in ["usa","cps","ipumsi"]:
         df = pd.read_csv(f"ipums_metadata/sampleid_{collection}.csv")
         sample_ids.extend(df["Sample ID"].tolist())
-    print(len(sample_ids))
     
     parser.add_argument("--sample-ids", nargs="+", choices=sample_ids)
     parser.add_argument("--download-dir", default="data")
     args = parser.parse_args()
-    if args.collection_name=="default" and len(args.sample_ids)==0:
-        print("Please either a collection name or a list of sample ids to download.")
+    if args.collection_name=="default" and args.sample_ids is None:
+        print("Please specify a collection name or a list of sample ids to download.")
+        sys.exit(1)
+    if args.collection_name!="default" and args.sample_ids is not None:
+        print("Please either specify a collection name or a list of sample ids to download, but not both.")
+        sys.exit(1)
     main(**vars(args))
