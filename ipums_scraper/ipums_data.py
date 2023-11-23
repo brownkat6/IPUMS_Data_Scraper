@@ -7,8 +7,7 @@ import os
 
 from ipumspy import IpumsApiClient, UsaExtract, CpsExtract, IpumsiExtract, readers
 
-IPUMS_API_KEY = "59cba10d8a5da536fc06b59dbd7181d551084657b83506bdc3028b35"
-#IPUMS_API_KEY = os.environ["IPUMS_API_KEY"]
+IPUMS_API_KEY = os.environ["IPUMS_API_KEY"]
 
 ipums = IpumsApiClient(IPUMS_API_KEY)
 
@@ -127,3 +126,5 @@ def save_ddi_json(name,download_dir):
         }
     with open(f"{download_dir}/{name}/{name}_description.json", 'w') as json_file:
         json.dump(variable_dict, json_file)
+
+save_ddi_json("ar1970a", "data")

@@ -33,7 +33,7 @@ The per-variable metadata is as follows:
     "description": A few sentences describing the variable.
     "label": feature name (usually a lowercase version of the variable name)
     "numpy_type": the numpy type used to represent entries in the column (e.g. <class \'int\'>)
-    "codes": a dictionary mapping row_value:string_name. For instance, if the label is "race", then the entries in the column
+    "codes": a dictionary mapping int_value:string_name. For instance, if the label is "race", then the entries in the column
         might be encoded as integers. The codes dictionary then maps integers to the string values they represent (e.g. 1:"Caucasian")
 
 Example of one entry with the json descriptor file "ar1970a_description.json":
@@ -42,8 +42,8 @@ Example of one entry with the json descriptor file "ar1970a_description.json":
  "variables":{
     "COUNTRY": {"description": "COUNTRY gives the country from which the sample was drawn.  The codes assigned to each country are those used by the UN Statistics Division and the ISO (International Organization for Standardization).", 
     "label": "Country", 
-    "numpy_type": "<class 'int'>", 
-    "codes": {"Argentina": 32, "Armenia": 51, "Austria": 40, "Bangladesh": 50, "Belarus": 112, "Benin": 204, "Bolivia": 68, "Botswana": 72, "Brazil": 76, "Burkina Faso": 854, "Cambodia": 116, "Cameroon": 120, "Canada": 124, "Chile": 152, "China": 156, "Colombia": 170, "Costa Rica": 188, "Cuba": 192, "Denmark": 208, "Dominican Republic": 214, "Ecuador": 218, "Egypt": 818, "El Salvador": 222, "Ethiopia": 231, "Fiji": 242, "Finland": 246, "France": 250, "Germany": 276, "Ghana": 288, "Greece": 300, "Guatemala": 320, "Guinea": 324, "Haiti": 332, "Honduras": 340, "Hungary": 348, "Iceland": 352, "India": 356, "Indonesia": 360, "Iran": 364, "Iraq": 368, "Ireland": 372, "Israel": 376, "Italy": 380, "Ivory Coast": 384, "Jamaica": 388, "Jordan": 400, "Kenya": 404, "Kyrgyz Republic": 417, "Laos": 418, "Lesotho": 426, "Liberia": 430, "Malawi": 454, "Malaysia": 458, "Mali": 466, "Mauritius": 480, "Mexico": 484, "Mongolia": 496, "Morocco": 504, "Mozambique": 508, "Myanmar": 104, "Nepal": 524, "Netherlands": 528, "Nicaragua": 558, "Nigeria": 566, "Norway": 578, "Pakistan": 586, "Palestine": 275, "Panama": 591, "Papua New Guinea": 598, "Paraguay": 600, "Peru": 604, "Philippines": 608, "Poland": 616, "Portugal": 620, "Puerto Rico": 630, "Romania": 642, "Russia": 643, "Rwanda": 646, "Saint Lucia": 662, "Senegal": 686, "Sierra Leone": 694, "Slovak Republic": 703, "Slovenia": 705, "South Africa": 710, "South Sudan": 728, "Spain": 724, "Sudan": 729, "Suriname": 740, "Sweden": 752, "Switzerland": 756, "Tanzania": 834, "Thailand": 764, "Togo": 768, "Trinidad and Tobago": 780, "Turkey": 792, "Uganda": 800, "Ukraine": 804, "United Kingdom": 826, "United States": 840, "Uruguay": 858, "Venezuela": 862, "Vietnam": 704, "Zambia": 894, "Zimbabwe": 716}}
+    "numpy_type": "int", 
+    "codes": {"32": "Argentina", "51": "Armenia", "40": "Austria", "50": "Bangladesh", "112": "Belarus", "204": "Benin", "68": "Bolivia", "72": "Botswana", "76": "Brazil", "854": "Burkina Faso", "116": "Cambodia", "120": "Cameroon",...}}
     ,...}}
 ```
 
