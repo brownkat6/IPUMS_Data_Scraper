@@ -99,7 +99,9 @@ def save_extract(name,download_dir):
         if flag==0:
             print(f"ERROR: unable to save {name} data even after only requesting the variables present in the data sample, and removing invalid vars")
             print(error)
+            return 0
     save_ddi_json(name,download_dir)
+    return 1
 
 # collection is one of {"usa", "cps", "ipumsi"}
 def save_collection_extracts(collection="usa",download_dir="data"):
@@ -126,5 +128,3 @@ def save_ddi_json(name,download_dir):
         }
     with open(f"{download_dir}/{name}/{name}_description.json", 'w') as json_file:
         json.dump(variable_dict, json_file)
-
-save_ddi_json("ar1970a", "data")
