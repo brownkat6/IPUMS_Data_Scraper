@@ -6,18 +6,28 @@ This repository provides a straightforward way to download datasets from IPUMS a
 is associated with a collection_id (e.g., USA, or IPUMSI international), as well as a sample_id (e.g. usa2012a). For each
 dataset, we provide a way to download all available rows and all columns/features.
 
-### Example Usage
+### Usage Instructions
 The `<collection_name>` should be one of: `{"usa", "cps", "ipumsi"}`
 
 To download all sample_id datasets within the specified collection:
 
-```python download_ipums_data.py <collection_name> ```
+```python download_ipums_data.py --collection-name <collection_name> ```
 
 To download the datasets corresponding to a subset of sample_ids:
 
-```python download_ipums_data.py <collection_name> sample_id1 sample_id2 sample_id3...```
+```python download_ipums_data.py --sample-ids <sample_id1> <sample_id2> <sample_id3>...```
 
-To see what sample_ids are available for a given data collection, refer to `ipums_metadata/usa_variables_2021.csv`, `ipums_metadata/cps_vars.csv`, `ipums_metadata/ipumsi_vars.csv`
+To see what sample_ids are available for a given data collection, refer to `ipums_metadata/usa_vars.csv`, `ipums_metadata/cps_vars.csv`, `ipums_metadata/ipumsi_vars.csv`
+
+### Sample Usage
+Download all datasets in the usa datacollection: 
+
+```python download_ipums_data.py --collection-name usa```
+
+Download the usa1850a dataset:
+
+```python download_ipums_data.py --sample-ids us1850a```
+
 
 ### Output structure
 All data is downloaded by default into the `data/` folder of the IPUMS_Data_Scraper repository. You can change the download directory by setting DOWNLOAD_DIR in `ipums_data.py` to point to a different location. 
