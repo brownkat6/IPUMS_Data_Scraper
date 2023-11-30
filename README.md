@@ -67,7 +67,7 @@ You'll need to add an IPUMS_API_KEY to your environment variables. You can obtai
 
 You also need to get account access to the USA, CPS, and IPUMSI data collections individually, for each data collection that you wish to download data from, by vising their respective IPUMS webpages and requesting access rights. 
 
-### Testing
+### Unit Testing
 To test downloading only the "us1850a" dataset from the usa collection into the `ipums_scraper/data/` folder, run the following:
 
 ```python tests.py```
