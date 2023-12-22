@@ -1,0 +1,8 @@
+name: ipums_scraper
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - pip
+  - pip:
+    - -r ipums_scraper/requirements.txt
