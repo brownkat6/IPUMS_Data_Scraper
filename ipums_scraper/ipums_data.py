@@ -94,7 +94,7 @@ def save_extract(name,download_dir):
     extract = get_extract(name,download_dir)
     flag,error = try_save_extract(extract,name,download_dir)
     if flag==0:
-        extract = get_extract(name)
+        extract = get_extract(name,download_dir)
         flag,error = try_save_extract(extract,name,download_dir)
         if flag==0:
             print(f"ERROR: unable to save {name} data even after only requesting the variables present in the data sample, and removing invalid vars")
