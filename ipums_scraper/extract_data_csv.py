@@ -17,18 +17,17 @@ def main(collection_name,sample_ids,download_dir,max_file_size):
         ddi_file = list(download_dir_PATH.glob("*.xml"))[0]
         ddi = readers.read_ipums_ddi(ddi_file)
         data_csv = f"{dir}/{sample_id}.csv"
-        try:
-            ipums_iter = readers.read_microdata_chunked(ddi, download_dir_PATH / ddi.file_description.filename, chunksize=max_file_size//5)
-            print(f"Construct ipums {sample_id} df for {data_csv} in chunks of {max_file_size}/5 rows")
-            count=0
-            for df in ipums_iter:
-                print(f"extract {len(df)} rows")
-                df.to_csv(data_csv,mode="a",header=not os.path.exists(data_csv))
-                count+=1
-                if count>=5:
-                    break
-        except Exception as e:
-            print(f"Couldn't load full df for {sample_id} into memory: \n{e}")
+        ipums_iter = readers.read_microdata_chunked(ddi, download_dir_PATH / ddi.file_description.filename, chunksize=max_file_size//5)
+        print(f"Construct ipums {sample_id} df for {data_csv} in chunks of {max_file_size}/5 rows")
+        count=0
+        for df in ipums_iter:
+            print(f"extract {len(df)} rows")
+            df.to_csv(data_csv,mode="a",header=not os.path.exists(data_csv))
+            count+=1
+            if count>=5:
+                break
+        #except Exception as e:
+        #    print(f"Couldn't load full df for {sample_id} into memory: \n{e}")
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--collection-name", choices=["usa","cps","ipumsi"], default="default")
