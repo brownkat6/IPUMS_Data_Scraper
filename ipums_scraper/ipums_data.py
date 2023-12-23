@@ -4,6 +4,7 @@ import pandas as pd
 
 import json
 import os
+from threading import Thread
 
 from ipumspy import IpumsApiClient, UsaExtract, CpsExtract, IpumsiExtract, readers
 
@@ -61,7 +62,7 @@ def try_save_extract(extract,name,download_dir):
     # submit your extract
     try:
         ipums.submit_extract(extract)
-        print("Extract submission successful")
+        print(f"Extract submission for {name} successful")
     except Exception as e:
         print("Extract submission failed. Save the list of variables present for the given data sample to a csv file, then try again.")
         missing_vars = set([l.split(":")[0] for l in str(e).split("\n") if ":" in l])
@@ -81,16 +82,20 @@ def try_save_extract(extract,name,download_dir):
     ddi_file = list(download_dir_PATH.glob("*.xml"))[0]
     ddi = readers.read_ipums_ddi(ddi_file)
 
-    # Get the data
+    # Get the data as a csv
+    '''
     try:
         ipums_df = readers.read_microdata(ddi, download_dir_PATH / ddi.file_description.filename)
         ipums_df.to_csv(data_csv)
-        print(name,ipums_df.shape)
+        print(f"Download of {name} dataframe with shape {ipums_df.shape} was successful")
     except Exception as e:
         print(f"Couldn't load full df for {name} into memory: \n{e}")
+    '''
+    save_ddi_json(name,download_dir)
     return (1,"")
 
 def save_extract(name,download_dir):
+    print(f"Save extract for {name}")
     extract = get_extract(name,download_dir)
     flag,error = try_save_extract(extract,name,download_dir)
     if flag==0:
@@ -100,15 +105,20 @@ def save_extract(name,download_dir):
             print(f"ERROR: unable to save {name} data even after only requesting the variables present in the data sample, and removing invalid vars")
             print(error)
             return 0
-    save_ddi_json(name,download_dir)
+    #save_ddi_json(name,download_dir)
     return 1
 
 # collection is one of {"usa", "cps", "ipumsi"}
 def save_collection_extracts(collection="usa",download_dir="data"):
-    sample_ids = pd.read_csv(f"ipums_metadata/sampleid_{collection}.csv")
-    for sample_id in sample_ids["Sample ID"].tolist():
-        print(sample_id)
-        save_extract(sample_id,download_dir)
+    sample_ids = pd.read_csv(f"ipums_metadata/sampleid_{collection}.csv").head(5)
+    #for sample_id in sample_ids["Sample ID"].tolist():
+    #    print(sample_id)
+    #    save_extract(sample_id,download_dir)
+    threads=[Thread(target=save_extract,args=(sample_id,download_dir)) for sample_id in sample_ids["Sample ID"].tolist()]
+    for thread in threads:
+        thread.start()
+    for thread in threads:
+        thread.join()
 
 # Get variable information
 # Extract: variable names, labels, text description, 
