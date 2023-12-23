@@ -16,7 +16,7 @@ def extract_data_csv(sample_id,download_dir,max_file_size):
         ddi = readers.read_ipums_ddi(ddi_file)
         data_csv = f"{dir}/{sample_id}.csv"
         
-        columns=pd.read_csv("data/us2013a/us2013a_100K.csv").columns.tolist()
+        columns=pd.read_csv("data/us2013a/us2013a_1K.csv").columns.tolist()
         for i in range(1,len(columns)):
             ipums_iter = readers.read_microdata_chunked(ddi, download_dir_PATH / ddi.file_description.filename, chunksize=1000, subset=columns[:i])
             print(f"Construct ipums {sample_id} df for {data_csv} in chunks of 100 rows, with {i} columns, where the last column is {columns[i-1]}")
