@@ -15,7 +15,8 @@ def extract_data_csv(sample_id,download_dir,max_file_size):
         ddi_file = list(download_dir_PATH.glob("*.xml"))[0]
         ddi = readers.read_ipums_ddi(ddi_file)
         data_csv = f"{dir}/{sample_id}.csv"
-        ipums_iter = readers.read_microdata_chunked(ddi, download_dir_PATH / ddi.file_description.filename, chunksize=max_file_size//5)
+        columns=pd.read_csv(f"{download_dir}/{sample_id}/present_variables.csv").columns.tolist()
+        ipums_iter = readers.read_microdata_chunked(ddi, download_dir_PATH / ddi.file_description.filename, chunksize=max_file_size//5, subset=columns)
         print(f"Construct ipums {sample_id} df for {data_csv} in chunks of {max_file_size}/5 rows")
         count=0
         for df in ipums_iter:
