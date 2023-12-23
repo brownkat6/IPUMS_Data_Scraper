@@ -5,6 +5,8 @@ import argparse
 import pandas as pd
 from ipumspy import readers
 import os
+import warnings
+warnings.filterwarnings("ignore")
 
 def main(collection_name,sample_ids,download_dir):
     assert(sample_ids is not None)
