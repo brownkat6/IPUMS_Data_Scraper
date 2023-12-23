@@ -110,7 +110,7 @@ def save_extract(name,download_dir):
 
 # collection is one of {"usa", "cps", "ipumsi"}
 def save_collection_extracts(collection="usa",download_dir="data"):
-    sample_ids = pd.read_csv(f"ipums_metadata/sampleid_{collection}.csv").head(5)
+    sample_ids = pd.read_csv(f"ipums_metadata/sampleid_{collection}.csv")
     #for sample_id in sample_ids["Sample ID"].tolist():
     #    print(sample_id)
     #    save_extract(sample_id,download_dir)
