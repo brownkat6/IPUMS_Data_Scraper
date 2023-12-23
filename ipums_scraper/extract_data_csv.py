@@ -16,10 +16,15 @@ def main(collection_name,sample_ids,download_dir):
         ddi = readers.read_ipums_ddi(ddi_file)
         data_csv = f"{dir}/{sample_id}.csv"
         try:
-            ipums_iter = readers.read_microdata_chunked(ddi, download_dir_PATH / ddi.file_description.filename, chunksize=10000)
-            print(f"Construct ipums {sample_id} df for {data_csv} in chunks of 10K rows")
+            ipums_iter = readers.read_microdata_chunked(ddi, download_dir_PATH / ddi.file_description.filename, chunksize=100000)
+            print(f"Construct ipums {sample_id} df for {data_csv} in chunks of 100K rows")
+            count=0
             for df in ipums_iter:
+                print(f"extract {len(df)} rows")
                 df.to_csv(data_csv,mode="a",header=not os.path.exists(data_csv))
+                count+=1
+                if count>=5:
+                    break
         except Exception as e:
             print(f"Couldn't load full df for {sample_id} into memory: \n{e}")
 if __name__ == "__main__":
