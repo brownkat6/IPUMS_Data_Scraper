@@ -2,11 +2,17 @@ from ipums_data import save_collection_extracts, save_extract
 import sys
 import argparse
 import pandas as pd
+from threading import Thread
 
 def main(collection_name,sample_ids,download_dir):
     if sample_ids is None:
         save_collection_extracts(collection_name,download_dir)
     else:
+        threads=[Thread(target=save_extract,args=(sample_id,download_dir)) for sample_id in sample_ids]
+        for thread in threads:
+            thread.start()
+        for thread in threads:
+            thread.join()
         for sample_id in sample_ids:
             print(sample_id)
             save_extract(sample_id,download_dir)
