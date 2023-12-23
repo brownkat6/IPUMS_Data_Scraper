@@ -8,9 +8,7 @@ import os
 import warnings
 warnings.filterwarnings("ignore")
 
-def main(collection_name,sample_ids,download_dir,max_file_size):
-    assert(sample_ids is not None)
-    for sample_id in sample_ids:
+def extract_data_csv(sample_id,download_dir,max_file_size):
         print(f"Extract csv for {sample_id}")
         dir=f"{download_dir}/{sample_id}"
         download_dir_PATH = Path(dir)
@@ -28,6 +26,18 @@ def main(collection_name,sample_ids,download_dir,max_file_size):
                 break
         #except Exception as e:
         #    print(f"Couldn't load full df for {sample_id} into memory: \n{e}")
+
+def main(collection_name,sample_ids,download_dir,max_file_size):
+    if sample_ids is None:
+        sample_ids = pd.read_csv(f"ipums_metadata/sampleid_{collection_name}.csv")["Sample ID"].tolist()
+        # only keep sample_ids where a .dat.gz file exists in directory f"data/{sample_id}" (the name of the .dat.gz file could be anything)
+        sample_ids = [sample_id for sample_id in sample_ids if len(list(Path(f"{download_dir}/{sample_id}").glob("*.dat.gz")))>0]
+        # remove sample_ids where a data csv file already exists
+        sample_ids = [sample_id for sample_id in sample_ids if not os.path.exists(f"{download_dir}/{sample_id}/{sample_id}.csv")]
+        print(f"extract csv for {len(sample_ids)} samples, where a .dat.gz file exists but a data csv file does not exist")
+        print(sample_ids)
+    for sample_id in sample_ids:
+        extract_data_csv(sample_id,download_dir,max_file_size)
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--collection-name", choices=["usa","cps","ipumsi"], default="default")
@@ -39,7 +49,7 @@ if __name__ == "__main__":
     
     parser.add_argument("--sample-ids", nargs="+", choices=sample_ids)
     parser.add_argument("--download-dir", default="data")
-    parser.add_argument("--max-file-size", type=int, default=1000)
+    parser.add_argument("--max-file-size", type=int, default=500000) # 500K row default
     args = parser.parse_args()
     if args.collection_name=="default" and args.sample_ids is None:
         print("Please specify a collection name or a list of sample ids to download.")
