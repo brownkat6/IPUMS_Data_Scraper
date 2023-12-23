@@ -8,7 +8,7 @@ import os
 import warnings
 warnings.filterwarnings("ignore")
 
-def main(collection_name,sample_ids,download_dir):
+def main(collection_name,sample_ids,download_dir,max_file_size):
     assert(sample_ids is not None)
     for sample_id in sample_ids:
         print(f"Extract csv for {sample_id}")
@@ -18,8 +18,8 @@ def main(collection_name,sample_ids,download_dir):
         ddi = readers.read_ipums_ddi(ddi_file)
         data_csv = f"{dir}/{sample_id}.csv"
         try:
-            ipums_iter = readers.read_microdata_chunked(ddi, download_dir_PATH / ddi.file_description.filename, chunksize=100000)
-            print(f"Construct ipums {sample_id} df for {data_csv} in chunks of 100K rows")
+            ipums_iter = readers.read_microdata_chunked(ddi, download_dir_PATH / ddi.file_description.filename, chunksize=max_file_size//5)
+            print(f"Construct ipums {sample_id} df for {data_csv} in chunks of {max_file_size}/5 rows")
             count=0
             for df in ipums_iter:
                 print(f"extract {len(df)} rows")
@@ -40,6 +40,7 @@ if __name__ == "__main__":
     
     parser.add_argument("--sample-ids", nargs="+", choices=sample_ids)
     parser.add_argument("--download-dir", default="data")
+    parser.add_argument("--max-file-size", type=int, default=1000)
     args = parser.parse_args()
     if args.collection_name=="default" and args.sample_ids is None:
         print("Please specify a collection name or a list of sample ids to download.")
