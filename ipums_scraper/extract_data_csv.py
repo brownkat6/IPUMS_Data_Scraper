@@ -27,7 +27,7 @@ def extract_data_csv(sample_id,download_dir,max_file_size):
             print(f"extract {len(df)} rows")
             df.to_csv(data_csv,mode="a",header=not os.path.exists(data_csv))
             count+=1
-            if count*CHUNK_SIZE>min(max_file_size,MAX_FILE_SIZE):
+            if count*CHUNK_SIZE>=min(max_file_size,MAX_FILE_SIZE):
                 break
 
 def main(collection_name,sample_ids,download_dir,max_file_size):
