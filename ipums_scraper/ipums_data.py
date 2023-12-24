@@ -5,6 +5,7 @@ import pandas as pd
 import json
 import os
 from threading import Thread
+import time
 
 from ipumspy import IpumsApiClient, UsaExtract, CpsExtract, IpumsiExtract, readers
 
@@ -111,12 +112,12 @@ def save_extract(name,download_dir):
 # collection is one of {"usa", "cps", "ipumsi"}
 def save_collection_extracts(collection="usa",download_dir="data"):
     sample_ids = pd.read_csv(f"ipums_metadata/sampleid_{collection}.csv")
-    #for sample_id in sample_ids["Sample ID"].tolist():
-    #    print(sample_id)
-    #    save_extract(sample_id,download_dir)
     threads=[Thread(target=save_extract,args=(sample_id,download_dir)) for sample_id in sample_ids["Sample ID"].tolist()]
-    for thread in threads:
+    for i,thread in enumerate(threads):
         thread.start()
+        if i%30==0:
+            print(f"Started {i} threads, sleep for 120 seconds before sending more requests")
+            time.sleep(120)
     for thread in threads:
         thread.join()
 
