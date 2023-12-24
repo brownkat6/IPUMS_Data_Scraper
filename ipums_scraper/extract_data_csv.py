@@ -10,6 +10,23 @@ warnings.filterwarnings("ignore")
 CHUNK_SIZE=100000
 MAX_FILE_SIZE=500000
 
+def get_valid_columns(ddi,download_dir_PATH,sample_id):
+        columns=[v.name for v in ddi.data_description]
+        columns_to_drop=[]
+        for i in range(len(columns)):
+            ipums_iter = readers.read_microdata_chunked(ddi, download_dir_PATH / ddi.file_description.filename, chunksize=1000, subset=[columns[i]])
+            try:
+                for df in ipums_iter:
+                    assert(len(df)>0)
+                    break
+            except Exception as e:
+                print(f"Failed to load column {columns[i]} for {sample_id}")
+                columns_to_drop.append(columns[i])
+            #if i%50==0:
+            #    print(f"Checked {i} columns")
+        columns_to_keep = [c for c in columns if c not in columns_to_drop]
+        return columns_to_keep
+
 def extract_data_csv(sample_id,download_dir,max_file_size):
         print(f"Extract csv for {sample_id}")
         dir=f"{download_dir}/{sample_id}"
@@ -17,9 +34,10 @@ def extract_data_csv(sample_id,download_dir,max_file_size):
         ddi_file = list(download_dir_PATH.glob("*.xml"))[0]
         ddi = readers.read_ipums_ddi(ddi_file)
         data_csv = f"{dir}/{sample_id}.csv"
-        columns=pd.read_csv(f"{download_dir}/{sample_id}/present_variables.csv")["variables"].tolist()
+        #columns=pd.read_csv(f"{download_dir}/{sample_id}/present_variables.csv")["variables"].tolist()
+        columns=get_valid_columns(ddi,download_dir_PATH,sample_id)
         ipums_iter = readers.read_microdata_chunked(ddi, download_dir_PATH / ddi.file_description.filename, chunksize=CHUNK_SIZE, subset=columns)
-        print(f"Construct ipums {sample_id} df for {data_csv} in chunks of 100K rows")
+        print(f"Construct ipums {sample_id} df for {data_csv} in chunks of 100K rows with {len(columns)} columns")
         #print(f"Columns: {[v.name for v in ddi.data_description]}")
         
         count=0
