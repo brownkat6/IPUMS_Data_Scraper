@@ -7,6 +7,8 @@ from ipumspy import readers
 import os
 import warnings
 warnings.filterwarnings("ignore")
+CHUNK_SIZE=100000
+MAX_FILE_SIZE=500000
 
 def extract_data_csv(sample_id,download_dir,max_file_size):
         print(f"Extract csv for {sample_id}")
@@ -15,18 +17,18 @@ def extract_data_csv(sample_id,download_dir,max_file_size):
         ddi_file = list(download_dir_PATH.glob("*.xml"))[0]
         ddi = readers.read_ipums_ddi(ddi_file)
         data_csv = f"{dir}/{sample_id}.csv"
-        columns=pd.read_csv(f"{download_dir}/{sample_id}/present_variables.csv").columns.tolist()
-        ipums_iter = readers.read_microdata_chunked(ddi, download_dir_PATH / ddi.file_description.filename, chunksize=max_file_size//5, subset=columns)
-        print(f"Construct ipums {sample_id} df for {data_csv} in chunks of {max_file_size}/5 rows")
+        columns=pd.read_csv(f"{download_dir}/{sample_id}/present_variables.csv")["variables"].tolist()
+        ipums_iter = readers.read_microdata_chunked(ddi, download_dir_PATH / ddi.file_description.filename, chunksize=CHUNK_SIZE, subset=columns)
+        print(f"Construct ipums {sample_id} df for {data_csv} in chunks of 100K rows")
+        #print(f"Columns: {[v.name for v in ddi.data_description]}")
+        
         count=0
         for df in ipums_iter:
             print(f"extract {len(df)} rows")
             df.to_csv(data_csv,mode="a",header=not os.path.exists(data_csv))
             count+=1
-            if count>=5:
+            if count*CHUNK_SIZE>min(max_file_size,MAX_FILE_SIZE):
                 break
-        #except Exception as e:
-        #    print(f"Couldn't load full df for {sample_id} into memory: \n{e}")
 
 def main(collection_name,sample_ids,download_dir,max_file_size):
     if sample_ids is None:
