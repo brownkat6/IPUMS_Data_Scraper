@@ -11,6 +11,7 @@ CHUNK_SIZE=100000
 MAX_FILE_SIZE=500000
 
 def get_valid_columns(ddi,download_dir_PATH,sample_id):
+        # readers.read_microdata_chunked throws errors when loading data for a few columns, so this function checks which columns are readable
         columns=[v.name for v in ddi.data_description]
         columns_to_drop=[]
         for i in range(len(columns)):
