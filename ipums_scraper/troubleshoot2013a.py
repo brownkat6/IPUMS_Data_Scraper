@@ -7,6 +7,8 @@ from ipumspy import readers
 import os
 import warnings
 warnings.filterwarnings("ignore")
+CHUNK_SIZE=100000
+MAX_FILE_SIZE=500000
 
 def extract_data_csv(sample_id,download_dir,max_file_size):
         print(f"Extract csv for {sample_id}")
@@ -15,8 +17,32 @@ def extract_data_csv(sample_id,download_dir,max_file_size):
         ddi_file = list(download_dir_PATH.glob("*.xml"))[0]
         ddi = readers.read_ipums_ddi(ddi_file)
         data_csv = f"{dir}/{sample_id}.csv"
+        columns=[v.name for v in ddi.data_description]
+        columns_to_drop=[]
+        for i in range(len(columns)):
+            ipums_iter = readers.read_microdata_chunked(ddi, download_dir_PATH / ddi.file_description.filename, chunksize=1000, subset=[columns[i]])
+            try:
+                for df in ipums_iter:
+                    assert(len(df)>0)
+                    break
+            except Exception as e:
+                print(f"Failed to load column {columns[i]} for {sample_id}")
+                columns_to_drop.append(columns[i])
+            if i%50==0:
+                print(f"Checked {i} columns")
+        columns_to_keep = [c for c in columns if c not in columns_to_drop]
+        print(f"Extract df with {len(columns_to_keep)} columns")
+        ipums_iter = readers.read_microdata_chunked(ddi, download_dir_PATH / ddi.file_description.filename, chunksize=CHUNK_SIZE, subset=columns_to_keep)
         
-        columns=pd.read_csv(f"data/{sample_id}/present_variables.csv").columns.tolist()
+        count=0
+        for df in ipums_iter:
+            print(f"extract {len(df)} rows")
+            df.to_csv(data_csv,mode="a",header=not os.path.exists(data_csv))
+            count+=1
+            if count*CHUNK_SIZE>=min(max_file_size,MAX_FILE_SIZE):
+                break
+        '''
+        columns=pd.read_csv(f"data/{sample_id}/present_variables.csv")["variables"].tolist()
         for i in range(2,len(columns)+1):
             ipums_iter = readers.read_microdata_chunked(ddi, download_dir_PATH / ddi.file_description.filename, chunksize=1000, subset=columns[:i])
             print(f"Construct ipums {sample_id} df for {data_csv} in chunks of 100 rows, with {i} columns, where the last column is {columns[i-1]}")
@@ -28,6 +54,7 @@ def extract_data_csv(sample_id,download_dir,max_file_size):
                 count+=1
                 if count>=2:
                     break
+        '''
 
 def main(collection_name,sample_ids,download_dir,max_file_size):
     if sample_ids is None:
