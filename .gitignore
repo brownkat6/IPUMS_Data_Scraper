@@ -1,3 +1,6 @@
 ipums_scraper/data/
 ipums_scraper/__pycache__/
 __pycache__/
+ipums_scraper/dataset_sizes.json
+scripts/analyze_us2013a.ipynb
+.gitignore
