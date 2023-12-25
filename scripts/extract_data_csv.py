@@ -1,4 +1,4 @@
-from ipums_data import save_collection_extracts, save_extract
+from ipums_scraper.ipums_data import save_collection_extracts, save_extract
 from pathlib import Path
 import sys
 import argparse
@@ -10,13 +10,8 @@ warnings.filterwarnings("ignore")
 CHUNK_SIZE=100000
 MAX_FILE_SIZE=500000
 
-def extract_data_csv(sample_id,download_dir,max_file_size):
-        print(f"Extract csv for {sample_id}")
-        dir=f"{download_dir}/{sample_id}"
-        download_dir_PATH = Path(dir)
-        ddi_file = list(download_dir_PATH.glob("*.xml"))[0]
-        ddi = readers.read_ipums_ddi(ddi_file)
-        data_csv = f"{dir}/{sample_id}.csv"
+def get_valid_columns(ddi,download_dir_PATH,sample_id):
+        # readers.read_microdata_chunked throws errors when loading data for a few columns, so this function checks which columns are readable
         columns=[v.name for v in ddi.data_description]
         columns_to_drop=[]
         for i in range(len(columns)):
@@ -28,11 +23,19 @@ def extract_data_csv(sample_id,download_dir,max_file_size):
             except Exception as e:
                 print(f"Failed to load column {columns[i]} for {sample_id}")
                 columns_to_drop.append(columns[i])
-            if i%50==0:
-                print(f"Checked {i} columns")
         columns_to_keep = [c for c in columns if c not in columns_to_drop]
-        print(f"Extract df with {len(columns_to_keep)} columns")
-        ipums_iter = readers.read_microdata_chunked(ddi, download_dir_PATH / ddi.file_description.filename, chunksize=CHUNK_SIZE, subset=columns_to_keep)
+        return columns_to_keep
+
+def extract_data_csv(sample_id,download_dir,max_file_size):
+        print(f"Extract csv for {sample_id}")
+        dir=f"{download_dir}/{sample_id}"
+        download_dir_PATH = Path(dir)
+        ddi_file = list(download_dir_PATH.glob("*.xml"))[0]
+        ddi = readers.read_ipums_ddi(ddi_file)
+        data_csv = f"{dir}/{sample_id}.csv"
+        columns=get_valid_columns(ddi,download_dir_PATH,sample_id)
+        ipums_iter = readers.read_microdata_chunked(ddi, download_dir_PATH / ddi.file_description.filename, chunksize=CHUNK_SIZE, subset=columns)
+        print(f"Construct ipums {sample_id} df for {data_csv} in chunks of 100K rows with {len(columns)} columns")
         
         count=0
         for df in ipums_iter:
@@ -41,20 +44,16 @@ def extract_data_csv(sample_id,download_dir,max_file_size):
             count+=1
             if count*CHUNK_SIZE>=min(max_file_size,MAX_FILE_SIZE):
                 break
-        '''
-        columns=pd.read_csv(f"data/{sample_id}/present_variables.csv")["variables"].tolist()
-        for i in range(2,len(columns)+1):
-            ipums_iter = readers.read_microdata_chunked(ddi, download_dir_PATH / ddi.file_description.filename, chunksize=1000, subset=columns[:i])
-            print(f"Construct ipums {sample_id} df for {data_csv} in chunks of 100 rows, with {i} columns, where the last column is {columns[i-1]}")
-            count=0
-            for df in ipums_iter:
-                if len(df)==0:
-                    print("whoops")
-                #df.to_csv("{download_dir}/{sample_id}/{sample_id}_{i}.csv")
-                count+=1
-                if count>=2:
-                    break
-        '''
+        
+        # Remove columns with >0.4 correlation with df["HHINCOME"]
+        df = pd.read_csv(data_csv)
+        if "HHINCOME" in df.columns:
+            for col in df.columns:
+                if col=="HHINCOME":
+                    continue
+                if df[col].corr(df["HHINCOME"])>0.4:
+                    df.drop(col,axis=1,inplace=True)
+            df.to_csv(data_csv,index=False)
 
 def main(collection_name,sample_ids,download_dir,max_file_size):
     if sample_ids is None:

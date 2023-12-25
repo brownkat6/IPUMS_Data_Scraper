@@ -14,9 +14,17 @@ IPUMS_API_KEY = os.environ["IPUMS_API_KEY"]
 ipums = IpumsApiClient(IPUMS_API_KEY)
 
 # These are complete lists of all variables available for usa, cps, and ipumsi (international) data
-usa_variables = pd.read_csv("ipums_metadata/usa_vars.csv")
-cps_variables = pd.read_csv("ipums_metadata/cps_vars.csv")
-ipumsi_variables = pd.read_csv("ipums_metadata/ipumsi_vars.csv")
+IPUMS_SCRAPER_REPO_PATH = os.path.dirname(os.path.abspath(__file__))
+
+def get_data_collection_variables(sample_id):
+    variables_path = IPUMS_SCRAPER_REPO_PATH/Path("ipums_metadata")
+    if "us"==sample_id[:2]:
+        variables_path = variables_path/Path("usa_vars.csv")
+    elif "cps"==sample_id[:3]:
+        variables_path = variables_path/Path("cps_vars.csv")
+    else:
+        variables_path = variables_path/Path("ipumsi_vars.csv")
+    return pd.read_csv(variables_path)["variables"].tolist()
 
 # define your extract
 def get_extract(name,download_dir):
@@ -25,7 +33,7 @@ def get_extract(name,download_dir):
         variables=df["variables"].tolist()
     else:
         # Use default variables
-        variables=usa_variables["variables"].tolist() if "us"==name[:2] else (cps_variables["variables"].tolist() if "cps"==name[:3] else ipumsi_variables["variables"].tolist())
+        variables=get_data_collection_variables(name)
     if name[:2]=="us":
         extract = UsaExtract(
             [name],
@@ -56,8 +64,8 @@ def try_save_extract(extract,name,download_dir):
     if os.path.isfile(f"{dir}/present_variables.csv"):
         present_vars=pd.read_csv(f"{dir}/present_variables.csv")["variables"].tolist()
     else:
-        present_vars = usa_variables["variables"].tolist() if "us"==name[:2] else (cps_variables["variables"].tolist() if "cps"==name[:3] else ipumsi_variables["variables"].tolist())
-        
+        present_vars = get_data_collection_variables(name)
+
     download_dir_PATH = Path(dir)
     
     # submit your extract
@@ -80,18 +88,6 @@ def try_save_extract(extract,name,download_dir):
     ipums.download_extract(extract, download_dir=download_dir_PATH)
 
     # Get the DDI
-    ddi_file = list(download_dir_PATH.glob("*.xml"))[0]
-    ddi = readers.read_ipums_ddi(ddi_file)
-
-    # Get the data as a csv
-    '''
-    try:
-        ipums_df = readers.read_microdata(ddi, download_dir_PATH / ddi.file_description.filename)
-        ipums_df.to_csv(data_csv)
-        print(f"Download of {name} dataframe with shape {ipums_df.shape} was successful")
-    except Exception as e:
-        print(f"Couldn't load full df for {name} into memory: \n{e}")
-    '''
     save_ddi_json(name,download_dir)
     return (1,"")
 
@@ -111,11 +107,11 @@ def save_extract(name,download_dir):
 
 # collection is one of {"usa", "cps", "ipumsi"}
 def save_collection_extracts(collection="usa",download_dir="data"):
-    sample_ids = pd.read_csv(f"ipums_metadata/sampleid_{collection}.csv")
+    sample_ids = pd.read_csv(os.path.join(IPUMS_SCRAPER_REPO_PATH,f"ipums_metadata/sampleid_{collection}.csv"))
     threads=[Thread(target=save_extract,args=(sample_id,download_dir)) for sample_id in sample_ids["Sample ID"].tolist()]
     for i,thread in enumerate(threads):
         thread.start()
-        if i%30==0:
+        if i%30==0 and i>0:
             print(f"Started {i} threads, sleep for 120 seconds before sending more requests")
             time.sleep(120)
     for thread in threads:
