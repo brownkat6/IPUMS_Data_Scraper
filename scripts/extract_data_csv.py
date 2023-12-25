@@ -1,4 +1,3 @@
-from ipums_scraper.ipums_data import save_collection_extracts, save_extract
 from pathlib import Path
 import sys
 import argparse
@@ -6,9 +5,10 @@ import pandas as pd
 from ipumspy import readers
 import os
 import warnings
+import numpy as np
 warnings.filterwarnings("ignore")
 CHUNK_SIZE=100000
-MAX_FILE_SIZE=500000
+IPUMS_SCRAPER_REPO_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))/Path("ipums_scraper/")
 
 def get_valid_columns(ddi,download_dir_PATH,sample_id):
         # readers.read_microdata_chunked throws errors when loading data for a few columns, so this function checks which columns are readable
@@ -42,14 +42,14 @@ def extract_data_csv(sample_id,download_dir,max_file_size):
             print(f"extract {len(df)} rows")
             df.to_csv(data_csv,mode="a",header=not os.path.exists(data_csv))
             count+=1
-            if count*CHUNK_SIZE>=min(max_file_size,MAX_FILE_SIZE):
+            if count*CHUNK_SIZE>max_file_size:
                 break
         
         # Remove columns with >0.4 correlation with df["HHINCOME"]
         df = pd.read_csv(data_csv)
         if "HHINCOME" in df.columns:
             for col in df.columns:
-                if col=="HHINCOME":
+                if col=="HHINCOME" or df[col].dtype not in [np.float64,np.int64]:
                     continue
                 if df[col].corr(df["HHINCOME"])>0.4:
                     df.drop(col,axis=1,inplace=True)
@@ -57,7 +57,7 @@ def extract_data_csv(sample_id,download_dir,max_file_size):
 
 def main(collection_name,sample_ids,download_dir,max_file_size):
     if sample_ids is None:
-        sample_ids = pd.read_csv(f"ipums_metadata/sampleid_{collection_name}.csv")["Sample ID"].tolist()
+        sample_ids = pd.read_csv(IPUMS_SCRAPER_REPO_PATH/Path(f"ipums_metadata/sampleid_{collection_name}.csv"))["Sample ID"].tolist()
         # only keep sample_ids where a .dat.gz file exists in directory f"data/{sample_id}" (the name of the .dat.gz file could be anything)
         sample_ids = [sample_id for sample_id in sample_ids if len(list(Path(f"{download_dir}/{sample_id}").glob("*.dat.gz")))>0]
         # remove sample_ids where a data csv file already exists
@@ -72,7 +72,7 @@ if __name__ == "__main__":
     
     sample_ids = []
     for collection in ["usa","cps","ipumsi"]:
-        df = pd.read_csv(f"ipums_metadata/sampleid_{collection}.csv")
+        df = pd.read_csv(IPUMS_SCRAPER_REPO_PATH/Path(f"ipums_metadata/sampleid_{collection}.csv"))
         sample_ids.extend(df["Sample ID"].tolist())
     
     parser.add_argument("--sample-ids", nargs="+", choices=sample_ids)
