@@ -8,8 +8,7 @@ from pathlib import Path
 from ipumspy import IpumsApiClient
 
 IPUMS_SCRAPER_REPO_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))/Path("ipums_scraper/")
-IPUMS_API_KEY = "59cba10d8a5da536fc06b59dbd7181d551084657b83506bdc3028b35"
-#IPUMS_API_KEY = os.environ["IPUMS_API_KEY"]
+IPUMS_API_KEY = os.environ["IPUMS_API_KEY"]
 
 ipums = IpumsApiClient(IPUMS_API_KEY)
 
